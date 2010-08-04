@@ -1,0 +1,20 @@
+<form id="contato" action="/notifier/notifier">
+	<h1 class="contato">Contato</h1>
+	<h5 class="aviso">Entre em contato conosco.</h5>
+	<br />
+	<p>
+	  <label for="nome">Nome:</label><br />
+	  <input type="text" id="nome" name="contato[nome]"/>
+	</p>
+	<p>
+	  <label for="email">Email:</label><br />
+	  <input type="text" id="email" name="contato[email]"/>
+	</p>
+	<p>
+	  <label for="mensagem">Mensagem:</label><br />
+	  <textarea id="mensagem" name="contato[mensagem]"></textarea>
+	</p>
+	<br />
+	<input type="submit" />
+	<%= flash[:notice] %>	
+</form>

@@ -1,0 +1,24 @@
+Eventos para aprovar:
+
+<% if flash[:removed] %>
+	<p class="notice"><%= flash[:removed] %></p>
+	<br />
+<% end  %>
+
+<% if flash[:aprovado] %>
+	<p class="notice"><%= flash[:aprovado] %></p>
+	<br />
+<% end  %>
+
+<br /><br />
+
+<% if @eventos.empty? %>
+	Nenhum evento para aprovar.
+<% else  %>	
+	<% for evento in @eventos %>
+		<%= evento.nome %> 
+		<%= link_to "Aprovar", :action => "aprovar", :id => evento %>
+		<%= link_to "Remover", :action => "remover", :id => evento %>
+		<br/><br/>
+	<% end  %>
+<% end  %>

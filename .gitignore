@@ -1,0 +1,6 @@
+config/database.yml
+log/development.log
+log/test.log
+tmp
+log/cucumber.log
+public/system/logos

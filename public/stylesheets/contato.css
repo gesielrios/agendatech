@@ -1,0 +1,47 @@
+	#contato {
+	  margin: 50px 0px 20px 0px;
+	}
+
+	#contato h1 {
+	  color: #4A4A47;
+	}
+
+	#contato h5 {
+	  color: #666666;
+	  width: 500px;
+	}
+
+	#contato label {
+	  font-size: 10pt;
+	}
+
+	#contato input[type=text],
+	#contato textarea {
+	  padding: 9px;
+	  border: solid 1px #4A4A47;
+	  outline: 0;
+	  width: 350px;
+	  background: #FFFFFF url('../images/bg_form.png') top repeat-x;
+		background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+		-moz-box-shadow: rgba(0,0,0, 0.5) 0px 0px 8px;
+	}
+
+	#contato input:focus,
+	#contato textarea:focus { 
+		border-color: #4A4A47; 
+		-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+		}
+
+	#contato input[type=submit] {
+		background-color: #4a4a47;
+		display: inline-block;
+		font-size: 12px !important;
+		color: #fdd011;
+		font-weight: normal !important;
+		padding: 5px;
+		width: 104px;
+	}
+
+	#contato p {
+	  margin-top: 5px;
+	}

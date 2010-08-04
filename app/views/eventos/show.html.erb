@@ -1,0 +1,29 @@
+<div id="detalhe_left">
+	 <%= image_tag @evento.logo.url(:medium) %>
+</div>
+
+<div id="detalhe_right" >
+	<strong><%= @evento.nome %></strong><br />					
+	<small><%= nome_do_estado @evento.estado %></small>
+	<p><span>Data:</span><%= @evento.data.day %>/<%= @evento.data.strftime('%B') %></p>
+	<br/><br/><br/>
+
+	<p><span>Tags:</span>
+
+			<% @evento.tags.each do |tag| %>
+			<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+			<% end %>
+
+	</p>
+
+	<p><span>Site:</span><a href="<%= @evento.site %>" target="blank"><%= @evento.site %></a></p>
+	<p><span>Twitter:</span><a href="http://www.twitter.com/<%= @evento.twitter %>" target="blank">@<%= @evento.twitter %></a></p>
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="detalhe_desc" >
+	<%= @evento.descricao %>
+</div>
+
+<p class="desc_button"><%= link_to '< Voltar para home', root_path %></p>
