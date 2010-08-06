@@ -10,12 +10,20 @@ E /^preencho o campo nome com "([^"]*)"$/ do |nome|
   fill_in "evento[nome]",:with=>nome
 end
 
+E /^preencho o campo estado com "([^"]*)"$/ do |estado|
+  select  estado, :from => "evento[estado]"
+end
+
 E /^preencho o campo site com "([^"]*)"$/ do |site|
   fill_in "evento[site]",:with=>site  
 end
 
 E /^preencho o campo data com "([^"]*)"$/ do |data|
   fill_in "evento[data]",:with=>data
+end
+
+E /^preencho o campo data_termino com "([^"]*)"$/ do |data_termino|
+  fill_in "evento[data_termino]",:with=>data_termino
 end
 
 E /^preencho o campo descricao com "([^"]*)"$/ do |descricao|
