@@ -134,7 +134,7 @@ h3{
 #left{
 	float: left;
 	width: 680px;
-	margin-top: -17px;
+	margin-top: -20px;
 }
 
 #right{
@@ -157,6 +157,7 @@ h3{
 	float: left;
 	margin-right: 20px;
 	text-align: center;
+	min-width: 76px;
 }	
 .data p{
 	font-size: 72px;
@@ -433,3 +434,36 @@ a:visited {
 	width:650px;
 }
 
+#banner{
+	width: 670px;
+	height: 164px;
+	background-color: #4A4A47;
+	margin-bottom: 10px;
+}
+
+.evento_destaque{
+	width: 670px;
+	background-color: #E3DFCE;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+#twitter_images{
+	padding:5px; 
+	margin-top: 20px;
+	float: left;
+}
+
+#twitter_images img{
+	float: left;
+}
+
+#twitter_images p{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.twit{
+	font-size: 11px;
+}

@@ -36,7 +36,7 @@
 						<p class="logo_home">agenda<span>tech</span></p>
 					</a>	
 				</h1>
-				<h3>Confira os próximos eventos de <span>tecnologia</span>, dojos, #hora_extra's e encontros pelo Brasil. Cadastre o seu.</h3Confira>
+				<h3>Confira os próximos eventos de <span>tecnologia</span>, dojos, #hora_extra's e encontros pelo Brasil. Cadastre o seu.</h3>
 			</div>	
 		</div>
 		
@@ -56,6 +56,40 @@
 						<p><a href="/eventos/new">Cadastre o seu</a></p>
 					</div>
 
+						<div id="mes">
+							<p class="bold">Eventos por mês</p><br />
+
+							<div id="meses">														
+								<div class="left">
+									<p><%= link_to 'Janeiro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Janeiro") %></p>
+									<p><%= link_to 'Fevereiro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Fevereiro") %></p>
+									<p><%= link_to 'Março'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Março") %></p>
+									<p><%= link_to 'Abril'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Abril") %></p>
+									<p><%= link_to 'Maio'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Maio") %></p>
+									<p><%= link_to 'Junho'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Junho") %></p>																																
+								</div>
+
+								<div class="">
+									<p><%= link_to 'Julho'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Julho") %></p>
+									<p><%= link_to 'Agosto'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Agosto") %></p>
+									<p><%= link_to 'Setembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Setembro") %></p>
+									<p><%= link_to 'Outubro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Outubro") %></p>
+									<p><%= link_to 'Novembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Novembro") %></p>
+									<p><%= link_to 'Dezembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Dezembro") %></p>			
+								</div>
+							</div>
+						</div>
+						
+							<div id="estado">
+								<p class="bold">Eventos por estado</p><br/>
+								<div id="meses">
+		  						<% for sigla in estados_com_eventos %>
+		    						<p><%= link_to nome_do_estado(sigla)  , eventos_por_estado_path(:estado => nome_do_estado(sigla)) %></p>
+		  						<% end %>
+								</div>
+							</div>	
+						
+
 					<div id="twitter">
 						<p>Eventos no twitter</p>
 
@@ -69,40 +103,10 @@
 
 					</div>
 					
-					<div id="mes">
-						<p class="bold">Eventos por mês</p><br />
-
-						<div id="meses">														
-							<div class="left">
-								<p><%= link_to 'Janeiro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Janeiro") %></p>
-								<p><%= link_to 'Fevereiro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Fevereiro") %></p>
-								<p><%= link_to 'Março'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Março") %></p>
-								<p><%= link_to 'Abril'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Abril") %></p>
-								<p><%= link_to 'Maio'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Maio") %></p>
-								<p><%= link_to 'Junho'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Junho") %></p>																																
-							</div>
-							
-							<div class="">
-								<p><%= link_to 'Julho'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Julho") %></p>
-								<p><%= link_to 'Agosto'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Agosto") %></p>
-								<p><%= link_to 'Setembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Setembro") %></p>
-								<p><%= link_to 'Outubro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Outubro") %></p>
-								<p><%= link_to 'Novembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Novembro") %></p>
-								<p><%= link_to 'Dezembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Dezembro") %></p>			
-							</div>
-						</div>
-					</div>
+				
 					
 			
-					<div id="estado">
-						<p class="bold">Eventos por estado</p><br/>
-						<div id="meses">
-  						<% for sigla in estados_com_eventos %>
-    						<p><%= link_to nome_do_estado(sigla)  , eventos_por_estado_path(:estado => nome_do_estado(sigla)) %></p>
-  						<% end %>
-						</div>
-					</div>	
-					
+				
 					<div id="tags">
 					  <% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
 					    <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => css_class %>

@@ -1,3 +1,7 @@
+<div id="banner">
+	<a href="http://qcon.com.br/"><img src="/images/banner_qcon.png" /></a>
+</div>
+
 <p class="breadcrumb">agenda<span>tech</span> > Brasil   </p> 
 
 <% if flash[:aguarde] %>
@@ -5,25 +9,84 @@
 <% end  %>
 
 <% for evento in @eventos %>
-<div class="evento clearfix">
-	<div class="data">
-		<p><%= evento.data.day %></p>
-		<small><%= evento.data.strftime('%B') %></small>
-	</div>
-	
-	<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
 
-	<div class="info">
-		<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
-		<small><%= nome_do_estado evento.estado %></small><br/>
+<!-- implementacao as pressas pra aproveitar o oxenterails - refactor me , pls -->
+
+<% if evento.id == 14 %>
+
+	<div class="evento_destaque clearfix">
+		<div class="data">
+			<p><%= evento.data.day %></p>
+			<small><%= evento.data.strftime('%B') %></small>
+		</div>
+
+		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
+
+		<div class="info">
+			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			<small><%= nome_do_estado evento.estado %></small><br/>
+	
+			<p class="tags">
+				<% evento.tags.each do |tag| %>
+				<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+				<% end %>
+			</p>
+	
+			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
+
+
+
+
+		</div>
 		
-		<p class="tags">
-			<% evento.tags.each do |tag| %>
-			<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+		<div id="twitter_images">
+			
+			<p>Acontecendo agora no <%= evento.nome %>:</p>
+			
+			<% for u in @ultimos_twits %>
+			<div class="twit">
+				<img src="<%= u.profile_image_url %>" width="30" height="30"/>
+				<%= u.text %>
+			</div>
 			<% end %>
-		</p>
-		
-		<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
+			
+			<br /><br />
+			
+			<div style="clear: both"></div>
+			
+			<% for img in @images %>
+				<img src="<%= img %>" width="30" height="30"/>
+			<% end%>
+
+		</div>
 	</div>
-</div>
+
+
+
+<% else %>
+
+	<div class="evento clearfix">
+		<div class="data">
+			<p><%= evento.data.day %></p>
+			<small><%= evento.data.strftime('%B') %></small>
+		</div>
+	
+		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
+
+		<div class="info">
+			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			<small><%= nome_do_estado evento.estado %></small><br/>
+		
+			<p class="tags">
+				<% evento.tags.each do |tag| %>
+				<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+				<% end %>
+			</p>
+		
+			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
+		</div>
+	</div>
+
+<% end %>
+
 <% end %>
