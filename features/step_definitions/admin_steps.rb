@@ -15,6 +15,15 @@ Dado /^que o evento abaixo existe com o termino para hoje:$/ do |table|
   end  
 end
 
+Dado /^que o evento abaixo existe com a data de inicio no futuro:$/ do |table|
+  table.hashes.each do |hash|
+    e = Evento.new hash
+    e.data = Date.today + 10
+    e.data_termino = Date.today + 15
+    e.save
+  end  
+end
+
 Dado /^que estou na pagina administrativa$/ do
   visit "/admin"
 end

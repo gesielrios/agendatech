@@ -35,10 +35,17 @@ Cenario: Busca por estado
 	Dado que estou na pagina inicial		
 	Quando clico no estado do evento
 	Entao deveria ver o "gurusp" na lista
-	
+		
 Cenario: Lista de eventos com mais de 1 dia na home
 	Dado que o evento abaixo existe com o termino para hoje:
 	|nome  |site  		       |descricao       |aprovado|estado|
 	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
     Dado que estou na pagina inicial		
 	Entao deveria ver o "gurusp" na lista 	 	 	 
+	
+Cenario: Lista de eventos quando o evento está para uma data futura
+	Dado que o evento abaixo existe com a data de inicio no futuro:
+	|nome  |site  		       |descricao       |aprovado|estado|
+	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
+    Dado que estou na pagina inicial		
+	Entao deveria ver o "gurusp" na lista 	 	 		

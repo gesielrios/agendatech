@@ -14,4 +14,11 @@ class Evento < ActiveRecord::Base
        errors.add(:data_termino, 'O termino deve vir após o inicio :)')
     end
   end
+  
+  public
+  
+  def ja_ta_rolando?
+    hoje = Date.today
+    return data <= hoje && data_termino >= hoje
+  end
 end

@@ -16,5 +16,9 @@ describe Evento do
   
   it "deveria verificar que a data de termino é posterior a data de inicio" do
     pending
-  end  
+  end
+  
+  it "deveria verificar se o dia está no intervalo do de dias do evento" do
+    pending
+  end      
 end

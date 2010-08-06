@@ -9,7 +9,7 @@ class EventosController < ApplicationController
       if params[:estado]
         @eventos = Evento.all(:conditions=> ["aprovado = ? AND estado = ? ", true,  estados.index(params[:estado])], :order => 'data ASC')      
       else    
-        @eventos = Evento.all(:conditions=> ["aprovado = ? AND ? between data and data_termino ", true, Date.today], :order => 'data ASC')
+        @eventos = Evento.all(:conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today], :order => 'data ASC')
       end
     end 
     
