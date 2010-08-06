@@ -11,20 +11,7 @@ class EventosController < ApplicationController
       else    
         @eventos = Evento.all(:conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today], :order => 'data ASC')
       end
-    end 
-    
-    # implementacao as pressas pra aproveitar o oxenterails - refactor me , pls
-    @images = []
-    Twitter::Search.new('oxenterails').page(1).per_page(88).each do |r| 
-      @images << r.profile_image_url
-    end
-    
-    @ultimos_twits = []
-    Twitter::Search.new('oxenterails').page(1).per_page(3).each do |r| 
-      @ultimos_twits << r
-    end
-    
-         
+    end                
   end
   
   def new

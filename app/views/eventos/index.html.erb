@@ -16,8 +16,8 @@
 
 	<div class="evento_destaque clearfix">
 		<div class="data">
-			<p><%= evento.data.day %></p>
-			<small><%= evento.data.strftime('%B') %></small>
+			<p><%= Date.today.day %></p>
+			<small><%= Date.today.strftime('%B') %></small>
 		</div>
 
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
@@ -42,21 +42,23 @@
 		<div id="twitter_images">
 			
 			<p>Acontecendo agora no <%= evento.nome %>:</p>
+			<!--criar um helper que ele chame o meu helper e eu entregue os twits do evento-->
+			<% twits_do_evento(evento) do |images,ultimos_twits|%>			
+			  <% for u in ultimos_twits%>
+			  <div class="twit">
+				  <img src="<%= u.profile_image_url %>" width="30" height="30"/>
+				  <%= u.text %>
+			  </div>
+			  <% end %>
 			
-			<% for u in @ultimos_twits %>
-			<div class="twit">
-				<img src="<%= u.profile_image_url %>" width="30" height="30"/>
-				<%= u.text %>
-			</div>
-			<% end %>
+			  <br /><br />
 			
-			<br /><br />
+			  <div style="clear: both"></div>
 			
-			<div style="clear: both"></div>
-			
-			<% for img in @images %>
-				<img src="<%= img %>" width="30" height="30"/>
-			<% end%>
+			  <% for img in images %>
+				  <img src="<%= img %>" width="30" height="30"/>
+			  <% end%>
+			 <%end%>
 
 		</div>
 	</div>
