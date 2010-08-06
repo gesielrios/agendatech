@@ -1,5 +1,5 @@
 class EventosController < ApplicationController
-  uses_tiny_mce :only => :new
+  uses_tiny_mce :only => [:new,:create]
 
   def index    
     if params[:month]
@@ -9,7 +9,7 @@ class EventosController < ApplicationController
       if params[:estado]
         @eventos = Evento.all(:conditions=> ["aprovado = ? AND estado = ? ", true,  estados.index(params[:estado])], :order => 'data ASC')      
       else    
-        @eventos = Evento.all(:conditions=> ["aprovado = ? AND data >= ?", true, Date.today], :order => 'data ASC')
+        @eventos = Evento.all(:conditions=> ["aprovado = ? AND data <= ? AND data_termino >= ? ", true, Date.today, Date.today], :order => 'data ASC')
       end
     end 
     
@@ -34,6 +34,9 @@ class EventosController < ApplicationController
   def create
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
+    unless @evento.data_termino?
+      @evento.data_termino = @evento.data
+    end
     if @evento.save 
       flash[:aguarde] = "Obrigado! Seu evento aparecerá na lista em instantes!"
       redirect_to :action => "index"

@@ -14,11 +14,11 @@ Esquema do Cenario: Cadastro de evento
 	Entao deveria ver o "<mensagem>" na lista
 	
 	Exemplos:
-	|nome|estado|site                  |data          |data_termino|descricao                 |mensagem|
+	|nome|estado|site                 |data          |data_termino|descricao                 |mensagem|
 	|QCon|Bahia|http://www.qcon.com.br|11/09/2010    |            |evento mais legal         |Obrigado! Seu evento aparecerá na lista em instantes!|
 	|    |Bahia|                      |              |            |                          |Campo obrigatório|
     |QCon|Bahia|http://www.qcon.com.br|11/09/2010    |12/09/2010  |evento mais legal         |Obrigado! Seu evento aparecerá na lista em instantes!|
-    |QCon|Bahia|http://www.qcon.com.br|11/09/2010    |11/09/2010  |evento mais legal         |O termino deve vir após o inicio :)|	    	
+    |QCon|Bahia|http://www.qcon.com.br|11/09/2010    |10/09/2010  |evento mais legal         |O termino deve vir após o inicio :)|	    	
 
 Cenario: Busca por mes
 	Dado que o evento abaixo existe:
@@ -34,4 +34,11 @@ Cenario: Busca por estado
 	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
 	Dado que estou na pagina inicial		
 	Quando clico no estado do evento
-	Entao deveria ver o "gurusp" na lista 	 
+	Entao deveria ver o "gurusp" na lista
+	
+Cenario: Lista de eventos com mais de 1 dia na home
+	Dado que o evento abaixo existe com o termino para hoje:
+	|nome  |site  		       |descricao       |aprovado|estado|
+	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
+    Dado que estou na pagina inicial		
+	Entao deveria ver o "gurusp" na lista 	 	 	 

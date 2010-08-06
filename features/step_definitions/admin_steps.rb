@@ -6,6 +6,15 @@ Dado /^que o evento abaixo existe:$/ do |table|
   end  
 end
 
+Dado /^que o evento abaixo existe com o termino para hoje:$/ do |table|
+  table.hashes.each do |hash|
+    e = Evento.new hash
+    e.data = Date.today - 1
+    e.data_termino = Date.today
+    e.save
+  end  
+end
+
 Dado /^que estou na pagina administrativa$/ do
   visit "/admin"
 end
