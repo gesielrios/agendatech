@@ -32,4 +32,7 @@ describe EventosController do
     pending
   end  
   
+  it "deveria testar a listagem dos twits e imagens dos twitters de determinado evento"
+    pending
+  end
 end

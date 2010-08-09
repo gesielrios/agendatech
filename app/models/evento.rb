@@ -17,7 +17,7 @@ class Evento < ActiveRecord::Base
   
   public
   
-  def ja_ta_rolando?
+  def ta_rolando?
     hoje = Date.today
     return data <= hoje && data_termino >= hoje
   end

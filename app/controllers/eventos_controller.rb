@@ -40,6 +40,11 @@ class EventosController < ApplicationController
     @eventos = Evento.find_tagged_with(params[:id], :order => "data DESC")
     @tag = params[:id]
     render :action => "index"
+  end
+  
+  def twits
+    @evento = Evento.find_by_id(params[:id])
+    render :layout => false
   end  
   
 end

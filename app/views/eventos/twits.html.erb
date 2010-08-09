@@ -1,0 +1,13 @@
+<% twits_do_evento(@evento) do |images,ultimos_twits|%>			
+  <% for u in ultimos_twits%>
+  <div class="twit">
+    <img src="<%= u.profile_image_url %>" width="30" height="30"/>
+    <%= u.text %>
+  </div>
+  <% end %>			
+  <br /><br />			
+  <div style="clear: both"></div>			
+  <% for img in images %>
+    <img src="<%= img %>" width="30" height="30"/>
+  <% end%>
+<%end%>

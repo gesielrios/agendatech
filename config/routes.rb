@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => "eventos"
-  map.resources :eventos  
+  map.resources :eventos
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   #coloquei por ultimo para ter prioridade mais baixa...
