@@ -18,7 +18,7 @@ Esquema do Cenario: Cadastro de evento
 	|QCon|Bahia|http://www.qcon.com.br|11/09/2010    |            |evento mais legal         |Obrigado! Seu evento aparecerá na lista em instantes!|
 	|    |Bahia|                      |              |            |                          |Campo obrigatório|
     |QCon|Bahia|http://www.qcon.com.br|11/09/2010    |12/09/2010  |evento mais legal         |Obrigado! Seu evento aparecerá na lista em instantes!|
-    |QCon|Bahia|http://www.qcon.com.br|11/09/2010    |10/09/2010  |evento mais legal         |O termino deve vir após o inicio :)|	    	
+    |QCon|Bahia|http://www.qcon.com.br|11/09/2010    |10/09/2010  |evento mais legal         |O término deve vir após o inicio :)|	    	
 
 Cenario: Busca por mes
 	Dado que o evento abaixo existe:

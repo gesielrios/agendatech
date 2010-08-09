@@ -11,7 +11,7 @@ class Evento < ActiveRecord::Base
 
   def termino_depois_do_inicio?
     if !errors.on(:data) && !errors.on(:data_termino) && data_termino && data_termino < data
-       errors.add(:data_termino, 'O termino deve vir após o inicio :)')
+       errors.add(:data_termino, 'O término deve vir após o inicio :)')
     end
   end
   
