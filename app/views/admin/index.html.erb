@@ -14,11 +14,13 @@ Eventos para aprovar:
 
 <% if @eventos.empty? %>
 	Nenhum evento para aprovar.
-<% else  %>	
+<% else  %>
 	<% for evento in @eventos %>
-		<%= evento.nome %> 
+		<%= evento.nome %>
 		<%= link_to "Aprovar", :action => "aprovar", :id => evento %>
 		<%= link_to "Remover", :action => "remover", :id => evento %>
 		<br/><br/>
 	<% end  %>
 <% end  %>
+
+<%= link_to "Logout", destroy_admin_session_path %>

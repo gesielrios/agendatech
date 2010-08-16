@@ -4,9 +4,9 @@ Funcionalidade: Adiminstrar os novos eventos cadastrados pelo site
 Contexto:
 	Dado que o evento abaixo existe:
 	|nome  |site  		       |descricao       |aprovado|estado|
-	|gurusp|http://www.guru.com|encontro do guru|false   |SP    |
+    |gurusp|http://www.guru.com|encontro do guru|false   |SP    |
+    Dado que estou como administrador
 	Dado que estou na pagina administrativa
-
 
 Cenario: Aprovar evento
 	Quando clico no link "Aprovar"

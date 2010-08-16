@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.devise_for :admins
+
   
   map.root :controller => "eventos"
   map.resources :eventos

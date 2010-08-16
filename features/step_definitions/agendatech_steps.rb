@@ -15,7 +15,7 @@ E /^preencho o campo estado com "([^"]*)"$/ do |estado|
 end
 
 E /^preencho o campo site com "([^"]*)"$/ do |site|
-  fill_in "evento[site]",:with=>site  
+  fill_in "evento[site]",:with=>site
 end
 
 E /^preencho o campo data com "([^"]*)"$/ do |data|
@@ -29,6 +29,9 @@ end
 E /^preencho o campo descricao com "([^"]*)"$/ do |descricao|
   fill_in "evento[descricao]",:with=>descricao
 end
+Quando /^preencho o campo "([^"]*)" com "([^"]*)"$/ do |label, conteudo|
+  fill_in label, :with => conteudo
+end
 
 Quando /^clico no botao "([^\"]*)"$/ do |botao|
   click_button botao
@@ -36,6 +39,10 @@ end
 
 
 Entao /^deveria ver o "([^\"]*)" na lista$/ do |texto|
+  page.should have_content texto
+end
+
+Entao /^deveria ver "([^\"]*)" na pagina$/ do |texto|
   page.should have_content texto
 end
 
