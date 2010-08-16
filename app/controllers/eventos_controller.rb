@@ -1,5 +1,5 @@
 class EventosController < ApplicationController
-  uses_tiny_mce :only => :new
+  uses_tiny_mce :only => [:new,:create]
 
   def index    
     if params[:month]
@@ -9,22 +9,22 @@ class EventosController < ApplicationController
       if params[:estado]
         @eventos = Evento.all(:conditions=> ["aprovado = ? AND estado = ? ", true,  estados.index(params[:estado])], :order => 'data ASC')      
       else    
-        @eventos = Evento.all(:conditions=> ["aprovado = ? AND data >= ?", true, Date.today], :order => 'data ASC')
+        @eventos = Evento.all(:conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today], :order => 'data ASC')
       end
     end 
     
     # implementacao as pressas pra aproveitar o oxenterails - refactor me , pls
     @images = []
-    # Twitter::Search.new('oxenterails').page(1).per_page(88).each do |r| 
-    #   @images << r.profile_image_url
-    # end
+    Twitter::Search.new('oxenterails').page(1).per_page(88).each do |r| 
+      @images << r.profile_image_url
+    end
     
     @ultimos_twits = []
-    # Twitter::Search.new('oxenterails').page(1).per_page(3).each do |r| 
-    #   @ultimos_twits << r
-    # end
+    Twitter::Search.new('oxenterails').page(1).per_page(3).each do |r| 
+      @ultimos_twits << r
+    end
     
-         
+
   end
   
   def new
@@ -34,6 +34,9 @@ class EventosController < ApplicationController
   def create
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
+    unless @evento.data_termino?
+      @evento.data_termino = @evento.data
+    end
     if @evento.save 
       flash[:aguarde] = "Obrigado! Seu evento aparecerá na lista em instantes!"
       redirect_to :action => "index"
@@ -50,6 +53,11 @@ class EventosController < ApplicationController
     @eventos = Evento.find_tagged_with(params[:id], :order => "data DESC")
     @tag = params[:id]
     render :action => "index"
+  end
+  
+  def twits
+    @evento = Evento.find_by_id(params[:id])
+    render :layout => false
   end  
   
 end

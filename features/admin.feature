@@ -3,8 +3,8 @@ Funcionalidade: Adiminstrar os novos eventos cadastrados pelo site
 
 Contexto:
 	Dado que o evento abaixo existe:
-	|nome  |site  		       |descricao       |aprovado|
-	|gurusp|http://www.guru.com|encontro do guru|false   |
+	|nome  |site  		       |descricao       |aprovado|estado|
+	|gurusp|http://www.guru.com|encontro do guru|false   |SP    |
 	Dado que estou na pagina administrativa
 
 

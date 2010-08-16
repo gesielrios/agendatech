@@ -13,11 +13,16 @@
 	  		  <%=error_message_on :evento,:estado%>
           <%=select("evento", "estado", estados.sort.collect {|estado| [ estado[1], estado[0]] })%>
 	  		</p>
-			<p>
-	  		  <label for="email">Data (dd/mm/yyyy)</label><br />
+			  <p>
+	  		  <label for="data">Data (dd/mm/yyyy)</label><br />
 	  		  <%=error_message_on @evento,:data%>
 	  		  <input type="text" name="evento[data]" value="<%=@evento.data.strftime('%d/%m/%Y') if @evento.data%>"/>
-	  		</p>					
+	  		</p>
+			  <p>
+	  		  <label for="data_termino">Data de termino(dd/mm/yyyy) - Caso dure mais de 1 dia</label><br />
+	  		  <%=error_message_on @evento,:data_termino%>
+	  		  <input type="text" name="evento[data_termino]" value="<%=@evento.data_termino.strftime('%d/%m/%Y') if @evento.data_termino%>"/>
+	  		</p>						  							
 	  		<p>
 	  		  <label for="email">Site</label><br />
 	  		  <%=error_message_on :evento,:site%>

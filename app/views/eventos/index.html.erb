@@ -6,64 +6,33 @@
 
 <% for evento in @eventos %>
 
-<!-- implementacao as pressas pra aproveitar o oxenterails - refactor me , pls -->
+<% if evento.ta_rolando? %>
 
-<% if evento.id == 14 %>
-
-	<% if evento.id == 14 %>
-
-	<div id="banner">
-		<a href="http://qcon.com.br/"><img src="/images/banner_qcon.png" /></a>
-	</div>
-
-	<% end  %>
-
-
-	<div class="evento_destaque clearfix">
-		<div class="data">
-			<p><%= evento.data.day %></p>
-			<small><%= evento.data.strftime('%B') %></small>
-		</div>
+<div class="evento_destaque clearfix" id="<%=evento.id%>">
+	  <div class="data">
+		  <p><%= Date.today.day %></p> 
+		  <small><%= Date.today.strftime('%B') %></small>
+	  </div>
 
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
 
-		<div class="info">
-			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
-			<small><%= nome_do_estado evento.estado %></small><br/>
+		  <div class="info">
+			  <p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			  <small><%= nome_do_estado evento.estado %></small><br/>
 	
-			<p class="tags">
-				<% evento.tags.each do |tag| %>
-				<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
-				<% end %>
-			</p>
+			  <p class="tags">
+				  <% evento.tags.each do |tag| %>
+				  <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+				  <% end %>
+			  </p>
 	
-			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
-
-
-
-
-		</div>
+			  <p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
+		  </div>
 		
-		<div id="twitter_images">
-			
-			<p>Acompanhe o que estão falando sobre o <%= evento.nome %> no Twitter:</p>
-			
-			<% for u in @ultimos_twits %>
-			<div class="twit">
-				<img src="<%= u.profile_image_url %>" width="30" height="30"/>
-				<%= u.text %>
-			</div>
-			<% end %>
-			
-			<br /><br />
-			
-			<div style="clear: both"></div>
-			
-			<% for img in @images %>
-				<img src="<%= img %>" width="30" height="30"/>
-			<% end%>
 
-		</div>
+	
+		  <div id="twitter_images" style="display:none">		
+		  </div>
 	</div>
 
 
@@ -97,3 +66,19 @@
 <% end %>
 
 <% end %>
+<%content_for :javascript do %>
+  <%= javascript_include_tag "jquery-1.4.2.min.js","jquery.async.js" %>  
+  <script>
+		jQuery.whileAsync({
+	        delay: 60000,      
+	        bulk: 0,
+	        loop: function(){ 	    								    		
+                $('div[id=twitter_images]').each(function(index,div){
+                    $.get("/eventos/twits/"+$(this).parent().attr('id'),function(htmlDosTwits){
+                     $(div).html(htmlDosTwits).fadeIn("slow");
+                    });
+                });	        
+	        }
+		});	
+  </script>
+<%end%>
