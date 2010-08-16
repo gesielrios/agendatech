@@ -1,7 +1,3 @@
-<div id="banner">
-	<a href="http://qcon.com.br/"><img src="/images/banner_qcon.png" /></a>
-</div>
-
 <p class="breadcrumb">agenda<span>tech</span> > Brasil   </p> 
 
 <% if flash[:aguarde] %>
@@ -13,6 +9,15 @@
 <!-- implementacao as pressas pra aproveitar o oxenterails - refactor me , pls -->
 
 <% if evento.id == 14 %>
+
+	<% if evento.id == 14 %>
+
+	<div id="banner">
+		<a href="http://qcon.com.br/"><img src="/images/banner_qcon.png" /></a>
+	</div>
+
+	<% end  %>
+
 
 	<div class="evento_destaque clearfix">
 		<div class="data">
@@ -41,7 +46,7 @@
 		
 		<div id="twitter_images">
 			
-			<p>Acontecendo agora no <%= evento.nome %>:</p>
+			<p>Acompanhe o que estão falando sobre o <%= evento.nome %> no Twitter:</p>
 			
 			<% for u in @ultimos_twits %>
 			<div class="twit">
@@ -65,6 +70,7 @@
 
 <% else %>
 
+
 	<div class="evento clearfix">
 		<div class="data">
 			<p><%= evento.data.day %></p>
@@ -86,6 +92,7 @@
 			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
 		</div>
 	</div>
+
 
 <% end %>
 

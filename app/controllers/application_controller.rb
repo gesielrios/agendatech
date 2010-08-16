@@ -79,9 +79,9 @@ class ApplicationController < ActionController::Base
     @twits = []
     
     eventos.each do |e|
-      Twitter::Search.new(e.twitter_hash).page(1).per_page(1).each do |r| 
-        @twits << r
-      end
+      # Twitter::Search.new(e.twitter_hash).page(1).per_page(1).each do |r| 
+      #   @twits << r
+      # end
     end
     @twits    
   end
