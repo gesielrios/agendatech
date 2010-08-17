@@ -21,13 +21,23 @@
 						<p class="logo_home">agenda<span>tech</span></p>
 					</a>	
 				</h1>
-				<h3>Confira os próximos eventos de <span>tecnologia</span>, dojos, #hora_extra's e encontros pelo Brasil. Cadastre o seu.</h3>
+				<h3>Eventos de tecnologia no Brasil.</h3>
 			</div>	
 		</div>
 		
 		<div id="content">
+			<div id="menu">
+				<ul>
+					<li><a href="#" class="menu_select">Eventos</a></li>
+					<li><a href="#" class="menu_inicial">Grupos</a></li>
+					<li><a href="#" class="menu_inicial">Contato</a></li>
+					<li><a href="#" class="menu_inicial">Sobre</a></li>
+					<li><a href="#" class="menu_inicial">Colaboradores</a></li>
+				</ul>
+			</div>
+			<div style="clear: both"></div>
 			<div class="container">
-				
+							
 				<div id="left" >
 					<p class="breadcrumb"><% if @mes %>Eventos em <%= Date::MONTHNAMES[@mes.to_i]  %><% end %></p>
 					<p class="breadcrumb"><% if @tag %>Eventos de <%= @tag  %><% end %></p>					
@@ -38,7 +48,8 @@
 				<div id="right" >
 					
 					<div id="cadastre">
-						<p><a href="/eventos/new">Cadastre o seu</a></p>
+						Confira os próximos eventos de tecnologia, dojos e encontros pelo Brasil.<br/><br/>
+						<p><a href="/eventos/new">Cadastre o seu evento!</a></p>
 					</div>
 					
 				
@@ -68,10 +79,6 @@
 							</div>
 						</div>
 						
-						
-						
-	<a href="javascript: void(0);" onclick="window.open('http://www.peixegrande.com.br/voto/votar.asp?key=5540704F5B011B534945091451484E0B0D5B4A45FFD6DB82820D51EA479A983EE60E','peixegrande','width=570,height=440')"><img src="http://www.newwws.com.br/imagesarteccom/selo_2010.png" alt="Selo peixe Grande 2010" border="0" /></a><br/><br/>						
-						
 							<div id="estado">
 								<p class="bold">Eventos por estado</p><br/>
 								<div id="meses">
@@ -98,8 +105,7 @@
 						<% end  %>
 
 					</div>
-					
-				
+							
 					
 			
 				
@@ -109,6 +115,12 @@
 					  <% end %>
 					</div>
 					
+		<br/><br/>
+		<div id="qcon">
+			<a href="http://qcon.com.br/"><img src="/images/qcon_side.png" /></a>
+		</div>					
+					
+	<a href="javascript: void(0);" onclick="window.open('http://www.peixegrande.com.br/voto/votar.asp?key=5540704F5B011B534945091451484E0B0D5B4A45FFD6DB82820D51EA479A983EE60E','peixegrande','width=570,height=440')"><img src="http://www.newwws.com.br/imagesarteccom/selo_2010.png" alt="Selo peixe Grande 2010" border="0" /></a><br/><br/>				
 					
 				</div>
 				<div style="clear: both"></div>
