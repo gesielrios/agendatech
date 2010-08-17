@@ -48,4 +48,10 @@ Cenario: Lista de eventos quando o evento está para uma data futura
 	|nome  |site  		       |descricao       |aprovado|estado|
 	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
     Dado que estou na pagina inicial		
-	Entao deveria ver o "gurusp" na lista 	 	 		
+	Entao deveria ver o "gurusp" na lista
+Cenario: Lista de eventos quando o evento já passou
+	Dado que o evento abaixo existe mas com a data ultrapassada:
+	|nome  |site  		       |descricao       |aprovado|estado|
+	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
+    Dado que estou na pagina inicial		
+	Entao não deveria ver o "gurusp" na lista 	 	 			 	 	 		

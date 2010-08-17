@@ -46,6 +46,10 @@ Entao /^deveria ver "([^\"]*)" na pagina$/ do |texto|
   page.should have_content texto
 end
 
+Entao /^não deveria ver o "([^\"]*)" na lista$/ do |texto|
+  page.should_not have_content texto
+end
+
 Quando /^clico no mes do evento$/ do
   click_link Date::MONTHNAMES[Time.now.month]
 end
