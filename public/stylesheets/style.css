@@ -198,7 +198,7 @@ text-decoration:none;
 .info small, #detalhe_right small{
 	font-size: 14px;
 	font-weight: normal;
-	font-style: italic;
+/*	font-style: italic;*/
 }
 
 .space{
