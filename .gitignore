@@ -4,3 +4,5 @@ log/test.log
 tmp
 log/cucumber.log
 public/system/logos
+*~
+*.sw?
