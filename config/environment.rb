@@ -4,11 +4,6 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
-
-  # gem list
-  config.gem "paperclip"
-  config.gem "twitter"
-  config.gem "devise", :version => "1.0.8"
 end
 
 ValidatesTimeliness::Formats.remove_us_formats
