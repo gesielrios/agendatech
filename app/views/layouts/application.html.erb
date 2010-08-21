@@ -28,11 +28,10 @@
 		<div id="content">
 			<div id="menu">
 				<ul>
-					<li><a href="#" class="menu_select">Eventos</a></li>
-					<li><a href="#" class="menu_inicial">Grupos</a></li>
-					<li><a href="#" class="menu_inicial">Contato</a></li>
-					<li><a href="#" class="menu_inicial">Sobre</a></li>
-					<li><a href="#" class="menu_inicial">Colaboradores</a></li>
+  			  <li><%= link_to "Eventos", {:controller => 'eventos'}, :class => 'menu_select' %></li>
+				  <li><%= link_to "Contato", {:controller => 'notifier'}, :class => 'menu_inicial'%></li>  			  									
+				  <li><%= link_to "Sobre", {:controller => 'sobre'}, :class => 'menu_inicial' %></li>				  
+  			  <li><%= link_to "Colaboradores", {:controller => 'sobre', :action => 'colaboradores'}, :class => 'menu_inicial' %></li>				
 				</ul>
 			</div>
 			<div style="clear: both"></div>
