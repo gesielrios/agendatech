@@ -2,7 +2,7 @@ source :rubygems
 gem "rails"            , "2.3.8"
 gem "mysql"
 gem "paperclip"
-gem "twitter"
+gem "twitter"          , "0.9.8"
 gem "devise"           , "1.0.8"
 
 group :test do
