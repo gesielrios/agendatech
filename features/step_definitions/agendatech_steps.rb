@@ -51,7 +51,7 @@ Entao /^não deveria ver o "([^\"]*)" na lista$/ do |texto|
 end
 
 Quando /^clico no mes do evento$/ do
-  click_link Date::MONTHNAMES[Time.now.month]
+  click_link I18n.l(Time.now, :format => :month)
 end
 
 Quando /^clico no estado do evento$/ do

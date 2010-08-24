@@ -3,7 +3,7 @@
 </div> -->
 
 <br/>
-<p class="breadcrumb"><b>agendatech</b> > Brasil   </p> 
+<p class="breadcrumb"><b>agendatech</b> > Brasil   </p>
 
 <% if flash[:aguarde] %>
 	<p class="notice"><%=flash[:aguarde]%></p>
@@ -16,8 +16,8 @@
 
 <div class="evento_destaque clearfix" id="<%=evento.id%>">
 	  <div class="data">
-		  <p><%= Date.today.day %></p> 
-		  <small><%= Date.today.strftime('%B') %></small>
+		  <p><%= Date.today.day %></p>
+          <small><%= l(Date.today, :format => :month) %></small>
 	  </div>
 
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
@@ -25,19 +25,19 @@
 		  <div class="info">
 			  <p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
 			  <small><%= nome_do_estado evento.estado %></small><br/>
-	
+
 			  <p class="tags">
 				  <% evento.tags.each do |tag| %>
-				  <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+				  <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
 				  <% end %>
 			  </p>
-	
-			  <p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
-		  </div>
-		
 
-	
-		  <div id="twitter_images" style="display:none">		
+			  <p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+		  </div>
+
+
+
+		  <div id="twitter_images" style="display:none">
 		  </div>
 	</div>
 
@@ -49,22 +49,22 @@
 	<div class="evento clearfix">
 		<div class="data">
 			<p><%= evento.data.day %></p>
-			<small><%= evento.data.strftime('%B') %></small>
+            <small><%= l(evento.data, :format => :month) %></small>
 		</div>
-	
+
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) %></div>
 
 		<div class="info">
 			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
 			<small><%= nome_do_estado evento.estado %></small><br/>
-		
+
 			<p class="tags">
 				<% evento.tags.each do |tag| %>
-				<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+				<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
 				<% end %>
 			</p>
-		
-			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>							
+
+			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
 		</div>
 	</div>
 
@@ -73,18 +73,18 @@
 
 <% end %>
 <%content_for :javascript do %>
-  <%= javascript_include_tag "jquery-1.4.2.min.js","jquery.async.js" %>  
+  <%= javascript_include_tag "jquery-1.4.2.min.js","jquery.async.js" %>
   <script>
 		jQuery.whileAsync({
-	        delay: 60000,      
+	        delay: 60000,
 	        bulk: 0,
-	        loop: function(){ 	    								    		
+	        loop: function(){
                 $('div[id=twitter_images]').each(function(index,div){
                     $.get("/eventos/twits/"+$(this).parent().attr('id'),function(htmlDosTwits){
                      $(div).html(htmlDosTwits).fadeIn("slow");
                     });
-                });	        
+                });
 	        }
-		});	
+		});
   </script>
 <%end%>

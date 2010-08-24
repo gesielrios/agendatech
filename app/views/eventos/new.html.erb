@@ -3,12 +3,12 @@
 	  		<h1>Cadastre novo evento</h1>
 	  		<h5 class="aviso">Cadastre um novo evento de tecnologia em qualquer região do Brasil. Preenchendo todos os campos abaixo seu evento será melhor representado nas páginas do agendatech.  </h5>
 				<br/>
-	  		<p>	  		   
+	  		<p>
 	  		  <label for="nome">Nome</label><br />
 	  		  <%=error_message_on :evento,:nome%>
-	  		  <input type="text" name="evento[nome]" value="<%=@evento.nome%>"/> 
+	  		  <input type="text" name="evento[nome]" value="<%=@evento.nome%>"/>
 	  		</p>
-	  		<p>	  		   
+	  		<p>
 	  		  <label for="estado">Estado</label><br />
 	  		  <%=error_message_on :evento,:estado%>
           <%=select("evento", "estado", estados.sort.collect {|estado| [ estado[1], estado[0]] })%>
@@ -16,13 +16,13 @@
 			  <p>
 	  		  <label for="data">Data (dd/mm/yyyy)</label><br />
 	  		  <%=error_message_on @evento,:data%>
-	  		  <input type="text" name="evento[data]" value="<%=@evento.data.strftime('%d/%m/%Y') if @evento.data%>"/>
+	  		  <input type="text" name="evento[data]" value="<%=l(@evento.data) if @evento.data%>"/>
 	  		</p>
 			  <p>
 	  		  <label for="data_termino">Data de termino(dd/mm/yyyy) - Caso dure mais de 1 dia</label><br />
 	  		  <%=error_message_on @evento,:data_termino%>
-	  		  <input type="text" name="evento[data_termino]" value="<%=@evento.data_termino.strftime('%d/%m/%Y') if @evento.data_termino%>"/>
-	  		</p>						  							
+	  		  <input type="text" name="evento[data_termino]" value="<%=l(@evento.data_termino) if @evento.data_termino%>"/>
+	  		</p>
 	  		<p>
 	  		  <label for="email">Site</label><br />
 	  		  <%=error_message_on :evento,:site%>
@@ -43,14 +43,14 @@
 	  		</p>
 	  		<p>
           <label for="evento_tag_list">Tag list (Separe suas tags por ",")</label><br/>
-          <input id="evento_tag_list" name="evento[tag_list]" type="text" value="<%=@evento.tag_list%>"/>	  		
+          <input id="evento_tag_list" name="evento[tag_list]" type="text" value="<%=@evento.tag_list%>"/>
 	  		</p>
 	  		<p>
 	  		  <label for="logo">Logo</label><br />
           	  <%= f.file_field :logo %>
-	  		</p>	  		
+	  		</p>
 
-	  		
+
 	  		<br />
 	  		<input type="submit" value="Cadastrar"/>
 <% end %>

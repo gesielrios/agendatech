@@ -3,15 +3,15 @@
 </div>
 
 <div id="detalhe_right" >
-	<strong><%= @evento.nome %></strong><br />					
+	<strong><%= @evento.nome %></strong><br />
 	<small><%= nome_do_estado @evento.estado %></small>
-	<p><span>Data:</span><%= @evento.data.day %>/<%= @evento.data.strftime('%B') %></p>
+    <p><span>Data:</span><%= @evento.data.day %>/<%= l(@evento.data, :format => :month) %></p>
 	<br/><br/><br/>
 
 	<p><span>Tags:</span>
 
 			<% @evento.tags.each do |tag| %>
-			<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>			
+			<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
 			<% end %>
 
 	</p>
