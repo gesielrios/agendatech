@@ -6,3 +6,4 @@ log/cucumber.log
 public/system/logos
 *~
 *.sw?
+.bundle/config
