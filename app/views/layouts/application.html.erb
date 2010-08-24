@@ -38,7 +38,7 @@
 			<div class="container">
 
 				<div id="left" >
-					<p class="breadcrumb"><% if @mes %>Eventos em <%= Date::MONTHNAMES[@mes.to_i]  %><% end %></p>
+					<p class="breadcrumb"><% if @mes %>Eventos em <%= @mes %><% end %></p>
 					<p class="breadcrumb"><% if @tag %>Eventos de <%= @tag	%><% end %></p>
 
 					<%= yield %>
