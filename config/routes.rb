@@ -1,7 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+
   map.devise_for :admins
 
-  
+	map.feed 'rss/feed.:format', :controller => 'rss', :action => 'feed'  
   map.root :controller => "eventos"
   map.resources :eventos
   map.connect ':controller/:action/:id'

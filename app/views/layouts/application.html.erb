@@ -32,6 +32,7 @@
 					<li><%= tab_link_to "Contato", {:controller => 'notifier'} %></li>
 					<li><%= tab_link_to "Sobre", {:controller => 'sobre', :action => 'index'} %></li>
 					<li><%= tab_link_to "Colaboradores", {:controller => 'sobre', :action => 'colaboradores'} %></li>
+					<li><%= tab_link_to 'RSS', feed_path('rss') %></li>
 				</ul>
 			</div>
 			<div style="clear: both"></div>
