@@ -490,6 +490,12 @@ a:visited {
 .menu_inicial{
 	background-color: #4A4A47;
 }
+.menu_inicial:hover{
+	background-color: #f2f2f2;
+	color: #4A4A47;
+	font-weight: bold;
+}
+
 
 a:link.menu_select, a:visited.menu_select  {
 	color:#4A4A47;
