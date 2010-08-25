@@ -29,6 +29,7 @@
 			<div id="menu">
 				<ul>
 					<li><%= tab_link_to "Eventos", {:controller => 'eventos'} %></li>
+					<li><%= tab_link_to "Grupos",  {:controller => 'grupos'} %></li>
 					<li><%= tab_link_to "Contato", {:controller => 'notifier'} %></li>
 					<li><%= tab_link_to "Sobre", {:controller => 'sobre', :action => 'index'} %></li>
 					<li><%= tab_link_to "Colaboradores", {:controller => 'sobre', :action => 'colaboradores'} %></li>
@@ -49,7 +50,9 @@
 
 					<div id="cadastre">
 						Confira os próximos eventos de tecnologia, dojos e encontros pelo Brasil.<br/><br/>
-						<p><a href="/eventos/new">Cadastre o seu evento!</a></p>
+						<p>
+						  <%= link_to "Cadastre o seu evento!", new_evento_path %>
+						</p>
 					</div>
 
 
