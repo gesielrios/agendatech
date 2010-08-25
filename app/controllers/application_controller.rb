@@ -8,28 +8,29 @@ class ApplicationController < ActionController::Base
   helper_method :meses, :numero_do_mes, :estados, :nome_do_estado
 
 
+  protected
   def meses
     {
-      "Janeiro" => 1,  
+      "Janeiro" => 1,
       "Fevereiro" => 2,
       "Março" => 3,
-      "Abril" => 4,    
-      "Maio" => 5,    
+      "Abril" => 4,
+      "Maio" => 5,
       "Junho" => 6,
-      "Julho" => 7,    
-      "Agosto" => 8,    
-      "Setembro" => 9,    
-      "Outubro" => 10,    
-      "Novembro" => 11,    
-      "Dezembro" => 12    
-    }    
+      "Julho" => 7,
+      "Agosto" => 8,
+      "Setembro" => 9,
+      "Outubro" => 10,
+      "Novembro" => 11,
+      "Dezembro" => 12
+    }
   end
-  
+
   def numero_do_mes (mes)
     meses[mes]
   end
-  
-  def estados    
+
+  def estados
     {
     "AC" =>   "Acre                "  ,
     "AL" =>   "Alagoas             "  ,
@@ -57,16 +58,16 @@ class ApplicationController < ActionController::Base
     "SP" =>   "São Paulo           "  ,
     "SC" =>    "Santa Catarina      "  ,
     "SE" =>   "Sergipe             "  ,
-    "TO" =>    "Tocantins           "  
+    "TO" =>    "Tocantins           "
     }
   end
-  
+
   # waiting peaceful for my refactor...
   def nome_do_estado (sigla)
     estados[sigla]
   end
 
-  
+
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   private
@@ -74,18 +75,18 @@ class ApplicationController < ActionController::Base
      @tags = Evento.tag_counts
   end
 
-  def twitter_search    
+  def twitter_search
     eventos = Evento.find_by_sql("select distinct twitter_hash from eventos where aprovado = 1 order by rand() limit 3")
     @twits = []
-    
+
     eventos.each do |e|
-       Twitter::Search.new(e.twitter_hash).page(1).per_page(1).each do |r| 
+       Twitter::Search.new(e.twitter_hash).page(1).per_page(1).each do |r|
          @twits << r
        end
     end
-    @twits    
+    @twits
   end
-    
-  
+
+
 end
 
