@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100816233302) do
+ActiveRecord::Schema.define(:version => 20100825010021) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -47,6 +47,19 @@ ActiveRecord::Schema.define(:version => 20100816233302) do
     t.string   "estado"
     t.datetime "data_termino"
   end
+
+  create_table "grupos", :force => true do |t|
+    t.string   "nome"
+    t.boolean  "aprovado"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "grupos", ["nome"], :name => "index_grupos_on_nome", :unique => true
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"

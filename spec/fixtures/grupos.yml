@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  aprovado: false
+  logo_file_name: MyString
+  logo_content_type: MyString
+  logo_file_size: 1
+  logo_updated_at: 2010-08-24 22:00:21
+
+two:
+  nome: MyString
+  aprovado: false
+  logo_file_name: MyString
+  logo_content_type: MyString
+  logo_file_size: 1
+  logo_updated_at: 2010-08-24 22:00:21

@@ -124,3 +124,38 @@
       reset_password_instructions: 'Instruções para reiniciar sua senha'
       unlock_instructions: 'Instruções de desbloqueio'
 
+  activerecord:
+    errors:
+      messages:
+        inclusion: "não está incluso na lista"
+        exclusion: "não está disponível"
+        invalid: "não é válido"
+        confirmation: "não é igual à sua confirmação"
+        accepted: "deve ser aceito"
+        empty: "não pode ficar vazio"
+        blank: "Campo obrigatório"
+        too_long: "é muito longo (máximo: {{count}} caracteres)"
+        too_short: "é muito curto (mínimo: {{count}} caracteres)"
+        wrong_length: "não possui o tamanho esperado ({{count}} caracteres)"
+        taken: "já existe"
+        not_a_number: "não é um número"
+        greater_than: "deve ser maior que {{count}}"
+        greater_than_or_equal_to: "deve ser maior ou igual a {{count}}"
+        equal_to: "deve ser igual a {{count}}"
+        less_than: "deve ser menor que {{count}}"
+        less_than_or_equal_to: "deve ser menor ou igual a {{count}}"
+        odd: "deve ser ímpar"
+        even: "deve ser par"
+        record_invalid: "Validação falhou: {{errors}}"
+        'already confirmed': "já está confirmado"
+        'not found': "não encontrado"
+
+        invalid_date: "não é uma data válida"
+        invalid_time: "não é um horário válido"
+        invalid_datetime: "não é uma data/horário válido"
+        before: "deve ser antes de {{restriction}}"
+        on_or_before: "deve ser em ou antes de {{restriction}}"
+        after: "deve ser após {{restriction}}"
+        on_or_after: "deve ser em ou após {{restriction}}"
+        between: "deve ser entre {{earliest}} e {{latest}}"
+

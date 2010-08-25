@@ -1,22 +1,22 @@
-#new_evento {
+.resource_form {
   margin: 10px 0px 20px 0px;
 }
 
-#new_evento h1{
+.resource_form h1{
 	font-size: 24px;
 }
 
-#new_evento h5 {
+.resource_form h5 {
   width: 640px;
 }
 
-#new_evento label {
+.resource_form label {
   font-size: 10pt;
 }
 
-#new_evento input[type=text],
-#new_evento textarea,
-#new_evento input[type=file] {
+.resource_form input[type=text],
+.resource_form textarea,
+.resource_form input[type=file] {
   padding: 9px;
   border: solid 1px #4A4A47;
   outline: 0;
@@ -26,13 +26,13 @@
 	-moz-box-shadow: rgba(0,0,0, 0.5) 0px 0px 8px;
 }
 
-#new_evento input:focus,
-#new_evento textarea:focus { 
-	border-color: #C9C9C9; 
+.resource_form input:focus,
+.resource_form textarea:focus {
+	border-color: #C9C9C9;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 	}
 
-#new_evento input[type=submit] {
+.resource_form input[type=submit] {
 	background-color: #4a4a47;
 	display: inline-block;
 	font-size: 12px !important;
@@ -42,7 +42,7 @@
 	width: 104px;
 }
 
-#new_evento p {
+.resource_form p {
   margin-top: 5px;
 }
 

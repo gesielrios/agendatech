@@ -1,0 +1,23 @@
+<h2 class="titulo">Grupos de usuários</h2>
+<p>
+	No agendatech você pode cadastrar o seu grupo de usuários e divulgar os seus encontros.
+	Cadastre-o no formulário abaixo e logo poderá promovê-lo!
+</p>
+<% form_for @grupo, grupos_path, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
+	<p>
+		<%= f.label :nome %><br/>
+		<%= error_message_on :grupo, :nome%>
+		<%= f.text_field :nome %>
+	</p>
+	<p>
+		<%= f.label :logo %><br/>
+		<%= f.file_field :logo %>
+	</p>
+	<p>
+		<%= f.label :tag_list, 'Tag list (separe suas tags por ",")' %><br/>
+		<%= error_message_on :grupo, :tag_list%>
+		<%= f.text_field :tag_list %>
+	</p>
+	<br/>
+	<%= f.submit 'Cadastrar' %>
+<% end -%>
