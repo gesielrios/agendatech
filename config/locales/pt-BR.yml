@@ -90,3 +90,37 @@
       minute: "Minuto"
       second: "Segundos"
 
+  devise:
+    sessions:
+      link: 'Acessar minha conta'
+      signed_in: 'Você acessou o site com sucesso.'
+      signed_out: 'Você saiu com sucesso.'
+      unauthenticated: 'Por favor efetue o login e nós o enviaremos para a página que você solicitou.'
+      unconfirmed: 'Sua conta ainda não foi confirmada.'
+      invalid: 'E-mail e/ou senha não são válidos.'
+      invalid_token: 'Invalid authentication token.'
+      locked: 'Your account is locked.'
+      timeout: 'Sua sessão expirou, por favor acesse novamente.'
+      inactive: 'Seu perfil foi desativado pelo administrador. Favor entrar em contato para reativá-lo.'
+    passwords:
+      link: 'Esqueceu sua senha?'
+      send_instructions: 'Nós enviamos instruções para você atualizar sua senha. Por favor, cheque sua caixa de entrada.'
+      updated: 'Sua senha foi atualizada com sucesso. Você está logado agora.'
+    confirmations:
+      link: "Reenviar instruções de confirmação"
+      send_instructions: 'Nós enviamos instruções para que você possa confirmar a sua conta. Por favor, cheque sua caixa de entrada.'
+      confirmed: 'Sua conta foi confirmada com sucesso. Você está logado agora.'
+    registrations:
+      link: 'Criar uma nova conta'
+      signed_up: 'Sua conta foi criada com sucesso. Um e-mail de confirmação foi enviado, por favor, confira sua caixa de entrada.'
+      updated: 'Sua conta foi atualizada com sucesso.'
+      destroyed: 'Sua conta e todas informações foram deletadas. Esperamos ver você novamente no futuro.'
+    unlocks:
+      link: "Reenviar instruções para desbloqueio"
+      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
+      unlocked: 'Your account was successfully unlocked. You are now signed in.'
+    mailer:
+      confirmation_instructions: 'Código de confirmação'
+      reset_password_instructions: 'Instruções para reiniciar sua senha'
+      unlock_instructions: 'Instruções de desbloqueio'
+
