@@ -7,3 +7,5 @@ Rails::Initializer.run do |config|
   config.i18n.default_locale = :'pt-BR'
 end
 
+ValidatesTimeliness::Formats.remove_us_formats
+
