@@ -1,4 +1,6 @@
 class Grupo < ActiveRecord::Base
+  has_many :eventos
+
   acts_as_taggable
   has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
   validates_presence_of :nome

@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe Grupo do
+  it { should have_many :eventos }
   it { should validate_presence_of :nome }
   it { should have_scope :nao_aprovados, :conditions => { :aprovado => false } }
 
