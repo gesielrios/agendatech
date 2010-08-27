@@ -3,6 +3,13 @@ ActionController::Routing::Routes.draw do |map|
 
   map.devise_for :admins
 
+  map.namespace :admin, :path_prefix => 'admin' do |admin|
+    admin.root :controller => 'admin'
+    # TODO Arrumar os metodos HTTP
+    admin.resources :eventos, :only => [:index], :member => {:aprovar => :get, :remover => :get}
+    admin.resources :grupos, :only => [:index, :update, :destroy]
+  end
+
 	map.feed 'rss/feed.:format', :controller => 'rss', :action => 'feed'
   map.root :controller => "eventos"
   map.resources :eventos
