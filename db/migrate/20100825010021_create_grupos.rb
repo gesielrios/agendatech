@@ -15,6 +15,8 @@ class CreateGrupos < ActiveRecord::Migration
   end
 
   def self.down
+    remove_index :grupos, :column => :nome
+
     drop_table :grupos
   end
 end
