@@ -4,7 +4,9 @@ class Grupo < ActiveRecord::Base
   validates_presence_of :nome
   validates_uniqueness_of :nome
 
-  attr_accessible :logo, :nome
+  attr_accessible :logo, :nome, :tag_list
+
+  named_scope :nao_aprovados, :conditions => { :aprovado => false }
 
   def aprovar!
     update_attribute(:aprovado, true)

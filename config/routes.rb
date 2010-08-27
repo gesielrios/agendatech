@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.root :controller => 'admin'
     # TODO Arrumar os metodos HTTP
     admin.resources :eventos, :only => [:index], :member => {:aprovar => :get, :remover => :get}
-    admin.resources :grupos, :only => [:index, :update, :destroy]
+    admin.resources :grupos, :only => [:index, :destroy], :member => {:aprovar => :put}
   end
 
 	map.feed 'rss/feed.:format', :controller => 'rss', :action => 'feed'

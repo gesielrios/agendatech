@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20100825010021) do
 
   create_table "grupos", :force => true do |t|
     t.string   "nome"
-    t.boolean  "aprovado"
+    t.boolean  "aprovado",          :default => false
     t.string   "logo_file_name"
     t.string   "logo_content_type"
     t.integer  "logo_file_size"

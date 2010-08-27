@@ -1,15 +1,5 @@
 Eventos para aprovar:
 
-<% if flash[:removed] %>
-	<p class="notice"><%= flash[:removed] %></p>
-	<br />
-<% end  %>
-
-<% if flash[:aprovado] %>
-	<p class="notice"><%= flash[:aprovado] %></p>
-	<br />
-<% end  %>
-
 <br /><br />
 
 <% if @eventos.empty? %>
@@ -23,4 +13,3 @@ Eventos para aprovar:
 	<% end  %>
 <% end  %>
 
-<%= link_to "Logout", destroy_admin_session_path %>

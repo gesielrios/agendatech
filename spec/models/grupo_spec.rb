@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe Grupo do
   it { should validate_presence_of :nome }
+  it { should have_scope :nao_aprovados, :conditions => { :aprovado => false } }
 
   describe "uniqueness of name" do
     before(:each) { Grupo.create(:nome => 'GURU-SP') }
