@@ -7,7 +7,7 @@
 		<%= stylesheet_link_tag 'form' %>
 		<%= stylesheet_link_tag 'contato' %>
 	  <%= include_tiny_mce_if_needed %>
-
+    <%= auto_discovery_link_tag :rss, feed_path('rss') %>
 	</head>
 	<body>
 		<div id="gray-bg">
