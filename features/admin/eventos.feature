@@ -1,5 +1,5 @@
 #language: pt
-Funcionalidade: Adiminstrar os novos eventos cadastrados pelo site
+Funcionalidade: Adminstrar os novos eventos cadastrados pelo site
 
 Contexto:
 	Dado que o evento abaixo existe:

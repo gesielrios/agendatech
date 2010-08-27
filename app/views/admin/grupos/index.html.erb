@@ -1,0 +1,13 @@
+Grupos para aprovar:
+
+<br/><br/>
+
+<% if @grupos.empty? -%>
+  Nenhum grupo para aprovar.
+<% else -%>
+  <% for grupo in @grupos -%>
+    <%= grupo.nome %>
+    <%= link_to "Aprovar", aprovar_admin_grupo_path(grupo), :method => :put %>
+    <%= link_to "Remover", admin_grupo_path(grupo), :method => :delete %>
+  <% end -%>
+<% end -%>
