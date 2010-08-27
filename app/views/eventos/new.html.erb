@@ -23,6 +23,12 @@
 	  		  <%=error_message_on @evento,:data_termino%>
 	  		  <input type="text" name="evento[data_termino]" value="<%=l(@evento.data_termino) if @evento.data_termino%>"/>
 	  		</p>
+				<p>
+						<label for="grupo_id">Grupo de usuários</label><br/>
+						<%=error_message_on :evento,:grupo%>
+						<%= f.collection_select :grupo_id, Grupo.all, :id, :nome %>
+				</p>
+
 	  		<p>
 	  		  <label for="email">Site</label><br />
 	  		  <%=error_message_on :evento,:site%>
