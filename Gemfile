@@ -4,6 +4,7 @@ gem "mysql"
 gem "paperclip"
 gem "twitter"          , "0.9.8"
 gem "devise"           , "1.0.8"
+gem "icalendar"        , "1.1.5"
 
 group :test do
   gem 'rspec'            , '1.3.0'

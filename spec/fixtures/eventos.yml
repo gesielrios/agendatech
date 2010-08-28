@@ -1,17 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  nome: MyString
-  descricao: MyText
-  site: MyString
-  twitter: MyString
-  twitter_hash: MyString
-  data: 2010-07-26 12:21:39
+qcon:
+  nome: Qcon
+  descricao: Maior evento de tecnologia da america
+  site: http:///www.qcon.com.br
+  twitter: qcon
+  twitter_hash: qcon
+  data: 2010-09-11 00:00:00
+  data_termino: 2010-09-12 00:00:00
 
-two:
-  nome: MyString
-  descricao: MyText
-  site: MyString
-  twitter: MyString
-  twitter_hash: MyString
-  data: 2010-07-26 12:21:39
+ruby_conf:
+  nome: Ruby Conf
+  descricao: evento para rubistas do mundo inteiro
+  site: http://www.rubyconf.com.br
+  twitter: rubyconf
+  twitter_hash: rubyconf
+  data: 2010-10-26 00:00:00
+  data_termino: 2010-10-27 00:00:00
