@@ -83,7 +83,10 @@
 								<p class="bold">Eventos por estado</p><br/>
 								<div id="meses">
 								<% for sigla in estados_com_eventos %>
-									<p><%= link_to nome_do_estado(sigla)  , eventos_por_estado_path(:estado => nome_do_estado(sigla)) %></p>
+                     <p>
+                        <%= link_to image_tag("ical.gif"), calendario_por_estado_path(:estado => nome_do_estado(sigla), :protocol => "webcal", :only_path => false) %>
+                        <%= link_to nome_do_estado(sigla), eventos_por_estado_path(:estado => nome_do_estado(sigla)) %>
+                    </p>
 								<% end %>
 								</div>
 							</div>

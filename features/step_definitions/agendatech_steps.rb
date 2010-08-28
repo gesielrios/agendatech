@@ -55,5 +55,5 @@ Quando /^clico no mes do evento$/ do
 end
 
 Quando /^clico no estado do evento$/ do
-  click_link "São Paulo           "
+  click_link "São Paulo"
 end
