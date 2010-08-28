@@ -1,5 +1,5 @@
 <div id="detalhe_left">
-	 <%= image_tag @evento.logo.url(:medium) %>
+	 <%= image_tag @evento.logo.url(:medium) if @evento.logo? %>
 </div>
 
 <div id="detalhe_right" >
