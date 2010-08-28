@@ -7,6 +7,8 @@ class Evento < ActiveRecord::Base
   validate :termino_depois_do_inicio?
   validates_format_of :site, :with => /(^$)|(^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$)/ix    
   
+  named_scope :estado_aprovado, lambda { |estado| { :conditions => ["aprovado = ? AND estado = ?", true, estado], :order => 'data ASC' } } 
+  
   private 
 
   def termino_depois_do_inicio?
