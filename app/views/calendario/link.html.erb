@@ -1,0 +1,10 @@
+<p class="titulo">Links para acompanhar o agendatech no seu calendário</p><br/>
+<p class="sub_titulo">
+    Todos os estados => http://www.agendatech.com.br<%=calendario_path%><br/><br/>
+		<% for sigla in estados_com_eventos %>
+		<%=nome_do_estado(sigla)%> => http://www.agendatech.com.br<%=calendario_por_estado_path(:estado => nome_do_estado(sigla)) %>
+		<br/><br/>
+		<% end %>	  
+
+	
+</p>

@@ -22,4 +22,8 @@ def index
     render :layout => false, :text => @calendar.to_ical
     
   end  
+
+def link
+  
+end  
 end
