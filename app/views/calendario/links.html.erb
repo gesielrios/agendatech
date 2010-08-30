@@ -1,8 +1,8 @@
 <p class="titulo">Links para acompanhar o agendatech no seu calendário</p><br/>
 <p class="sub_titulo">
-    Todos os estados => <%= link_to image_tag("ical.gif"), calendario_path %><br/><br/>
+    Todos os estados => <%= link_to image_tag("ical.gif"), calendario_path(:protocol => "webcal", :only_path => false) %><br/><br/>
 		<% for sigla in estados_com_eventos %>
-    <%=nome_do_estado(sigla)%> => <%= link_to image_tag("ical.gif"), calendario_por_estado_path(:estado => nome_do_estado(sigla)) %>		
+    <%=nome_do_estado(sigla)%> => <%= link_to image_tag("ical.gif"), calendario_por_estado_path(:estado => nome_do_estado(sigla),:protocol => "webcal", :only_path => false) %>		
 		<br/><br/>
 		<% end %>	  
 

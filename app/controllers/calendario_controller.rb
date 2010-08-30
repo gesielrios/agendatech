@@ -2,9 +2,9 @@ class CalendarioController < ApplicationController
 def index
     
     if params[:estado]
-      @eventos = Evento.estado_aprovado(params[:estado])
+      @eventos = Evento.estado_aprovado(estados.index(params[:estado]))
     else
-      @eventos = Evento.all(:order => 'data ASC')
+      @eventos = Evento.all
     end
     
     @calendar = Icalendar::Calendar.new
