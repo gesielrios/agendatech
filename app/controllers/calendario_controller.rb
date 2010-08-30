@@ -23,7 +23,7 @@ def index
     
   end  
 
-def link
+def links
   
 end  
 end
