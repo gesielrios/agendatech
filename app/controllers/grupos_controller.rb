@@ -1,5 +1,9 @@
 class GruposController < ApplicationController
   def index
+    @grupos = Grupo.por_nome.aprovados
+  end
+
+  def new
     @grupo = Grupo.new
   end
 

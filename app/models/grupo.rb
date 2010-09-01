@@ -9,6 +9,8 @@ class Grupo < ActiveRecord::Base
   attr_accessible :logo, :nome, :tag_list
 
   named_scope :nao_aprovados, :conditions => { :aprovado => false }
+  named_scope :aprovados, :conditions => { :aprovado => true }
+  named_scope :por_nome, :order => 'nome ASC'
 
   def aprovar!
     update_attribute(:aprovado, true)

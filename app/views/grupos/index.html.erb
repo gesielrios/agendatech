@@ -1,23 +1,25 @@
-<h2 class="titulo">Grupos de usuários</h2>
-<p>
-	No agendatech você pode cadastrar o seu grupo de usuários e divulgar os seus encontros.
-	Cadastre-o no formulário abaixo e logo poderá promovê-lo!
-</p>
-<% form_for @grupo, grupos_path, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
-	<p>
-		<%= f.label :nome %><br/>
-		<%= error_message_on :grupo, :nome%>
-		<%= f.text_field :nome %>
-	</p>
-	<p>
-		<%= f.label :logo %><br/>
-		<%= f.file_field :logo %>
-	</p>
-	<p>
-		<%= f.label :tag_list, 'Tag list (separe suas tags por ",")' %><br/>
-		<%= error_message_on :grupo, :tag_list%>
-		<%= f.text_field :tag_list %>
-	</p>
-	<br/>
-	<%= f.submit 'Cadastrar' %>
+
+<br/>
+<p class="breadcrumb"><b>agendatech</b> &gt; Brasil   </p>
+
+<% @grupos.each do |grupo| -%>
+
+  <div class="evento clearfix" id="<%=grupo.id%>">
+    <div class="logo clearfix"> <%= image_tag grupo.logo.url(:thumb) if grupo.logo? %></div>
+
+    <div class="info">
+      <p id="evento"><%=h grupo.nome  %></p>
+
+      <p class="tags">
+        <% grupo.tags.each do |tag| %>
+          <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
+        <% end %>
+      </p>
+
+    </div>
+
+  </div>
+
 <% end -%>
+
+

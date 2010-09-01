@@ -4,6 +4,9 @@ describe Grupo do
   it { should have_many :eventos }
   it { should validate_presence_of :nome }
   it { should have_scope :nao_aprovados, :conditions => { :aprovado => false } }
+  it { should have_scope :aprovados, :conditions => { :aprovado => true } }
+
+  it { should have_scope :por_nome, :order => 'nome ASC'  }
 
   describe "uniqueness of name" do
     before(:each) { Grupo.create(:nome => 'GURU-SP') }
@@ -11,18 +14,18 @@ describe Grupo do
   end
 
   describe "#aprovar!" do
-    let(:grupo) { described_class.create(:nome => 'GURU-SP', :aprovado => false) }
-    subject { grupo }
-
-    before(:each) { grupo.aprovar! }
-    its(:aprovado) { should be_true }
+    it "deve aprovar o grupo" do
+      grupo = described_class.create(:nome => 'GURU-SP', :aprovado => true)
+      grupo.aprovar!
+      grupo.should be_aprovado
+    end
   end
 
   describe "#reprovar!" do
-    let(:grupo) { described_class.create(:nome => 'GURU-SP', :aprovado => true) }
-    subject { grupo }
-
-    before(:each) { grupo.reprovar! }
-    its(:aprovado) { should be_false }
+    it "deve reprovar o grupo" do
+      grupo = described_class.create(:nome => 'GURU-SP', :aprovado => true)
+      grupo.reprovar!
+      grupo.should_not be_aprovado
+    end
   end
 end

@@ -233,7 +233,7 @@ text-decoration:none;
 	margin-bottom: 30px;
 }
 
-#cadastre{
+.cadastre{
 	background-color: #4a4a47;
 	display: inline-block;
 	font-size: 12px;
@@ -246,11 +246,11 @@ text-decoration:none;
 	cursor: pointer;
 	cursor: hand;
 }
-#cadastre p{
+.cadastre p{
 	font-size: 14px;
 	color: #fdd011;
 }
-#cadastre:hover, .info_button:hover, .desc_button:hover{
+.cadastre:hover, .info_button:hover, .desc_button:hover{
 	background-color: #666666;
 }
 
