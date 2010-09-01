@@ -11,6 +11,8 @@ class Evento < ActiveRecord::Base
 
   named_scope :estado_aprovado, lambda { |estado| { :conditions => ["aprovado = ? AND estado = ?", true, estado], :order => 'data ASC' } }
 
+  private
+
   def termino_depois_do_inicio?
     if !errors.on(:data) && !errors.on(:data_termino) && data_termino && data_termino < data
        errors.add(:data_termino, 'O término deve vir após o inicio :)')
