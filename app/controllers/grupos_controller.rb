@@ -20,7 +20,7 @@ class GruposController < ApplicationController
       respond_to do |format|
         format.html do
           flash.now[:error] = 'Erro no cadastro do grupo, por favor verifique os erros.'
-          render :index
+          render :new
         end
       end
     end

@@ -2,7 +2,7 @@
 Funcionalidade: Mapear os grupos de usuarios do Brasil.
 
 Esquema do Cenario: Cadastro de grupo
-	Dado que estou na pagina "grupos"
+	Dado que estou na pagina "cadastrar grupo"
 	E que o grupo com nome "GURU-SP" esta cadastrado
 	Quando preencho o campo "Nome" com "<nome>"
 	E clico no botao "Cadastrar"

@@ -14,11 +14,14 @@ module NavigationHelpers
     when /administracao de grupos/
       '/admin/grupos'
 
+    when /lista de grupos/
+      '/grupos'
+
     when /administracao/
       '/admin'
 
-    when /grupos/
-      '/grupos'
+    when /cadastrar grupo/
+      '/grupos/novo'
 
 
     # Add more mappings here.
