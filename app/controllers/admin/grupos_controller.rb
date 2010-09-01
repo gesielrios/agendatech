@@ -6,14 +6,14 @@ class Admin::GruposController < ApplicationController
   end
 
   def aprovar
-    Grupo.update(params[:id], :aprovado => true)
+    Grupo.find(params[:id]).aprovar!
     flash[:success] = "Grupo aprovado."
     redirect_to admin_grupos_path
   end
 
   def destroy
-    Grupo.destroy params[:id]
-    flash[:success] = "Grupo removido."
+    Grupo.find(params[:id]).reprovar!
+    flash[:success] = "Grupo reprovado."
     redirect_to admin_grupos_path
   end
 

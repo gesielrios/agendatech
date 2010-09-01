@@ -8,6 +8,6 @@ Grupos para aprovar:
   <% for grupo in @grupos -%>
     <%= grupo.nome %>
     <%= link_to "Aprovar", aprovar_admin_grupo_path(grupo), :method => :put %>
-    <%= link_to "Remover", admin_grupo_path(grupo), :method => :delete %>
+    <%= link_to "Reprovar", admin_grupo_path(grupo), :method => :delete %>
   <% end -%>
 <% end -%>

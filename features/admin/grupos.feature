@@ -15,6 +15,6 @@ Cenario: Aprovar grupo
 	Entao deveria ver "Grupo aprovado." na pagina
 
 Cenario: Remover grupo
-	Quando clico no link "Remover"
-	Entao deveria ver "Grupo removido." na pagina
+	Quando clico no link "Reprovar"
+	Entao deveria ver "Grupo reprovado." na pagina
 
