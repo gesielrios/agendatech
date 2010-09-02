@@ -1,0 +1,4 @@
+- bundle install (o friendly_id já ta no gemfile)
+- rake db:migrate (para criar as tabelas de urls amigaveis e a coluna de cache)
+- rake friendly_id:make_slugs MODEL=eventos (para criar as urls amigaveis aos eventos cadastrados)
+- mais informações em => http://norman.github.com/friendly_id/file.Guide.html
