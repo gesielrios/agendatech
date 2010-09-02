@@ -2,6 +2,10 @@ Dado /^que estou na pagina inicial$/ do
   visit "/"
 end
 
+Dado /^que acesso a pagina de detalhe do "([^"]*)"$/ do |evento_nome_id|
+  visit "/eventos/tecnologia/2010/#{evento_nome_id}"
+end
+
 Quando /^clico no link "([^\"]*)"$/ do |link|
   click_link link
 end

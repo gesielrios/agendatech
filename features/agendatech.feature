@@ -36,6 +36,7 @@ Cenario: Busca por estado
 	Quando clico no estado do evento
 	Entao deveria ver o "gurusp" na lista
 		
+		
 Cenario: Lista de eventos com mais de 1 dia na home
 	Dado que o evento abaixo existe com o termino para hoje:
 	|nome  |site  		       |descricao       |aprovado|estado|
@@ -49,9 +50,17 @@ Cenario: Lista de eventos quando o evento está para uma data futura
 	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
     Dado que estou na pagina inicial		
 	Entao deveria ver o "gurusp" na lista
+	
 Cenario: Lista de eventos quando o evento já passou
 	Dado que o evento abaixo existe mas com a data ultrapassada:
 	|nome  |site  		       |descricao       |aprovado|estado|
 	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
     Dado que estou na pagina inicial		
 	Entao não deveria ver o "gurusp" na lista 	 	 			 	 	 		
+	
+Cenario: Visualizacao de detalhes do evento com nomes com espaços
+	Dado que o evento abaixo existe:
+	|nome  |site  		       |descricao       |aprovado|estado|
+	|guru sp|http://www.guru.com|encontro do guru|true    |SP	|
+	Dado que acesso a pagina de detalhe do "guru-sp"
+	Entao deveria ver "guru sp" na pagina	

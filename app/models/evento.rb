@@ -1,5 +1,6 @@
 class Evento < ActiveRecord::Base
   acts_as_taggable
+  has_friendly_id :nome, :use_slug => true,:approximate_ascii => true
   has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
   validates_presence_of   :nome, :site, :data, :descricao, :message => "Campo obrigatório"
   validates_date :data,:format=>"dd/mm/yyyy", :invalid_date_message => "Formato inválido", :if => Proc.new { |evento| !evento.aprovado }
