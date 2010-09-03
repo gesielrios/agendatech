@@ -5,7 +5,7 @@ gem "paperclip"
 gem "twitter"          , "0.9.8"
 gem "devise"           , "1.0.8"
 gem "icalendar"        , "1.1.5"
-gem "friendly_id"      , "3.1"
+gem "friendly_id"      , "3.1.6"
 
 group :test do
   gem 'rspec'            , '1.3.0'
