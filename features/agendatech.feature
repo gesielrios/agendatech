@@ -55,12 +55,3 @@ Cenario: Lista de eventos quando o evento já passou
 	|gurusp|http://www.guru.com|encontro do guru|true    |SP	|
     Dado que estou na pagina inicial		
 	Entao não deveria ver o "gurusp" na lista 	 	 			 	 	 		
-
-Cenario: Lista de grupos
-  Dado que o grupo abaixo existe:
-    |nome | aprovado|
-    |guru | true    |
-    |bla  | false   |
-  Dado que estou na pagina "lista de grupos"
-  Entao deveria ver o "guru" na lista
-  E não deveria ver o "bla" na lista

@@ -5,14 +5,15 @@
 <% @grupos.each do |grupo| -%>
 
   <div class="evento clearfix" id="<%=grupo.id%>">
-    <div class="logo clearfix"> <%= image_tag grupo.logo.url(:thumb) if grupo.logo? %></div>
+    <div class="logo clearfix">
+      <%= link_to(image_tag(grupo.logo.url(:thumb)), grupo_path(:nome => grupo.nome, :id => grupo)) if grupo.logo? %>
+    </div>
 
     <div class="info">
-      	
-
-		<p id="evento"><%=h grupo.nome  %></p>
-
-		<%= link_to grupo.site, grupo.site %>
+      <p id="evento">
+        <%= link_to(h(grupo.nome), grupo_path(:nome => grupo.nome, :id => grupo))  %>
+        <%= link_to grupo.site, grupo.site %>
+      </p>
 
       <p class="tags">
         <% grupo.tags.each do |tag| %>

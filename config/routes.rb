@@ -15,11 +15,12 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :eventos
   map.calendario 'calendario/eventos', :controller => 'calendario', :action => 'index'
   map.calendario_por_estado 'calendario/eventos/:estado', :controller => 'calendario', :action => 'index'
-  map.resources :grupos, :only => [:index, :new, :create, :show]
+  map.resources :grupos, :only => [:index, :new, :create]
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   #coloquei por ultimo para ter prioridade mais baixa...
   map.evento 'eventos/:ano/:nome/:id', :controller => 'eventos', :action => 'show'
+  map.grupo 'grupos/:nome/:id/eventos', :controller => 'grupos', :action => 'show'
   map.eventos_por_estado 'busca/eventos/:estado', :controller => 'eventos', :action => 'index'
   map.eventos_por_mes 'busca/eventos/:ano/:month', :controller => 'eventos', :action => 'index'
 end

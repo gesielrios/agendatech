@@ -11,6 +11,11 @@ class Evento < ActiveRecord::Base
 
   named_scope :estado_aprovado, lambda { |estado| { :conditions => ["aprovado = ? AND estado = ?", true, estado], :order => 'data ASC' } }
 
+  named_scope :nao_ocorrido, {
+    :conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today],
+    :order => 'data ASC'
+  }
+
   private
 
   def termino_depois_do_inicio?

@@ -3,7 +3,10 @@ Dado /^que estou na pagina inicial$/ do
 end
 
 Dado /^que o grupo com nome "([^\"]*)" esta cadastrado$/ do |nome|
-  Grupo.create(:nome => nome)
+  Grupo.new(:nome => nome).tap do |g|
+    g.aprovado = true
+    g.save!
+  end
 end
 
 Dado /^que estou na pagina "([^\"]*)"$/ do |pagina|

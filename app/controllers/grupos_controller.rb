@@ -3,6 +3,10 @@ class GruposController < ApplicationController
     @grupos = Grupo.por_nome.aprovados
   end
 
+  def show
+    @grupo = Grupo.find params[:id], :include => :eventos
+  end
+
   def new
     @grupo = Grupo.new
   end

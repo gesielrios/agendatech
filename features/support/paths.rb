@@ -23,7 +23,6 @@ module NavigationHelpers
     when /cadastrar grupo/
       '/grupos/novo'
 
-
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

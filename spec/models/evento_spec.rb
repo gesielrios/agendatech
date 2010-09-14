@@ -4,6 +4,11 @@ describe Evento do
 
   it { should belong_to :grupo }
 
+  it { should have_scope :nao_ocorrido,
+    :conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today],
+    :order => 'data ASC'
+  }
+
   it "deveria validar a data de inicio apenas para eventos não aprovados" do
     pending
   end
