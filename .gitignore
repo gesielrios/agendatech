@@ -7,3 +7,4 @@ public/system/logos
 *~
 *.sw?
 .bundle/config
+.rvmrc
