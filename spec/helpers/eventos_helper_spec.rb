@@ -2,10 +2,12 @@ require 'spec_helper'
 
 describe EventosHelper do
 
-  #Delete this example and add some real ones or delete this file
-  it "should be included in the object returned by #helper" do
-    included_modules = (class << helper; self; end).send :included_modules
-    included_modules.should include(EventosHelper)
+
+
+  it "should generate a valid url based on the event" do
+    evento = Evento.create(:data => Date.today)
+    helper.evento_full_path(evento).should == evento_path(:ano => Date.today.year, :id => evento)
   end
+
 
 end

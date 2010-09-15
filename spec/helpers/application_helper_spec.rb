@@ -9,7 +9,7 @@ describe ApplicationHelper do
         params[:controller] = 'sobre'
         params[:junk] = 'junk'
       end
-      it { should have_tag('a[class=menu_select]') }
+      it("mark tab as selected") { should have_tag('a[class=menu_select]') }
     end
 
     context "non-matching params" do
@@ -17,7 +17,7 @@ describe ApplicationHelper do
         params[:controller] = 'eventos'
         params[:junk] = 'junk'
       end
-      it { should have_tag('a[class=menu_inicial]') }
+      it("unmark tab") { should have_tag('a[class=menu_inicial]') }
     end
 
     context "url with both controller and action matching" do
@@ -27,7 +27,7 @@ describe ApplicationHelper do
         params[:action] = 'colaboradores'
         params[:junk] = 'junk'
       end
-      it { should have_tag('a[class=menu_select]') }
+      it("don't mark tab as selected") { should have_tag('a[class=menu_select]') }
     end
 
     context "url with both controller and action, but action doesn't match" do
@@ -37,7 +37,7 @@ describe ApplicationHelper do
         params[:action] = 'index'
         params[:junk] = 'junk'
       end
-      it { should have_tag('a[class=menu_inicial]') }
+      it("don't mark tab as selected") { should have_tag('a[class=menu_inicial]') }
 
     end
   end

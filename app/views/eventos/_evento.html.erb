@@ -8,7 +8,7 @@
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %></div>
 
 		<div class="info">
-			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			<p id="evento"><%= link_to evento.nome, evento_full_path(evento) %></p>
 			<small><%= nome_do_estado evento.estado %></small><br/>
 
 			<p class="tags">
@@ -17,7 +17,7 @@
 				<% end %>
 			</p>
 
-			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			<p class="info_button"><%= link_to '+ Informações', evento_full_path(evento) %></p>
 		</div>
 
 
@@ -35,7 +35,7 @@
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %></div>
 
 		<div class="info">
-			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			<p id="evento"><%= link_to evento.nome, evento_full_path(evento) %></p>
 			<small><%= nome_do_estado evento.estado %></small><br/>
 
 			<p class="tags">
@@ -44,7 +44,7 @@
 				<% end %>
 			</p>
 
-			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:nome => evento.nome,:id=>evento) %></p>
+			<p class="info_button"><%= link_to '+ Informações', evento_full_path(evento) %></p>
 		</div>
 	</div>
 
