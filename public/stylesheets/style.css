@@ -207,6 +207,7 @@ text-decoration:none;
 
 .info_button{
 	-moz-border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
 	background-color:#4A4A47;
 	color:#FDD011;
 	cursor:pointer;
@@ -480,6 +481,7 @@ a:visited {
 	padding: 8px;
 	-moz-border-radius-topleft:5px;
 	-moz-border-radius-topright:5px;
+	-webkit-border-radius:5px 5px 0px 0px;
 }
 
 .menu_select{
