@@ -1,0 +1,27 @@
+<br/>
+<p class="breadcrumb"><b>agendatech</b> &gt; Brasil   </p>
+
+<div class="evento clearfix" id="<%=@grupo.id%>">
+  <div class="logo clearfix"> <%= image_tag @grupo.logo.url(:thumb) if @grupo.logo? %></div>
+
+  <div class="info">
+    <p id="evento"><%=h @grupo.nome  %></p>
+
+    <p class="tags">
+      <% @grupo.tags.each do |tag| %>
+        <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
+      <% end %>
+    </p>
+
+  </div>
+</div>
+
+
+<% if @grupo.eventos.present? %>
+  Exibindo eventos do grupo <%= @grupo.nome %>:<br/><br/>
+  <% for evento in @grupo.eventos.nao_ocorrido %>
+    <%= render evento %>
+  <% end -%>
+<% else %>
+  Não há eventos cadastrados nesse grupo.
+<% end %>

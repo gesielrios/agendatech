@@ -3,7 +3,7 @@
 </div> -->
 
 <br/>
-<p class="breadcrumb"><b>agendatech</b> > Brasil   </p>
+<p class="breadcrumb"><b>agendatech</b> &gt; Brasil   </p>
 
 <% if flash[:aguarde] %>
 	<p class="notice"><%=flash[:aguarde]%></p>
@@ -11,67 +11,9 @@
 
 
 <% for evento in @eventos %>
+  <%= render evento %>
+<% end -%>
 
-<% if evento.ta_rolando? %>
-
-<div class="evento_destaque clearfix" id="<%=evento.id%>">
-	  <div class="data">
-		  <p><%= Date.today.day %></p>
-          <small><%= l(Date.today, :format => :month) %></small>
-	  </div>
-
-		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %></div>
-
-		  <div class="info">
-			  <p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:id=>evento) %></p>
-			  <small><%= nome_do_estado evento.estado %></small><br/>
-
-			  <p class="tags">
-				  <% evento.tags.each do |tag| %>
-				  <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
-				  <% end %>
-			  </p>
-
-			  <p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:id=>evento) %></p>
-		  </div>
-
-
-
-		  <div id="twitter_images" style="display:none">
-		  </div>
-	</div>
-
-
-
-<% else %>
-
-
-	<div class="evento clearfix">
-		<div class="data">
-			<p><%= evento.data.day %></p>
-            <small><%= l(evento.data, :format => :month) %></small>
-		</div>
-
-		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %></div>
-
-		<div class="info">
-			<p id="evento"><%= link_to evento.nome, evento_path(:ano => evento.data.year,:id=>evento) %></p>
-			<small><%= nome_do_estado evento.estado %></small><br/>
-
-			<p class="tags">
-				<% evento.tags.each do |tag| %>
-				<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
-				<% end %>
-			</p>
-
-			<p class="info_button"><%= link_to '+ Informações', evento_path(:ano => evento.data.year,:id=>evento) %></p>
-		</div>
-	</div>
-
-
-<% end %>
-
-<% end %>
 <%content_for :javascript do %>
   <%= javascript_include_tag "jquery-1.4.2.min.js","jquery.async.js" %>
   <script>

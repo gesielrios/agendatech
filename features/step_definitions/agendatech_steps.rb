@@ -6,6 +6,17 @@ Dado /^que acesso a pagina de detalhe do "([^"]*)"$/ do |evento_nome_id|
   visit "/eventos/tecnologia/2010/#{evento_nome_id}"
 end
 
+Dado /^que o grupo com nome "([^\"]*)" esta cadastrado$/ do |nome|
+  Grupo.new(:nome => nome, :site => 'www.example.com').tap do |g|
+    g.aprovado = true
+    g.save!
+  end
+end
+
+Dado /^que estou na pagina "([^\"]*)"$/ do |pagina|
+  visit path_to(pagina)
+end
+
 Quando /^clico no link "([^\"]*)"$/ do |link|
   click_link link
 end
@@ -41,7 +52,6 @@ Quando /^clico no botao "([^\"]*)"$/ do |botao|
   click_button botao
 end
 
-
 Entao /^deveria ver o "([^\"]*)" na lista$/ do |texto|
   page.should have_content texto
 end
@@ -61,3 +71,4 @@ end
 Quando /^clico no estado do evento$/ do
   click_link "São Paulo"
 end
+

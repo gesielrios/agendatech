@@ -1,0 +1,30 @@
+
+<br/>
+<p class="breadcrumb"><b>agendatech</b> &gt; Grupos   </p>
+
+<% @grupos.each do |grupo| -%>
+
+  <div class="evento clearfix" id="<%=grupo.id%>">
+    <div class="logo clearfix">
+      <%= link_to(image_tag(grupo.logo.url(:thumb)), grupo_path(:nome => grupo.nome, :id => grupo)) if grupo.logo? %>
+    </div>
+
+    <div class="info">
+      <p id="evento">
+        <%= link_to(h(grupo.nome), grupo_path(:nome => grupo.nome, :id => grupo))  %>
+        <%= link_to grupo.site, grupo.site %>
+      </p>
+
+      <p class="tags">
+        <% grupo.tags.each do |tag| %>
+          <%= tag %>
+        <% end %>
+      </p>
+
+    </div>
+
+  </div>
+
+<% end -%>
+
+

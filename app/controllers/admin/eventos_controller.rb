@@ -1,5 +1,5 @@
-class AdminController < ApplicationController
-  before_filter :authenticate_admin!
+class Admin::EventosController < ApplicationController
+  admin_only
 
   def index
     @eventos = Evento.all(:conditions=>{:aprovado=>false})

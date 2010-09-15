@@ -33,6 +33,14 @@ Dado /^que o evento abaixo existe mas com a data ultrapassada:$/ do |table|
   end
 end
 
+Dado /^que o grupo abaixo existe:$/ do |table|
+  table.hashes.each do |hash|
+    g = Grupo.new hash
+    g.aprovado = hash['aprovado']
+    g.save!
+  end
+end
+
 Dado /^que estou como administrador$/ do
   Admin.create :email => 'admin@admin.com', :password => 'adminspassword'
   visit "/admin"

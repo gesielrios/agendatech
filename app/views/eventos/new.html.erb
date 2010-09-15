@@ -1,4 +1,4 @@
-<% form_for @evento, :html => { :multipart => true } do |f| %>
+<% form_for @evento, :html => { :multipart => true, :class => 'resource_form' } do |f| %>
 
 	  		<h1>Cadastre novo evento</h1>
 	  		<h5 class="aviso">Cadastre um novo evento de tecnologia em qualquer região do Brasil. Preenchendo todos os campos abaixo seu evento será melhor representado nas páginas do agendatech.  </h5>
@@ -23,6 +23,13 @@
 	  		  <%=error_message_on @evento,:data_termino%>
 	  		  <input type="text" name="evento[data_termino]" value="<%=l(@evento.data_termino) if @evento.data_termino%>"/>
 	  		</p>
+				<p>
+						<label for="grupo_id">Grupo de usuários</label><br/>
+						<%=error_message_on :evento,:grupo%>
+						<%= f.collection_select :grupo_id, Grupo.all, :id, :nome, options ={:prompt =>
+						"Evento sem grupo específico."} %>
+				</p>
+
 	  		<p>
 	  		  <label for="email">Site</label><br />
 	  		  <%=error_message_on :evento,:site%>

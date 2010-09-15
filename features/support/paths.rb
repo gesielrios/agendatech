@@ -11,8 +11,17 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
+    when /administracao de grupos/
+      '/admin/grupos'
+
+    when /lista de grupos/
+      '/grupos'
+
     when /administracao/
       '/admin'
+
+    when /cadastrar grupo/
+      '/grupos/novo'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

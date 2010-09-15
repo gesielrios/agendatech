@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<title>agendatech || Eventos de tecnologia no Brasil</title>
+		<title>Administação agendatech || Eventos de tecnologia no Brasil</title>
 		<%= stylesheet_link_tag 'style' %>
 		<%= stylesheet_link_tag 'form' %>
 		<%= stylesheet_link_tag 'contato' %>
@@ -13,6 +13,7 @@
 		<div id="gray-bg">
 			<img width="100%" height="100%" src="/images/bg.jpg">
 		</div>
+
 		<div id="header">
 			<div class="container">
 				<h1>
@@ -20,47 +21,41 @@
 						<p class="logo_home">agenda<span>tech</span></p>
 					</a>
 				</h1>
-				<h3>Eventos de tecnologia no Brasil.</h3>
+				<h3>Administração</h3>
 			</div>
 		</div>
 
 		<div id="content">
 			<div id="menu">
 				<ul>
-					<li><%= tab_link_to "Eventos", {:controller => 'eventos'} %></li>
-					<li><%= tab_link_to "Grupos",  {:controller => 'grupos'} %></li>
-					<li><%= tab_link_to "Contato", {:controller => 'notifier'} %></li>
-					<li><%= tab_link_to "Sobre", {:controller => 'sobre', :action => 'index'} %></li>
-					<li><%= tab_link_to "Colaboradores", {:controller => 'sobre', :action => 'colaboradores'} %></li>
-					<li><%= tab_link_to 'RSS', feed_path('rss') %></li>
-					<li><%= tab_link_to "iCal", {:controller => 'calendario', :action => 'links'} %></li>
+					<li><%= tab_link_to "Eventos", {:controller => 'admin/eventos'} %></li>
+					<li><%= tab_link_to "Grupos",  {:controller => 'admin/grupos'} %></li>
+          <li class="last"><%= tab_link_to "Logout", destroy_admin_session_path %></li>
 				</ul>
 			</div>
 			<div style="clear: both"></div>
 			<div class="container">
 
 				<div id="left" >
-					<p class="breadcrumb"><% if @mes %>Eventos em <%= @mes %><% end %></p>
-					<p class="breadcrumb"><% if @tag %>Eventos de <%= @tag	%><% end %></p>
-
+          <% unless flash.empty? %>
+            <% flash.each do |key, message| -%>
+              <br/>
+              <p class="<%= key %>"><%= message %></p>
+            <% end %>
+          <% end -%>
+          <br/>
 					<%= yield %>
 
 				</div>
 				<div id="right" >
 
-					<div class="cadastre">
+					<div id="cadastre">
 						Confira os próximos eventos de tecnologia, dojos e encontros pelo Brasil.<br/><br/>
 						<p>
 						  <%= link_to "Cadastre o seu evento!", new_evento_path %>
 						</p>
 					</div>
 
-					<div class="cadastre">
-						Divulgue os eventos do seu grupo no agendatech.<br/><br/>
-						<p>
-						  <%= link_to "Cadastre o seu grupo!", new_grupo_path %>
-						</p>
-					</div>
 
 
 
@@ -92,14 +87,12 @@
 								<p class="bold">Eventos por estado</p><br/>
 								<div id="meses">
 								<% for sigla in estados_com_eventos %>
-                     <p>
-                        <%= link_to nome_do_estado(sigla), eventos_por_estado_path(:estado => nome_do_estado(sigla)) %>
-                    </p>
+									<p><%= link_to nome_do_estado(sigla)  , eventos_por_estado_path(:estado => nome_do_estado(sigla)) %></p>
 								<% end %>
 								</div>
 							</div>
 
-								<div class="cadastre">
+								<div id="cadastre">
 									<p><a href="http://www.twitter.com/agendatech" target="blank">agendatech no twitter</a></p>
 								</div>
 
@@ -127,12 +120,9 @@
 					</div>
 
 		<br/><br/>
-<<<<<<< HEAD
 		<div id="qcon">
-			<a href="http://www.rubyinside.com.br/" target="_blank" ><img src="/images/logo-br.gif" /></a>
+			<a href="http://qcon.com.br/"><img src="/images/qcon_side.png" /></a>
 		</div>
-=======
->>>>>>> grupos
 
 	<a href="javascript: void(0);" onclick="window.open('http://www.peixegrande.com.br/voto/votar.asp?key=5540704F5B011B534945091451484E0B0D5B4A45FFD6DB82820D51EA479A983EE60E','peixegrande','width=570,height=440')"><img src="http://www.newwws.com.br/imagesarteccom/selo_2010.png" alt="Selo peixe Grande 2010" border="0" /></a><br/><br/>
 

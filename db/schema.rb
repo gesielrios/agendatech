@@ -1,4 +1,4 @@
-# This file is auto-generated from the current state of the database. Instead of editing this file, 
+# This file is auto-generated from the current state of the database. Instead of editing this file,
 # please use the migrations feature of Active Record to incrementally modify your database, and
 # then regenerate this schema definition.
 #
@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100902155851) do
+ActiveRecord::Schema.define(:version => 20100914233317) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -46,10 +46,25 @@ ActiveRecord::Schema.define(:version => 20100902155851) do
     t.datetime "logo_updated_at"
     t.string   "estado"
     t.datetime "data_termino"
+    t.integer  "grupo_id"
     t.string   "cached_slug"
   end
 
   add_index "eventos", ["cached_slug"], :name => "index_eventos_on_cached_slug", :unique => true
+
+  create_table "grupos", :force => true do |t|
+    t.string   "nome"
+    t.boolean  "aprovado",          :default => false
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "site"
+  end
+
+  add_index "grupos", ["nome"], :name => "index_grupos_on_nome", :unique => true
 
   create_table "slugs", :force => true do |t|
     t.string   "name"

@@ -82,7 +82,7 @@ body{
 	background-color: #4d4d46;
 	text-align: center;
 	padding: 20px;
-	
+
 }
 
 #footer p{
@@ -125,7 +125,7 @@ h3 span{
 
 h3{
 	font-size: 12px;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
 }
 
 #left{
@@ -147,18 +147,18 @@ h3{
 .breadcrumb span{
 	color: #fdd011;
 	font-weight: bold;
-}	
-	
+}
+
 .data{
 	font-weight: bold;
 	float: left;
 	margin-right: 20px;
 	text-align: center;
 	min-width: 76px;
-}	
+}
 .data p{
 	font-size: 72px;
-}	
+}
 .data small{
 	background-color:#4A4A47;
 	color:#F2F2F2;
@@ -234,7 +234,7 @@ text-decoration:none;
 	margin-bottom: 30px;
 }
 
-#cadastre{
+.cadastre{
 	background-color: #4a4a47;
 	display: inline-block;
 	font-size: 12px;
@@ -245,13 +245,13 @@ text-decoration:none;
 	text-align: center;
 	margin-bottom: 10px;
 	cursor: pointer;
-	cursor: hand;	
+	cursor: hand;
 }
-#cadastre p{
+.cadastre p{
 	font-size: 14px;
-	color: #fdd011;	
+	color: #fdd011;
 }
-#cadastre:hover, .info_button:hover, .desc_button:hover{
+.cadastre:hover, .info_button:hover, .desc_button:hover{
 	background-color: #666666;
 }
 
@@ -261,13 +261,13 @@ text-decoration:none;
 
 #twitter{
 	background-color: #4a4a47;
-	font-size: 12px;		
+	font-size: 12px;
 	color: #fdd011;
 	display: inline-block;
-	font-weight: bold;	
+	font-weight: bold;
 	padding: 10px;
 	width: 220px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 .twit{
@@ -294,7 +294,7 @@ text-decoration:none;
 	margin-top: 15px;
 	float: left;
 	font-weight: normal;
-	line-height: 1.1;		
+	line-height: 1.1;
 	float: left;
 }
 
@@ -323,7 +323,7 @@ text-decoration:none;
 }
 
 #detalhe_right p span{
-	font-weight: bold;	
+	font-weight: bold;
 	float: left;
 	padding-right: 5px;
 }
@@ -339,7 +339,7 @@ text-decoration:none;
 a:link,
 a:visited {
 	text-decoration: none;
-	color: #fdd011;	
+	color: #fdd011;
 }
 
 .notice{
@@ -378,37 +378,37 @@ a:visited {
 #tags{
 	background-color: #4a4a47;
 	font-size: 12px;
-	font-weight: normal;		
+	font-weight: normal;
 	color: #fdd011;
 	display: inline-block;
 	padding: 10px;
-	width: 220px;	
+	width: 220px;
 }
-	
+
 #detalhe_right a:link, #detalhe_right a:visited{
 	color: #4A4A47;
 	font-size: 12px;
 }
-	
+
 .left{
 	float:left;
 	margin-right: 20px;
-}	
-	
+}
+
 #estado, #mes{
 	background-color: #4a4a47;
 	font-size: 12px;
-	font-weight: normal;		
+	font-weight: normal;
 	color: #fdd011;
 	display: inline-block;
 	padding: 10px;
-	width: 220px;	
+	width: 220px;
 	margin-bottom: 10px;
 }
 
 .bold{
 	font-weight: bold;
-}	
+}
 
 .titulo {
 	font-weight: bold;
@@ -424,13 +424,13 @@ a:visited {
 .item {
 	font-size: 16px;
 	font-weight: bold;
-	margin-bottom: 3px;	
+	margin-bottom: 3px;
 }
 
 .item_desc {
 	font-size: 14px;
 	color: #666666;
-	line-height: 1.2;	
+	line-height: 1.2;
 	text-align:justify;
 	width:650px;
 }
@@ -450,7 +450,7 @@ a:visited {
 }
 
 #twitter_images{
-	padding:5px; 
+	padding:5px;
 	margin-top: 20px;
 	float: left;
 }
@@ -495,6 +495,10 @@ a:visited {
 .menu_inicial:hover{
 	background-color: #f2f2f2;
 	color: #4A4A47;
+}
+
+#menu li.last a {
+  float: right;
 }
 
 
