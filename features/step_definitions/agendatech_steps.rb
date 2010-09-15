@@ -3,7 +3,7 @@ Dado /^que estou na pagina inicial$/ do
 end
 
 Dado /^que o grupo com nome "([^\"]*)" esta cadastrado$/ do |nome|
-  Grupo.new(:nome => nome).tap do |g|
+  Grupo.new(:nome => nome, :site => 'www.example.com').tap do |g|
     g.aprovado = true
     g.save!
   end

@@ -18,9 +18,9 @@ Esquema do Cenario: Cadastro de grupo
 
 Cenario: Lista de grupos
   Dado que o grupo abaixo existe:
-    |nome | aprovado|
-    |guru | true    |
-    |bla  | false   |
+    |nome | aprovado| site       |
+    |guru | true    | guru-sp.com|
+    |bla  | false   | example.com|
   Dado que estou na pagina "lista de grupos"
   Entao deveria ver o "guru" na lista
   E não deveria ver o "bla" na lista

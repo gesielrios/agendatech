@@ -4,8 +4,8 @@ Funcionalidade: Adminstrar os novos grupos cadastrados pelo site
 
 Contexto:
 	Dado que o grupo abaixo existe:
-	|nome  |aprovado|
-    |gurusp|false |
+	|nome  |aprovado| site |
+    |gurusp|false | www.guru-sp.com |
   E que estou como administrador
   E que estou na pagina "administracao de grupos"
   
