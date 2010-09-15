@@ -4,9 +4,10 @@ class Grupo < ActiveRecord::Base
   acts_as_taggable
   has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
   validates_presence_of :nome
+  validates_presence_of :site
   validates_uniqueness_of :nome
 
-  attr_accessible :logo, :nome, :tag_list
+  attr_accessible :logo, :nome, :tag_list, :site
 
   named_scope :nao_aprovados, :conditions => { :aprovado => false }
   named_scope :aprovados, :conditions => { :aprovado => true }

@@ -6,6 +6,7 @@
 	<strong><%= @evento.nome %></strong><br />
 	<small><%= nome_do_estado @evento.estado %></small>
     <p><span>Data:</span><%= @evento.data.day %>/<%= l(@evento.data, :format => :month) %></p>
+	<small><%= evento_do @evento.grupo %></small>
 	<br/><br/><br/>
 
 	<p><span>Tags:</span>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100827015152) do
+ActiveRecord::Schema.define(:version => 20100914233317) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -47,7 +47,10 @@ ActiveRecord::Schema.define(:version => 20100827015152) do
     t.string   "estado"
     t.datetime "data_termino"
     t.integer  "grupo_id"
+    t.string   "cached_slug"
   end
+
+  add_index "eventos", ["cached_slug"], :name => "index_eventos_on_cached_slug", :unique => true
 
   create_table "grupos", :force => true do |t|
     t.string   "nome"
@@ -58,9 +61,22 @@ ActiveRecord::Schema.define(:version => 20100827015152) do
     t.datetime "logo_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "site"
   end
 
   add_index "grupos", ["nome"], :name => "index_grupos_on_nome", :unique => true
+
+  create_table "slugs", :force => true do |t|
+    t.string   "name"
+    t.integer  "sluggable_id"
+    t.integer  "sequence",                     :default => 1, :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "slugs", ["name", "sluggable_type", "sequence", "scope"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
+  add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"

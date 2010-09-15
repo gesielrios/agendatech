@@ -10,6 +10,11 @@
 		<%= f.text_field :nome %>
 	</p>
 	<p>
+		<%= f.label :site %><br/>
+		<%= error_message_on :grupo, :site%>
+		<%= f.text_field :site %>
+	</p>
+	<p>
 		<%= f.label :logo %><br/>
 		<%= f.file_field :logo %>
 	</p>

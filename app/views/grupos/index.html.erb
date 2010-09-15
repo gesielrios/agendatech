@@ -1,6 +1,6 @@
 
 <br/>
-<p class="breadcrumb"><b>agendatech</b> &gt; Brasil   </p>
+<p class="breadcrumb"><b>agendatech</b> &gt; Grupos   </p>
 
 <% @grupos.each do |grupo| -%>
 
@@ -8,11 +8,15 @@
     <div class="logo clearfix"> <%= image_tag grupo.logo.url(:thumb) if grupo.logo? %></div>
 
     <div class="info">
-      <p id="evento"><%=h grupo.nome  %></p>
+      	
+
+		<p id="evento"><%=h grupo.nome  %></p>
+
+		<%= link_to grupo.site, grupo.site %>
 
       <p class="tags">
         <% grupo.tags.each do |tag| %>
-          <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
+          <%= tag %>
         <% end %>
       </p>
 
