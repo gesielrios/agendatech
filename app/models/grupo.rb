@@ -10,7 +10,7 @@ class Grupo < ActiveRecord::Base
   attr_accessible :logo, :nome, :tag_list, :site
 
   named_scope :nao_aprovados, :conditions => { :aprovado => false }
-  named_scope :aprovados, :conditions => { :aprovado => true }
+  named_scope :aprovados, :order => 'nome ASC',:conditions => { :aprovado => true }
   named_scope :por_nome, :order => 'nome ASC'
 
   def aprovar!
