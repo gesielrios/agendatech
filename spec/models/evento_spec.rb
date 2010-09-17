@@ -2,6 +2,10 @@ require 'spec_helper'
 
 describe Evento do
 
+  before(:each) do
+     @evento = Evento.new :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => Time.now
+   end
+
   it { should belong_to :grupo }
 
   it { should have_scope :nao_ocorrido,
@@ -10,11 +14,17 @@ describe Evento do
   }
 
   it "deveria validar a data de inicio apenas para eventos não aprovados" do
-    pending
+    @evento.data = "10/10/10"
+    @evento.should_not be_valid
+    @evento.aprovado = true
+    @evento.should be_valid
   end
 
   it "deveria validar a data de termino apenas para eventos não aprovados" do
-    pending
+      @evento.data_termino = "10/10/10"
+      @evento.should_not be_valid
+      @evento.aprovado = true
+      @evento.should be_valid
   end
 
   it "deveria validar a data de termino apenas caso ela tenha sido preenchida" do
@@ -22,10 +32,18 @@ describe Evento do
   end
 
   it "deveria verificar que a data de termino é posterior a data de inicio" do
-    pending
+    @evento.data_termino = @evento.data - 1.day
+    @evento.should_not be_valid
+    @evento.data_termino = @evento.data + 1.day
+    @evento.should be_valid
   end
 
   it "deveria verificar se o dia está no intervalo do de dias do evento" do
-    pending
+    @evento.data = Time.now - 1.day
+    @evento.data_termino = Time.now + 1.day
+    @evento.should be_ta_rolando
+    @evento.data = Time.now + 1.day
+    @evento.data_termino = Time.now + 2.day
+    @evento.should_not be_ta_rolando
   end
 end
