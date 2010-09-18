@@ -1,5 +1,5 @@
 class Admin::EventosController < ApplicationController
-  admin_only
+  before_filter :authenticate_admin!
 
   def index
     @eventos = Evento.all(:conditions=>{:aprovado=>false})
@@ -8,13 +8,13 @@ class Admin::EventosController < ApplicationController
   def aprovar
     Evento.update(params[:id], :aprovado => true)
     flash[:aprovado] = "Evento aprovado."
-    redirect_to :action => 'index'
+    render :action => 'index'
   end
 
   def remover
     Evento.destroy params[:id]
     flash[:removed] = "Evento removido."
-    redirect_to :action => 'index'
+    render :action => 'index'
   end
 
 end

@@ -27,13 +27,18 @@
 		<div id="content">
 			<div id="menu">
 				<ul>
-					<li><%= tab_link_to "Eventos", {:controller => 'eventos'} %></li>
-					<li><%= tab_link_to "Grupos",  {:controller => 'grupos'} %></li>
-					<li><%= tab_link_to "Contato", {:controller => 'notifier'} %></li>
-					<li><%= tab_link_to "Sobre", {:controller => 'sobre', :action => 'index'} %></li>
-					<li><%= tab_link_to "Colaboradores", {:controller => 'sobre', :action => 'colaboradores'} %></li>
+					<li><%= tab_link_to "Eventos", eventos_path %></li>
+					<li><%= tab_link_to "Grupos",  grupos_path %></li>
+					<li><%= tab_link_to "Contato", "/contato" %></li>
+					<li><%= tab_link_to "Sobre", "/sobre" %></li>
+					<li><%= tab_link_to "Colaboradores", colaboradores_path %></li>
 					<li><%= tab_link_to 'RSS', feed_path('rss') %></li>
-					<li><%= tab_link_to "iCal", {:controller => 'calendario', :action => 'links'} %></li>
+					<li><%= tab_link_to "iCal", "/calendario/links" %></li>
+					<% if admin_signed_in?%>	
+						<li><%= tab_link_to "Aprovação Eventos", admin_eventos_path %></li>
+						<li><%= tab_link_to "Aprovação Grupos",  admin_grupos_path %></li>
+	        	<li class="last"><%= tab_link_to "Logout", destroy_admin_session_path %></li>
+					<%end%>
 				</ul>
 			</div>
 			<div style="clear: both"></div>

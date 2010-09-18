@@ -1,5 +1,5 @@
 class Admin::GruposController < ApplicationController
-  admin_only
+  before_filter :authenticate_admin!
 
   def index
     @grupos = Grupo.nao_aprovados
