@@ -71,11 +71,13 @@ body{
 }
 
 #content .container{
-	background-color: #F2F2F2;
-	padding: 20px 20px 0px 20px;
-	width: 920px;
-	color: #4a4a47;
-	overflow: auto;
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;	
+	background:url("http://www.backgroundlabs.com/backgrounds/13.gif") repeat scroll 0 0 #CCCCCC;
+	color:#4A4A47;
+	overflow:auto;
+	padding:20px 20px 0;
+	width:920px;
 }
 
 #footer{
@@ -126,12 +128,17 @@ h3 span{
 h3{
 	font-size: 12px;
 	margin-bottom: 25px;
+	margin-top: 20px;	
 }
 
 #left{
-	float: left;
-	width: 680px;
-	margin-top: -20px;
+	background-color:#F2F2F2;
+	float:left;
+	margin-left:-20px;
+	margin-top:-20px;
+	padding-left:20px;
+	width:660px;
+	min-height:740px;	
 }
 
 #right{
@@ -231,25 +238,32 @@ text-decoration:none;
 }
 
 .evento{
-	margin-bottom: 30px;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
+	background-color:#CCCCCC;
+	border:5px solid #818181;
+	margin-bottom:30px;
+	padding:20px;
+	width:590px;
 }
 
 .cadastre{
-	background-color: #4a4a47;
-	display: inline-block;
-	font-size: 12px;
-	color: #f2f2f2;
-
-	padding: 10px;
-	width: 220px;
-	text-align: center;
-	margin-bottom: 10px;
-	cursor: pointer;
-	cursor: hand;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
+	background-color:#4A4A47;
+	color:#F2F2F2;
+	cursor:pointer;
+	display:inline-block;
+	font-size:12px;
+	margin-bottom:20px;
+	padding:10px;
+	text-align:center;
+	width:220px;
 }
+
 .cadastre p{
 	font-size: 14px;
-	color: #fdd011;
+	color: #fdd011 !important;
 }
 .cadastre:hover, .info_button:hover, .desc_button:hover{
 	background-color: #666666;
@@ -271,12 +285,23 @@ text-decoration:none;
 }
 
 .twit{
-	margin-top: 20px;
+	background-color:#4a4a47;
+	border:5px solid #F2F2F2;
+	height:66px;
+	margin-top:5px;
+	padding: 15px;
+}
+
+.yellow{
+	color: #FDD011 !important;
 }
 
 .twit img{
 	float: left;
 	margin-right: 5px;
+	width: 66px; 
+	height: 66px;
+	
 }
 
 .twit small{
@@ -284,10 +309,9 @@ text-decoration:none;
 }
 
 .twit p{
-	font-weight: normal;
-	color: #F2F2F2;
+	font-weight: normal !important;
+	color: #f2f2f2;
 	font-size: 12px;
-	margin-top: 3px;
 }
 
 #meses_left{
@@ -299,7 +323,7 @@ text-decoration:none;
 }
 
 #meses p a:hover{
-	text-decoration: underline;
+	color: #FDD011;
 }
 
 
@@ -338,9 +362,22 @@ text-decoration:none;
 
 a:link,
 a:visited {
-	text-decoration: none;
-	color: #fdd011;
+	color:#FFFFFF;
+	line-height:18px;
+	text-decoration:none;
 }
+
+
+
+.info_button a:link,
+.info_button a:visited,
+.cadastre a:link,
+.cadastre a:visited {
+	color:#fdd011;
+	line-height:18px;
+	text-decoration:none;
+}
+
 
 .notice{
 	color:#666666;
@@ -360,10 +397,12 @@ a:visited {
 }
 
 #geeks{
-	background: url('/images/geeks.jpg') no-repeat;
-	height: 100px;
-	margin-top: 10px;
-}
+	background:url("/images/geeks.jpg") no-repeat scroll 0 0 #F2F2F2;
+	height:100px;
+	left:-20px;
+	margin-top:0;
+	position:relative;
+	width:680px;}
 
 .copy{
 	padding-top: 5px;
@@ -376,6 +415,8 @@ a:visited {
 .css4 { font-size: 1.6em; }
 
 #tags{
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
 	background-color: #4a4a47;
 	font-size: 12px;
 	font-weight: normal;
@@ -383,6 +424,7 @@ a:visited {
 	display: inline-block;
 	padding: 10px;
 	width: 220px;
+	margin-bottom: 20px;
 }
 
 #detalhe_right a:link, #detalhe_right a:visited{
@@ -396,14 +438,15 @@ a:visited {
 }
 
 #estado, #mes{
-	background-color: #4a4a47;
-	font-size: 12px;
-	font-weight: normal;
-	color: #fdd011;
-	display: inline-block;
-	padding: 10px;
-	width: 220px;
-	margin-bottom: 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	background-color:#4A4A47;
+	color:#f2f2f2;
+	display:inline-block;
+	font-size:12px;
+	font-weight:normal;
+	margin-bottom:20px;
+	padding:20px;
+	width:200px;
 }
 
 .bold{
@@ -443,11 +486,13 @@ a:visited {
 }
 
 .evento_destaque{
-	width: 670px;
-	background-color: #E3DFCE;
-	margin-bottom: 20px;
-	padding-top: 20px;
-}
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
+	background-color:#CCCCCC;
+	border:5px solid #818181;
+	margin-bottom:20px;
+	padding:20px;
+	width:590px;}
 
 #twitter_images{
 	padding:5px;
@@ -464,10 +509,6 @@ a:visited {
 	font-weight: bold;
 	margin-bottom: 10px;
 }
-``
-.twit{
-	font-size: 11px;
-}
 
 #menu{
 	margin-left:auto;
@@ -476,12 +517,11 @@ a:visited {
 }
 
 #menu ul a{
-	float:left;
-	font-size: 12px;
-	padding: 8px;
-	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topleft:10px;
 	-moz-border-radius-topright:5px;
-	-webkit-border-radius:5px 5px 0px 0px;
+	float:left;
+	font-size:12px;
+	padding:10px;
 }
 
 .menu_select{
@@ -507,3 +547,19 @@ a:link.menu_select, a:visited.menu_select  {
 	font-weight: bold;
 	text-decoration:none;
 }
+
+
+#peixe{
+	float: right;
+}
+
+.colaboradores  {
+	-moz-border-radius:10px 10px 10px 10px;
+	background-color:#4A4A47;
+	color:#F2F2F2;
+	display:inline-block;
+	font-size:12px;
+	font-weight:normal;
+	margin-bottom:20px;
+	padding:20px;
+	width:200px;}

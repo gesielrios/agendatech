@@ -14,6 +14,10 @@
 			<img width="100%" height="100%" src="/images/bg.jpg">
 		</div>
 		<div id="header">
+			
+				<div id="peixe">
+					<a href="javascript: void(0);" onclick="window.open('http://www.peixegrande.com.br/voto/votar.asp?key=5540704F5B011B534945091451484E0B0D5B4A45FFD6DB82820D51EA479A983EE60E','peixegrande','width=570,height=440')"><img src="http://www.newwws.com.br/imagesarteccom/selo_2010.png" alt="Selo peixe Grande 2010" border="0" /></a>
+				</div>
 			<div class="container">
 				<h1>
 					<a href="/">
@@ -22,8 +26,12 @@
 				</h1>
 				<h3>Eventos de tecnologia no Brasil.</h3>
 			</div>
+			
+		
+			<div style="clear:both"></div>
+			
 		</div>
-
+		
 		<div id="content">
 			<div id="menu">
 				<ul>
@@ -49,14 +57,12 @@
 				<div id="right" >
 
 					<div class="cadastre">
-						Confira os próximos eventos de tecnologia, dojos e encontros pelo Brasil.<br/><br/>
 						<p>
 						  <%= link_to "Cadastre o seu evento!", new_evento_path %>
 						</p>
 					</div>
 
 					<div class="cadastre">
-						Divulgue os eventos do seu grupo no agendatech.<br/><br/>
 						<p>
 						  <%= link_to "Cadastre o seu grupo!", new_grupo_path %>
 						</p>
@@ -104,18 +110,18 @@
 								</div>
 
 
-					<div id="twitter">
-						<p>Eventos no twitter</p>
+					<!-- <div id="twitter">
+											<p>Eventos no twitter</p>
 
-						<% for t in @twits %>
-						<div class="twit">
-							<img src="<%= t.profile_image_url %>" width="48px" height="48px">
-							<small><a href="http://www.twitter.com/<%= t.from_user %>" target="blank">@<%= t.from_user %></a></small>
-							<p><%= t.text %></p>
-						</div>
-						<% end	%>
+											<% for t in @twits %>
+											<div class="twit">
+												<img src="<%= t.profile_image_url %>" width="48px" height="48px">
+												<small><a href="http://www.twitter.com/<%= t.from_user %>" target="blank">@<%= t.from_user %></a></small>
+												<p><%= t.text %></p>
+											</div>
+											<% end	%>
 
-					</div>
+										</div> -->
 
 
 
@@ -126,13 +132,12 @@
 					  <% end %>
 					</div>
 
-		<br/><br/>
+
 		<div id="qcon">
 		  <a href="http://www.caelum.com.br/" alt="Caelum ensindo e inovação" target="_blank" ><img src="/images/caelum.jpg" /></a><br/><br/>
 			<a href="http://www.rubyinside.com.br/" alt="O maior site de ruby on rails do mundo" target="_blank" ><img src="/images/logo-br.gif" /></a>
 		</div>
 
-	<a href="javascript: void(0);" onclick="window.open('http://www.peixegrande.com.br/voto/votar.asp?key=5540704F5B011B534945091451484E0B0D5B4A45FFD6DB82820D51EA479A983EE60E','peixegrande','width=570,height=440')"><img src="http://www.newwws.com.br/imagesarteccom/selo_2010.png" alt="Selo peixe Grande 2010" border="0" /></a><br/><br/>
 
 				</div>
 				<div style="clear: both"></div>
