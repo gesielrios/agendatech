@@ -1,6 +1,5 @@
 #language: pt
-@javascript
-Funcionalidade: Adminstrar os novos grupos cadastrados pelo site
+Funcionalidade: Administrar os novos grupos cadastrados pelo site
 
 Contexto:
 	Dado que o grupo abaixo existe:

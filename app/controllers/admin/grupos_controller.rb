@@ -7,13 +7,13 @@ class Admin::GruposController < ApplicationController
 
   def aprovar
     Grupo.find(params[:id]).aprovar!
-    flash[:success] = "Grupo aprovado."
+    flash[:notice] = "Grupo aprovado."
     redirect_to admin_grupos_path
   end
 
   def destroy
     Grupo.find(params[:id]).reprovar!
-    flash[:success] = "Grupo reprovado."
+    flash[:notice] = "Grupo reprovado."
     redirect_to admin_grupos_path
   end
 

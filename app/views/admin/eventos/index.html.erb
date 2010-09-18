@@ -1,10 +1,10 @@
-Eventos para aprovar:
+<b><%= flash[:notice]%></b><br/><br/>
 
-<br /><br />
-<%= %>
 <% if @eventos.empty? %>
 	Nenhum evento para aprovar.
 <% else  %>
+	Eventos para aprovar:
+	<br /><br />
 	<% for evento in @eventos %>
 		<%= evento.nome %>
 		<%= link_to "Aprovar", :action => "aprovar", :id => evento %>

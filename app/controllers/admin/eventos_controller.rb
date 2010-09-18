@@ -7,14 +7,14 @@ class Admin::EventosController < ApplicationController
 
   def aprovar
     Evento.update(params[:id], :aprovado => true)
-    flash[:aprovado] = "Evento aprovado."
-    render :action => 'index'
+    flash[:notice] = "Evento aprovado."
+    redirect_to :action => 'index'
   end
 
   def remover
     Evento.destroy params[:id]
-    flash[:removed] = "Evento removido."
-    render :action => 'index'
+    flash[:notice] = "Evento removido."
+    redirect_to :action => 'index'
   end
 
 end

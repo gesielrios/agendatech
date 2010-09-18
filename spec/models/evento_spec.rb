@@ -39,11 +39,11 @@ describe Evento do
   end
 
   it "deveria verificar se o dia está no intervalo do de dias do evento" do
-    @evento.data = Time.now - 1.day
-    @evento.data_termino = Time.now + 1.day
-    @evento.should be_ta_rolando
-    @evento.data = Time.now + 1.day
+    @evento.data = Time.now - 2.day
     @evento.data_termino = Time.now + 2.day
+    @evento.should be_ta_rolando
+    @evento.data = Time.now + 4.day
+    @evento.data_termino = Time.now + 6.day
     @evento.should_not be_ta_rolando
   end
 end
