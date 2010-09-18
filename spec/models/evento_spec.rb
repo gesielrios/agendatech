@@ -27,8 +27,9 @@ describe Evento do
       @evento.should be_valid
   end
 
-  it "deveria validar a data de termino apenas caso ela tenha sido preenchida" do
-    pending
+  it "deveria falar que o evento nao esta rolando se nao tem data de termino" do
+    @evento.data_termino = nil
+    @evento.should_not be_ta_rolando
   end
 
   it "deveria verificar que a data de termino é posterior a data de inicio" do
