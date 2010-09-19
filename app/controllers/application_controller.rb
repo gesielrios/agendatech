@@ -2,13 +2,11 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  extend Admin::Filter
 
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   before_filter :tag_cloud, :twitter_search
   helper_method :meses, :numero_do_mes, :estados, :nome_do_estado
-
 
   protected
   def meses

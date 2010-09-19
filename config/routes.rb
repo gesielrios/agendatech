@@ -16,6 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.calendario 'calendario/eventos', :controller => 'calendario', :action => 'index'
   map.calendario_por_estado 'calendario/eventos/:estado', :controller => 'calendario', :action => 'index'
   map.resources :grupos, :only => [:index, :new, :create]
+
+  map.colaboradores 'colaboradores', :controller => "sobre", :action => "colaboradores"
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 

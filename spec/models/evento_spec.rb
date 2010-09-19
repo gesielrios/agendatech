@@ -27,9 +27,11 @@ describe Evento do
       @evento.should be_valid
   end
 
-  it "deveria falar que o evento nao esta rolando se nao tem data de termino" do
+
+  it "deveria falar que o evento esta rolando se a data de termino eh vazia e o dia eh hoje" do
+    @evento.data = Date.today
     @evento.data_termino = nil
-    @evento.should_not be_ta_rolando
+    @evento.should be_ta_rolando
   end
 
   it "deveria verificar que a data de termino é posterior a data de inicio" do
@@ -40,11 +42,11 @@ describe Evento do
   end
 
   it "deveria verificar se o dia está no intervalo do de dias do evento" do
-    @evento.data = Time.now - 1.day
-    @evento.data_termino = Time.now + 1.day
+    @evento.data = Date.today
+    @evento.data_termino = Date.today + 2.day
     @evento.should be_ta_rolando
-    @evento.data = Time.now + 1.day
-    @evento.data_termino = Time.now + 2.day
+    @evento.data = Date.today + 4.day
+    @evento.data_termino = Date.today + 6.day
     @evento.should_not be_ta_rolando
   end
 end

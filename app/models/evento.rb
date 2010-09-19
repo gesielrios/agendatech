@@ -29,6 +29,9 @@ class Evento < ActiveRecord::Base
 
   def ta_rolando?
     hoje = Date.today
-    return data <= hoje && data_termino >= hoje
+    if data_termino.nil?
+      return hoje == data.to_date
+    end
+    hoje.between?(data.to_date, data_termino.to_date)
   end
 end

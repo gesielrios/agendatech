@@ -9,6 +9,9 @@ Funcionalidade: Controlar o acesso de administradores no site
 
     Cenario: Bloquear usuários não registrados
         Entao deveria ver a página de login
+				E nao deveria ver a aba "Logout"
+				E nao deveria ver a aba "Aprovação Eventos"
+				E nao deveria ver a aba "Aprovação Grupos"
 
     Cenario: Fazer logout da minha conta de administrador
         Quando preencho o campo "Email" com "admin@admin.com"
@@ -39,5 +42,7 @@ Funcionalidade: Controlar o acesso de administradores no site
         Quando preencho o campo "Email" com "admin@admin.com"
         E preencho o campo "Password" com "adminspassword"
         E clico no botao "Sign in"
-        Entao deveria ver "Eventos para aprovar" na pagina
+        Entao deveria ver a aba "Aprovação Eventos" 
+        E deveria ver a aba "Aprovação Grupos" 
+        E deveria ver a aba "Logout"
 

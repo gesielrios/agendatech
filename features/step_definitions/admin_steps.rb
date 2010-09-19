@@ -66,3 +66,12 @@ end
 Entao /^deveria ver a página de login$/ do
   page.should have_content "Login"
 end
+
+Entao /^deveria ver a aba "([^\"]*)"$/ do |texto|
+  page.should have_content texto
+end
+
+Entao /^nao deveria ver a aba "([^\"]*)"$/ do |texto|
+  page.should_not have_content texto
+end
+

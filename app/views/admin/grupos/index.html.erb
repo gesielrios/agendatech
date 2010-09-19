@@ -1,10 +1,10 @@
-Grupos para aprovar:
-
-<br/><br/>
+<b><%= flash[:notice]%></b><br/><br/>
 
 <% if @grupos.empty? -%>
   Nenhum grupo para aprovar.
 <% else -%>
+Grupos para Aprovar:
+<br/><br/>
   <% for grupo in @grupos -%>
     <%= grupo.nome %>
     <%= link_to "Aprovar", aprovar_admin_grupo_path(grupo), :method => :put %>
