@@ -138,7 +138,7 @@ h3{
 	margin-top:-20px;
 	padding-left:20px;
 	width:660px;
-	min-height:1900px;	
+	min-height:19px;	
 }
 
 #right{
@@ -439,6 +439,7 @@ a:visited {
 
 #estado, #mes{
 	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
 	background-color:#4A4A47;
 	color:#f2f2f2;
 	display:inline-block;
@@ -517,8 +518,10 @@ a:visited {
 }
 
 #menu ul a{
-	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topleft:5px;
 	-moz-border-radius-topright:5px;
+	-webkit-border-radius-topleft:5px;
+	-webkit-border-radius-topright:5px;	
 	float:left;
 	font-size:12px;
 	padding:10px;
@@ -555,6 +558,7 @@ a:link.menu_select, a:visited.menu_select  {
 
 .colaboradores  {
 	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
 	background-color:#4A4A47;
 	color:#F2F2F2;
 	display:inline-block;
