@@ -37,11 +37,11 @@
 				<ul>
 					<li><%= tab_link_to "Eventos", eventos_path %></li>
 					<li><%= tab_link_to "Grupos",  grupos_path %></li>
-					<li><%= tab_link_to "Contato", "/contato" %></li>
-					<li><%= tab_link_to "Sobre", "/sobre" %></li>
+					<li><%= tab_link_to "Contato", contato_path %></li>
+					<li><%= tab_link_to "Sobre", sobre_path %></li>
 					<li><%= tab_link_to "Colaboradores", colaboradores_path %></li>
 					<li><%= tab_link_to 'RSS', feed_path('rss') %></li>
-					<li><%= tab_link_to "iCal", "/calendario/links" %></li>
+					<li><%= tab_link_to "iCal", calendario_link_path %></li>
 					<% if admin_signed_in?%>	
 						<li><%= tab_link_to "Aprovação Eventos", admin_eventos_path %></li>
 						<li><%= tab_link_to "Aprovação Grupos",  admin_grupos_path %></li>

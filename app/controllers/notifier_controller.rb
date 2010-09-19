@@ -1,5 +1,5 @@
 class NotifierController < ApplicationController
-
+  
   def notifier
     contato = Contato.new params[:contato]
     Notifier.deliver_envia_email(contato)
