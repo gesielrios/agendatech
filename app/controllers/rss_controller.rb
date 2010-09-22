@@ -6,7 +6,7 @@ class RssController < ApplicationController
 			respond_to do |format|
 				format.rss {render :layout => false}
 				format.atom {render :layout => false}
-				format.json {render :json => @carros.to_json}
+				format.json {render :json => @eventos.to_json}
 				format.html {index}
 			end
 		end
