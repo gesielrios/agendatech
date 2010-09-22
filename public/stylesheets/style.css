@@ -247,6 +247,19 @@ text-decoration:none;
 	width:590px;
 }
 
+.grupo{
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;	
+	background-color:#CCCCCC;
+	border:5px solid #818181;
+	margin-bottom:30px;
+	padding:20px;
+	width:150px;
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+}
+
 .cadastre{
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;	
@@ -566,4 +579,11 @@ a:link.menu_select, a:visited.menu_select  {
 	font-weight:normal;
 	margin-bottom:20px;
 	padding:20px;
-	width:200px;}
+	width:200px;
+}
+
+.logo a img{
+	left: 25px;
+	position: relative;
+	bottom: 5px;
+}
