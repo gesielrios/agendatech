@@ -16,8 +16,9 @@
 					<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
 				<% end %>
 			</p>
+			<br/>
+			<a href=<%= evento_full_path(evento) %>><img src="/images/info.png"></img></a>
 
-			<p class="info_button"><%= link_to '+ Informações', evento_full_path(evento) %></p>
 		</div>
 
 
@@ -43,8 +44,8 @@
 					<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
 				<% end %>
 			</p>
-
-			<p class="info_button"><%= link_to '+ Informações', evento_full_path(evento) %></p>
+			<br/>
+			<a href=<%= evento_full_path(evento) %>><img src="/images/info.png"></img></a>
 		</div>
 	</div>
 

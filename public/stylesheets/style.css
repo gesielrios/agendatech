@@ -264,7 +264,6 @@ text-decoration:none;
 .cadastre{
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color:#4A4A47;
 	color:#F2F2F2;
 	cursor:pointer;
 	display:inline-block;
@@ -273,14 +272,19 @@ text-decoration:none;
 	padding:10px;
 	text-align:center;
 	width:220px;
+	height: 18px;
+	text-indent: -9999;
+}
+
+.cadastre a img{
+	left:-10px;
+	position:relative;
+	top:-10px;
 }
 
 .cadastre p{
 	font-size: 14px;
 	color: #fdd011 !important;
-}
-.cadastre:hover, .info_button:hover, .desc_button:hover{
-	background-color: #666666;
 }
 
 #twitter p{
