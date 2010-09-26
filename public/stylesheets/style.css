@@ -47,7 +47,7 @@ blockquote, q {
 }
 
 body{
-	font-family: arial;
+	font-family: helvetica;
 }
 
 #header{
@@ -73,7 +73,7 @@ body{
 #content .container{
 	-moz-border-radius:10px 10px 0px 0px;
 	-webkit-border-radius:10px 10px 0px 0px;	
-	background:url("http://www.backgroundlabs.com/backgrounds/13.gif") repeat scroll 0 0 #CCCCCC;
+	background:url("http://www.theirc.org/sites/all/themes/denali/images/body-bg.gif") repeat scroll 0 0 #CCCCCC;
 	color:#4A4A47;
 	overflow:auto;
 	padding:20px 20px 0;
@@ -241,7 +241,6 @@ text-decoration:none;
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;	
 	background-color:#CCCCCC;
-	border:5px solid #818181;
 	margin-bottom:30px;
 	padding:20px;
 	width:590px;
@@ -264,6 +263,7 @@ text-decoration:none;
 .cadastre{
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;	
+	background-color: #212121;
 	color:#F2F2F2;
 	cursor:pointer;
 	display:inline-block;
