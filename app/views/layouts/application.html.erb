@@ -95,6 +95,11 @@
 							</div>
 						</div>
 
+
+
+
+
+
 							<div id="estado">
 								<p class="bold">Eventos por estado</p><br/>
 								<div id="meses">
@@ -110,10 +115,27 @@
 									<a href="http://www.twitter.com/agendatech">AGENDATECH NO TWITTER</a>
 								</div>
 
-
+							
 				
 
-
+									<div id="twitter">
+									                      <p>Eventos no twitter</p>
+									            <% for t in @twits %>
+									            <div class="twit">
+									              <img src="<%= t.profile_image_url %>" width="48px" height="48px">
+									              <small><a href="http://www.twitter.com/<%= t.from_user %>" target="blank">@<%= t.from_user %></a></small>
+									              <p><%= t.text %></p>
+									            </div>
+									            <% end  %>
+									                      <% for t in @twits %>
+									                      <div class="twit">
+									                        <img src="<%= t.profile_image_url %>" width="48px" height="48px">
+									                        <small><a href="http://www.twitter.com/<%= t.from_user %>" target="blank">@<%= t.from_user %></a></small>
+									                        <p><%= t.text %></p>
+									                      </div>
+									                      <% end  %>
+									          </div>
+									                    </div>
 
 
 					<div id="tags">
