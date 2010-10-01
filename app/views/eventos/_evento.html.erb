@@ -1,36 +1,13 @@
-<% if evento.ta_rolando? %>
-	<div class="evento_destaque clearfix" id="<%=evento.id%>">
-		<div class="data">
-			<p><%= Date.today.day %></p>
-			<small><%= l(Date.today, :format => :month) %></small>
-		</div>
 
-		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %></div>
-
-		<div class="info">
-			<p id="evento"><%= link_to evento.nome, evento_full_path(evento) %></p>
-			<small><%= nome_do_estado evento.estado %></small><br/>
-
-			<p class="tags">
-				<% evento.tags.each do |tag| %>
-					<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
-				<% end %>
-			</p>
-			<br/>
-			<a href=<%= evento_full_path(evento) %>><img src="/images/info.png"></img></a>
-
-		</div>
-
-
-
-		<div id="twitter_images" style="display:none">
-		</div>
-	</div>
-<% else %>
 	<div class="evento clearfix">
 		<div class="data">
-			<p><%= evento.data.day %></p>
-			<small><%= l(evento.data, :format => :month) %></small>
+		  <%if evento.ta_rolando? %>
+			  <p><%= Date.today.day %></p>
+			  <small><%= l(Date.today, :format => :month) %></small>
+			<%else%>
+			  <p><%= evento.data.day %></p>
+			  <small><%= l(evento.data, :format => :month) %></small>			
+			<%end%>
 		</div>
 
 		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %></div>
@@ -46,9 +23,9 @@
 			</p>
 			<br/>
 			<a href=<%= evento_full_path(evento) %>><img src="/images/info.png"></img></a>
+			<br />
+			<a href="http://twitter.com/home?status=RT%20@agendatech%20<%= evento.nome %> <%= ShortURL.shorten evento.site, :tinyurl %>"><img src="/images/twitter_icon.png" /></a>			
 		</div>
 	</div>
 
-
-<% end %>
 
