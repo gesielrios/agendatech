@@ -24,6 +24,7 @@
 			<br/>
 			<a href=<%= evento_full_path(evento) %>><img src="/images/info.png"></img></a>
 			<a href="http://twitter.com/home?status=RT%20@agendatech%20<%= evento.nome %> <%= ShortURL.shorten evento.site, :tinyurl %>"><img src="/images/twitter_icon.png" width="25" /></a>			
+		
 			<iframe src="http://www.facebook.com/plugins/like.php?href=<%= evento_full_url(evento)%>&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" 
 			        scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:25px;" 
 			        allowTransparency="true"></iframe>
