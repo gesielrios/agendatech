@@ -16,12 +16,12 @@
 			  <p>
 	  		  <label for="data">Data (dd/mm/yyyy)</label><br />
 	  		  <%=error_message_on @evento,:data%>
-	  		  <input type="text" name="evento[data]" value="<%=l(@evento.data) if @evento.data%>"/>
+	  		  <input id="dataInicio" type="text" name="evento[data]" value="<%=l(@evento.data.to_date) if @evento.data%>"/>
 	  		</p>
 			  <p>
 	  		  <label for="data_termino">Data de termino(dd/mm/yyyy) - Caso dure mais de 1 dia</label><br />
 	  		  <%=error_message_on @evento,:data_termino%>
-	  		  <input type="text" name="evento[data_termino]" value="<%=l(@evento.data_termino) if @evento.data_termino%>"/>
+	  		  <input id="dataTermino" type="text" name="evento[data_termino]" value="<%=l(@evento.data_termino.to_date) if @evento.data_termino%>"/>
 	  		</p>
 				<p>
 						<label for="grupo_id">Grupo de usuários</label><br/>
@@ -62,4 +62,18 @@
 	  		<input type="submit" value="Cadastrar"/>
 <% end %>
 
+<%-content_for :javascript do %>
+  <%= javascript_include_tag 'jquery-1.4.2.min.js'%>
+  <%= javascript_include_tag 'jquery.ui.core' %>
+  <%= javascript_include_tag 'jquery.ui.datepicker'%>
+  <script type="text/javascript">
+    [$("#dataTermino"),$("#dataInicio")].forEach(function(campo){
+      campo.datepicker({ dateFormat: 'dd/mm/yy',
+                         dayNamesMin: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+                         monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Augosto','Setembro','Outubro','Novembro','Dezembro']
+                        });
+    });
+    
+  </script>
+<%end -%>
 
