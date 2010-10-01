@@ -287,6 +287,11 @@ text-decoration:none;
 	color: #fdd011 !important;
 }
 
+.site{
+	font-size: 14px;
+	color: #212121;
+}
+
 #twitter p{
 	margin-bottom: 15px;
 }

@@ -11,7 +11,8 @@
     <div class="info">
       <p id="evento">
          <%= link_to(h(grupo.nome), grupo_path(:nome => grupo.nome, :id => grupo))  %>
-		 <%= link_to "Site do grupo", grupo.site %>
+		 <br />
+		 <%= link_to "Site do grupo", grupo.site, :class => "site" %>
       </p>
 
       <p class="tags">
