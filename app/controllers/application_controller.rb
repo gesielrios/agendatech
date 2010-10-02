@@ -76,7 +76,7 @@ class ApplicationController < ActionController::Base
   end
 
   def twitter_search    
-    eventos = Evento.find_by_sql("select distinct twitter_hash from eventos where aprovado = true order by rand() limit 3")
+    eventos = Evento.find_by_sql("select distinct twitter_hash from eventos where aprovado = true  limit 3")
     @twits = []
 
     eventos.each do |e|
