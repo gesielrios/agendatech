@@ -9,3 +9,14 @@ end
 
 ValidatesTimeliness::Formats.remove_us_formats
 
+#manguezinho para pegar a funcao de mes em funcao do ambiente. Ta aqui justamente para ser temporario.
+class SQL
+  def self.mes_do_evento
+    if(RAILS_ENV=='test' || RAILS_ENV=='development')
+      "month(data)"      
+    else
+      "date_part('month',data)"
+    end
+  end
+end
+
