@@ -9,7 +9,7 @@ end
 
 ValidatesTimeliness::Formats.remove_us_formats
 
-#manguezinho para pegar a funcao de mes em funcao do ambiente. Ta aqui justamente para ser temporario.
+#manguezinho para pegar funcao do mysql ou do postgree, enquanto nao rola uma decisao sobre trocar ou nao.
 class SQL
   def self.mes_do_evento
     if(RAILS_ENV=='test' || RAILS_ENV=='development')
@@ -18,5 +18,13 @@ class SQL
       "date_part('month',data)"
     end
   end
+  
+  def self.random
+    if(RAILS_ENV=='test' || RAILS_ENV=='development')
+      "rand()"      
+    else
+      "random()"
+    end
+  end  
 end
 
