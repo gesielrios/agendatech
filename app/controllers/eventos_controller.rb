@@ -3,7 +3,7 @@ class EventosController < ApplicationController
 
   def index
     if params[:month]
-      @eventos = Evento.all(:conditions=> ["aprovado = ? AND MONTH(data) = ? ", true,  numero_do_mes(params[:month])], :order => 'data ASC')
+      @eventos = Evento.all(:conditions=> ["aprovado = ? AND month(data) = ? ", true,  numero_do_mes(params[:month])], :order => 'data ASC')
       @mes = params[:month]
     else
       if params[:estado]

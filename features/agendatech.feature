@@ -3,7 +3,7 @@ Funcionalidade: Mapear os eventos de tecnologia do Brasil.
 
 Esquema do Cenario: Cadastro de evento
 	Dado que estou na pagina inicial
-	Quando clico no link "Cadastre o seu"
+	Quando clico no link "CADASTRAR NOVO EVENTO"
 	E preencho o campo nome com "<nome>"
     E preencho o campo estado com "<estado>"	
 	E preencho o campo site com "<site>"
