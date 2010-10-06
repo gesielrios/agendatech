@@ -1,5 +1,4 @@
 config/database.yml
-config/s3.yml
 log/development.log
 log/test.log
 tmp

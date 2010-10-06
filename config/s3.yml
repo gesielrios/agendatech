@@ -9,7 +9,7 @@ test:
   secret_access_key: <your key>
 
 production:
-  bucket: myapp
-  access_key_id: <your key>
-  secret_access_key: <your key>
+  bucket: agendatech_logos
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
 
