@@ -8,6 +8,10 @@ gem "icalendar"        , "1.1.5"
 gem "friendly_id"      , "3.1.6"
 gem 'shorturl'         , "0.8.8"   
 
+group :production do
+gem "aws-s3"
+end
+
 group :test do
   gem 'rspec'            , '1.3.0'
   gem 'rspec-rails'
