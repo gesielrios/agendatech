@@ -27,9 +27,4 @@ config.action_view.cache_template_loading            = true
 # Enable threaded mode
 # config.threadsafe!
 
-class Evento
-  has_attached_file :logo, :storage => :s3, 
-                    :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",:path => "/:style/:filename",
-                    :styles => { :medium => "195x189>", :thumb => "97x97>" }  
-end
 
