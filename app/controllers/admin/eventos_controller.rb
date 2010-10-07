@@ -3,6 +3,21 @@ class Admin::EventosController < ApplicationController
 
   def index
     @eventos = Evento.all(:conditions=>{:aprovado=>false})
+    @eventos_editar = Evento.all
+  end
+  
+  def editar
+    @evento = Evento.find(params[:id])
+  end
+  
+  def update
+     @evento = Evento.find(params[:id])
+      if @evento.update_attributes(params[:evento])
+        flash[:notice] = "Evento editado com sucesso"
+        redirect_to :action => "index"
+      else
+        render :action => 'edit'
+      end
   end
 
   def aprovar

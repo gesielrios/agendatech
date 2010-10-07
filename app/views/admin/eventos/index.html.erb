@@ -13,3 +13,11 @@
 	<% end  %>
 <% end  %>
 
+<hr/>
+Editar Eventos:
+<br/><br/>
+<% for evento in @eventos_editar %>
+
+	<%= evento.nome %> <%= link_to 'editar',:action => "editar", :id => evento %> <br/>
+
+<% end %>
