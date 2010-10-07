@@ -3,7 +3,16 @@ class Evento < ActiveRecord::Base
 
   acts_as_taggable
   has_friendly_id :nome, :use_slug => true,:approximate_ascii => true
-  has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
+  if(RAILS_ENV=='production')
+    has_attached_file :logo, 
+          :storage => :s3, 
+          :s3_credentials => "#{RAILS_ROOT}/config/s3.yml", 
+          :path => "/:style/:filename",
+          :styles => { :medium => "195x189>", :thumb => "97x97>" }    
+  else
+    has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }    
+  end
+  
   validates_presence_of   :nome, :site, :data, :descricao, :message => "Campo obrigatório"
   validates_date :data,:format=>"dd/mm/yyyy", :invalid_date_message => "Formato inválido", :if => Proc.new { |evento| !evento.aprovado }
   validates_date :data_termino,:format=>"dd/mm/yyyy", :invalid_date_message => "Formato inválido", :allow_blank => true, :if => Proc.new { |evento| !evento.aprovado}

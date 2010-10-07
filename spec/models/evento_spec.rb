@@ -49,4 +49,8 @@ describe Evento do
     @evento.data_termino = Date.today + 6.day
     @evento.should_not be_ta_rolando
   end
+  
+  it "deveria configurar o paperclip para usar o amazon-s3 em modo de producao" do
+    pending
+  end  
 end
