@@ -1,0 +1,28 @@
+<h2 class="titulo">Grupos de usuários</h2>
+<% form_for @grupo, :url => {:action=> "update"}, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
+
+	<input type="hidden" name="id" value="<%=@grupo.id%>"/>
+
+	<p>
+		<%= f.label :nome %><br/>
+		<%= error_message_on :grupo, :nome%>
+		<%= f.text_field :nome %>
+	</p>
+	<p>
+		<%= f.label :site %><br/>
+		<%= error_message_on :grupo, :site%>
+		<%= f.text_field :site %>
+	</p>
+	<p>
+		<%= f.label :logo %><br/>
+		<%= f.file_field :logo %>
+	</p>
+	<p>
+		<%= f.label :tag_list, 'Tag list (separe suas tags por ",")' %><br/>
+		<%= error_message_on :grupo, :tag_list%>
+		<%= f.text_field :tag_list %>
+	</p>
+	<br/>
+	<%= f.submit 'Cadastrar' %>
+<% end -%>
+

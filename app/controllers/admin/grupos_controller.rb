@@ -3,6 +3,7 @@ class Admin::GruposController < ApplicationController
 
   def index
     @grupos = Grupo.nao_aprovados
+    @grupos_editar = Grupo.all
   end
 
   def aprovar
@@ -16,5 +17,20 @@ class Admin::GruposController < ApplicationController
     flash[:notice] = "Grupo reprovado."
     redirect_to admin_grupos_path
   end
+  
+  def editar
+    @grupo = Grupo.find(params[:id])
+  end
+  
+  def update
+     @grupo = Grupo.find(params[:id])
+      if @grupo.update_attributes(params[:grupo])
+        flash[:notice] = "Grupo editado com sucesso"
+        redirect_to :action => "index"
+      else
+        render :action => 'edit'
+      end
+  end
+  
 
 end

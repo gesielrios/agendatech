@@ -12,3 +12,13 @@ Grupos para Aprovar:
     <br/>
   <% end -%>
 <% end -%>
+
+
+<hr />
+<br/>
+Editar grupos:
+<br /><br />
+
+<% for grupo in @grupos_editar %>
+	<%= grupo.nome %> <%= link_to 'editar',:action => "editar", :id => grupo %> <br/>
+<% end  %>
