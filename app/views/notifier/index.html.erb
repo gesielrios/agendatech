@@ -1,4 +1,4 @@
-<form id="contato" action="/notifier/notifier">
+<% form_for :notifier, :url => '/notifier/notifier',:html => { :id => 'contato' } do |f| %>
 	<h1 class="contato">Contato</h1>
 	<h5 class="aviso">Entre em contato conosco.</h5>
 	<br />
@@ -17,4 +17,4 @@
 	<br />
 	<input type="submit" />
 	<%= flash[:notice] %>	
-</form>
+<%end%>
