@@ -12,7 +12,6 @@ class EventosController < ApplicationController
         @eventos = Evento.nao_ocorrido
       end
     end
-    @ultimos_comentarios = Comentario.find_by_sql("select * from comentarios order by created_at desc limit 3")
   end
 
   def new
