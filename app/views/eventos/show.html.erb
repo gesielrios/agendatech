@@ -41,7 +41,7 @@
 	<% for comentario in @evento.comentarios %>
 		<br/>
 		<div class="comentario">
-			<img src="<%= Twitter.user(comentario.twitter).profile_image_url %>" />
+			<!-- <img src="<%= Twitter.user(comentario.twitter).profile_image_url %>" /> -->
 			<p class="comentario_descricao"><%= Twitter.user(comentario.twitter).name %></p><br/>
 			<div style="clear:both;"></div>
 	
