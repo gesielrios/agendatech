@@ -2,7 +2,21 @@ class Grupo < ActiveRecord::Base
   has_many :eventos
 
   acts_as_taggable
-  has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
+
+
+  if(RAILS_ENV=='production')
+    has_attached_file :logo, 
+          :storage => :s3, 
+          :path => "/:style/:filename",
+          :styles => { :medium => "195x189>", :thumb => "97x97>" }  ,
+          :bucket => ENV['S3_BUCKET'],
+          :s3_credentials => { :access_key_id => ENV['S3_KEY'], 
+                               :secret_access_key => ENV['S3_SECRET'] }
+  else
+    has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
+  end
+
+
   validates_presence_of :nome
   validates_presence_of :site
   validates_uniqueness_of :nome
