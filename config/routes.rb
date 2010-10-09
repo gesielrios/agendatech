@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.feed 'rss/feed.:format', :controller => 'rss', :action => 'feed'
   map.root :controller => "eventos"
   map.resources :eventos
+  map.resources :comentarios
   
   map.calendario 'calendario/eventos', :controller => 'calendario', :action => 'index'
   map.calendario_por_estado 'calendario/eventos/:estado', :controller => 'calendario', :action => 'index'

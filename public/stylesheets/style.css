@@ -594,3 +594,25 @@ a:link.menu_select, a:visited.menu_select  {
 	position: relative;
 	bottom: 5px;
 }
+
+.comentario img{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.comentario_twitter{
+	font-size: 12px;
+}
+
+.comentario_descricao{
+	font-size: 14px;
+}
+
+.comentario_data{
+	font-size: 10px;
+}
+
+.comentario{
+	border-bottom: 1px solid #ccc;
+}

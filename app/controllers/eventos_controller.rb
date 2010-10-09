@@ -12,6 +12,7 @@ class EventosController < ApplicationController
         @eventos = Evento.nao_ocorrido
       end
     end
+    @ultimos_comentarios = Comentario.find_by_sql("select * from comentarios order by created_at desc limit 3")
   end
 
   def new
@@ -34,6 +35,7 @@ class EventosController < ApplicationController
 
   def show
     @evento = Evento.find(params[:id])
+    @comentario = Comentario.new
   end
 
   def tag
@@ -45,6 +47,18 @@ class EventosController < ApplicationController
   def twits
     @evento = Evento.find_by_id(params[:id])
     render :layout => false
+  end
+
+  def comentar
+    @comentario = Comentario.new(params[:comentario])
+    if @comentario.save
+      flash[:comentario] = "Comentário cadastrado com sucesso!"
+      @evento = Evento.find @comentario.evento_id
+      @comentario = Comentario.new
+      render :action => "show"
+    else
+      render :action => "new"
+    end
   end
 
 end

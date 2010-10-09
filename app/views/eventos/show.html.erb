@@ -28,3 +28,43 @@
 </div>
 
 <p class="desc_button"><%= link_to '< Voltar para home', root_path %></p>
+
+<hr />
+<p>Comente sobre esse evento:</p>
+<%=  flash[:comentario] %>
+<br />
+
+<% if @evento.comentarios.empty?%>
+ <p>Seja o primeiro a comentar sobre esse evento!</p>
+<% else  %>
+
+	<% for comentario in @evento.comentarios %>
+		<br/>
+		<div class="comentario">
+			<img src="<%= Twitter.user(comentario.twitter).profile_image_url %>" />
+			<p class="comentario_descricao"><%= Twitter.user(comentario.twitter).name %></p><br/>
+			<div style="clear:both;"></div>
+	
+			<p class="comentario_descricao"><%= comentario.descricao %></p>
+			<p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
+
+		</div>
+	<% end %>
+
+<% end %>
+
+<br/> <br/>
+<% form_for @comentario, :url => {:action => "comentar"}, :html => { :class => 'resource_form' } do |f| %>
+	<input type="hidden" name="comentario[evento_id]" value="<%= @evento.id %>"/>
+	<p>
+		<label for="twitter">Seu Twitter: (sem @)</label><br />
+		<input type="text" name="comentario[twitter]"/>
+	</p>
+	<p>
+		<label for="descricao">Comentário: </label><br />
+		<textarea type="text" name="comentario[descricao]"> </textarea>
+	</p>
+	<br/>
+	<input type="submit" value="Comentar"/>
+
+<% end  %>	

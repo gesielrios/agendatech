@@ -1,4 +1,5 @@
 class Evento < ActiveRecord::Base
+  has_many :comentarios
   belongs_to :grupo
 
   acts_as_taggable
