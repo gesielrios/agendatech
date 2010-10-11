@@ -20,7 +20,7 @@ describe Evento do
     @evento.should be_valid
   end
 
-  it "deveria validar a data de termino apenas para eventos não aprovados" do
+  it "deveria validar a data de termino apenas para eventos não aprovados" do      
       @evento.data_termino = "10/10/10"
       @evento.should_not be_valid
       @evento.aprovado = true
