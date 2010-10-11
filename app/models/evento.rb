@@ -4,23 +4,15 @@ class Evento < ActiveRecord::Base
 
   acts_as_taggable
   has_friendly_id :nome, :use_slug => true,:approximate_ascii => true
-  EnvironmentHack.para_producao {
-      has_attached_file :logo, 
-          :storage => :s3, 
-          :path => "/:style/:filename",
-          :styles => { :medium => "195x189>", :thumb => "97x97>" }  ,
-          :bucket => ENV['S3_BUCKET'],
-          :s3_credentials => { :access_key_id => ENV['S3_KEY'],                                
-          :secret_access_key => ENV['S3_SECRET'] }
-  }
-  EnvironmentHack.para_os_outros {
-      has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }          
-  }
-  
-  if(RAILS_ENV=='production')
-  else
+  EnvironmentHack.para do |env|
+    env.producao {
+      has_attached_file :logo, Heroku.paper_clip
+    }
+    env.outros {
+      has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }                
+    }
   end
-  
+    
   validates_presence_of   :nome, :site, :data, :descricao, :message => "Campo obrigatório"
   validates_date :data,:format=>"dd/mm/yyyy", :invalid_date_message => "Formato inválido", :if => Proc.new { |evento| !evento.aprovado }
   validates_date :data_termino,:format=>"dd/mm/yyyy", :invalid_date_message => "Formato inválido", :allow_blank => true, :if => Proc.new { |evento| !evento.aprovado}
