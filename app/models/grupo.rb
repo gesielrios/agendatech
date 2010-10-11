@@ -2,13 +2,15 @@ class Grupo < ActiveRecord::Base
   has_many :eventos
 
   acts_as_taggable
-
-
-  if(RAILS_ENV=='production')
-    has_attached_file :logo, Heroku.paper_clip
-  else
-    has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }
-  end
+  
+  EnvironmentHack.para do |env|
+    env.producao {
+      has_attached_file :logo, Heroku.paper_clip
+    }
+    env.outros {
+      has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }                
+    }
+  end  
 
 
   validates_presence_of :nome
