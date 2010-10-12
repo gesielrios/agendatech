@@ -6,7 +6,14 @@ class Evento < ActiveRecord::Base
   has_friendly_id :nome, :use_slug => true,:approximate_ascii => true
   EnvironmentHack.para do |env|
     env.producao {
-      has_attached_file :logo, Heroku.paper_clip
+      has_attached_file :logo,
+          :storage => :s3, 
+          :path => "/:style/:filename",
+          :styles => { :medium => "195x189>", :thumb => "97x97>" }  ,
+          :bucket => ENV['S3_BUCKET'],
+          :s3_credentials => { :access_key_id => ENV['S3_KEY'],                                
+          :secret_access_key => ENV['S3_SECRET'] }          
+    
     }
     env.outros {
       has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }                
