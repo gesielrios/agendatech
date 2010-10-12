@@ -3,10 +3,10 @@ class SQL
   def self.mes_do_evento
     EnvironmentHack.para do |env| 
       env.producao {
-        "date_part('month',data)"
+        return "date_part('month',data)"
       }
       env.outros {   
-        "month(data)"      
+        return "month(data)"      
       }
     end
   end
