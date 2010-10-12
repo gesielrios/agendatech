@@ -1,8 +1,8 @@
 class Plugins
-  def self.paper_clip
+  def self.paper_clip(model)
     EnvironmentHack.para do |env|
       env.producao {
-        has_attached_file :logo,           
+        model.has_attached_file :logo,           
           :storage => :s3, 
           :path => "/:style/:filename",
           :styles => { :medium => "195x189>", :thumb => "97x97>" }  ,
@@ -11,7 +11,7 @@ class Plugins
           :secret_access_key => ENV['S3_SECRET'] }          
       }
       env.outros {
-        has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }                
+        model.has_attached_file :logo, :styles => { :medium => "195x189>", :thumb => "97x97>" }                
       }
     end
 end
