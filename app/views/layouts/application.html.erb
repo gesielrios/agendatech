@@ -72,8 +72,7 @@
 
 							<% for comentario in @ultimos_comentarios %>
 							<div class="comentario">
-								<!-- <img src="<%= Twitter.user(comentario.twitter).profile_image_url %>" /> -->
-								<p class="comentario_descricao">@<%=comentario.twitter%><!--%= Twitter.user(comentario.twitter).name %--></p><br/>
+								<p class="comentario_descricao">@<%=comentario.twitter%></p><br/>
 								<div style="clear:both;"></div>
 
 								<p class="comentario_descricao"><%= comentario.descricao %></p>
