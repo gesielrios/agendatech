@@ -73,7 +73,7 @@ body{
 #content .container{
 	-moz-border-radius:10px 10px 0px 0px;
 	-webkit-border-radius:10px 10px 0px 0px;	
-	background:url("http://www.theirc.org/sites/all/themes/denali/images/body-bg.gif") repeat scroll 0 0 #CCCCCC;
+	background: repeat scroll 0 0 #f2f2f2;
 	color:#4A4A47;
 	overflow:auto;
 	padding:20px 20px 0;
@@ -238,9 +238,7 @@ text-decoration:none;
 }
 
 .evento{
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color:#CCCCCC;
+	border-bottom:1px solid #CCCCCC;
 	margin-bottom:30px;
 	padding:20px;
 	width:600px;
