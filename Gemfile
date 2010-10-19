@@ -7,6 +7,7 @@ gem "devise"           , "1.0.8"
 gem "icalendar"        , "1.1.5"
 gem "friendly_id"      , "3.1.6"
 gem 'shorturl'         , "0.8.8"   
+gem 'restfulie'        , "0.9.1"
 
 group :production do
 gem "aws-s3"
