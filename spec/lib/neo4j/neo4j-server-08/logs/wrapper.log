@@ -1,0 +1,762 @@
+STATUS | wrapper  | 2010/10/19 16:44:17 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/19 16:44:18 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/19 16:44:19 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/19 16:44:19 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/19 16:44:19 | 
+INFO   | jvm 1    | 2010/10/19 16:44:19 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/19 16:44:19 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/19 16:44:19 | 2010-10-19 16:44:19.648:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/19 16:44:19 | 2010-10-19 16:44:19.802:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/19 16:44:19 | 2010-10-19 16:44:19.895:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/19 16:44:19 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/19 16:44:34 | 19/10/2010 16:44:34 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/19 16:44:34 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/19 16:44:34 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/19 16:44:34 | 19/10/2010 16:44:34 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/19 16:44:34 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/19 16:44:34 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/19 16:44:34 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/19 16:44:34 | 19/10/2010 16:44:34 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/19 16:44:34 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/19 16:44:34 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/19 16:44:34 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/19 16:44:34 | 19/10/2010 16:44:34 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/19 16:44:34 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/19 16:44:50 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/19 16:44:50 | Shutting down the server
+INFO   | jvm 1    | 2010/10/19 16:44:50 | 2010-10-19 16:44:50.894:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/19 16:44:51 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/19 16:44:55 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/19 16:44:55 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/19 16:44:55 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/19 16:44:55 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/19 16:44:55 | 
+INFO   | jvm 1    | 2010/10/19 16:44:56 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/19 16:44:56 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/19 16:44:56 | 2010-10-19 16:44:56.036:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/19 16:44:56 | 2010-10-19 16:44:56.088:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/19 16:44:56 | 2010-10-19 16:44:56.147:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/19 16:44:56 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/19 16:44:57 | 19/10/2010 16:44:57 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/19 16:44:57 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/19 16:44:57 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/19 16:44:57 | 19/10/2010 16:44:57 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/19 16:44:57 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/19 16:44:57 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/19 16:44:57 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/19 16:44:57 | 19/10/2010 16:44:57 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/19 16:44:57 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/19 16:44:57 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/19 16:44:57 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/19 16:44:57 | 19/10/2010 16:44:57 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/19 16:44:57 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/19 18:09:51 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/19 18:09:52 | Shutting down the server
+INFO   | jvm 1    | 2010/10/19 18:09:52 | 2010-10-19 18:09:52.538:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/19 18:09:53 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/19 18:10:02 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/19 18:10:02 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/19 18:10:03 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/19 18:10:03 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/19 18:10:03 | 
+INFO   | jvm 1    | 2010/10/19 18:10:03 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/19 18:10:03 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/19 18:10:03 | 2010-10-19 18:10:03.707:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/19 18:10:03 | 2010-10-19 18:10:03.778:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/19 18:10:03 | 2010-10-19 18:10:03.847:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/19 18:10:03 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/19 18:10:05 | 19/10/2010 18:10:05 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/19 18:10:05 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/19 18:10:05 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/19 18:10:05 | 19/10/2010 18:10:05 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/19 18:10:05 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/19 18:10:05 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/19 18:10:05 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/19 18:10:05 | 19/10/2010 18:10:05 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/19 18:10:05 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/19 18:10:05 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/19 18:10:05 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/19 18:10:05 | 19/10/2010 18:10:05 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/19 18:10:05 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/19 18:10:13 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/19 18:10:13 | Shutting down the server
+INFO   | jvm 1    | 2010/10/19 18:10:13 | 2010-10-19 18:10:13.950:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/19 18:10:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 13:20:00 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 13:20:00 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 13:20:02 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 13:20:02 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 13:20:02 | 
+INFO   | jvm 1    | 2010/10/20 13:20:02 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 13:20:02 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 13:20:02 | 2010-10-20 13:20:02.484:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 13:20:02 | 2010-10-20 13:20:02.601:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 13:20:02 | 2010-10-20 13:20:02.705:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 13:20:02 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 15:06:42 | 20/10/2010 15:06:42 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 15:06:42 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 15:06:42 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 15:06:43 | 20/10/2010 15:06:42 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:06:43 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 15:06:43 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 15:06:43 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 15:06:43 | 20/10/2010 15:06:42 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:06:43 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 15:06:43 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:06:43 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:06:43 | 20/10/2010 15:06:43 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 15:06:43 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 15:41:58 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 15:41:59 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 2010-10-20 15:41:59.403:INFO::Stopped SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 15:41:59 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:41:59 | java.io.FileNotFoundException: neo4j-rest-db/nioneo_logical.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.close(NeoStoreXaDataSource.java:229)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.nioneo.xa.NioNeoDbPersistenceSource.stop(NioNeoDbPersistenceSource.java:78)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:269)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:41:59 | java.io.FileNotFoundException: neo4j-rest-db/lucene/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:41:59 | java.io.FileNotFoundException: neo4j-rest-db/lucene-fulltext/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:41:59 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+STATUS | wrapper  | 2010/10/20 15:41:59 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 15:42:03 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 15:42:03 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 15:42:04 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 15:42:04 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 15:42:04 | 
+INFO   | jvm 1    | 2010/10/20 15:42:04 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 15:42:04 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 15:42:04 | 2010-10-20 15:42:04.251:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 15:42:04 | 2010-10-20 15:42:04.305:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 15:42:04 | 2010-10-20 15:42:04.375:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 15:42:04 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 15:42:06 | 20/10/2010 15:42:06 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 15:42:06 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 15:42:06 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 15:42:06 | 20/10/2010 15:42:06 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:42:06 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 15:42:06 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 15:42:06 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 15:42:06 | 20/10/2010 15:42:06 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:42:06 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 15:42:06 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:42:06 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:42:06 | 20/10/2010 15:42:06 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 15:42:06 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 15:42:38 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 15:42:38 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 15:42:38 | 2010-10-20 15:42:38.859:INFO::Stopped SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 15:42:39 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:42:39 | java.io.FileNotFoundException: neo4j-rest-db/nioneo_logical.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.close(NeoStoreXaDataSource.java:229)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.nioneo.xa.NioNeoDbPersistenceSource.stop(NioNeoDbPersistenceSource.java:78)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:269)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:42:39 | java.io.FileNotFoundException: neo4j-rest-db/lucene/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:42:39 | java.io.FileNotFoundException: neo4j-rest-db/lucene-fulltext/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:42:39 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+STATUS | wrapper  | 2010/10/20 15:42:39 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 15:42:55 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 15:42:55 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 15:42:55 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 15:42:55 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 15:42:55 | 
+INFO   | jvm 1    | 2010/10/20 15:42:56 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 15:42:56 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 15:42:56 | 2010-10-20 15:42:56.025:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 15:42:56 | 2010-10-20 15:42:56.079:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 15:42:56 | 2010-10-20 15:42:56.137:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 15:42:56 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 15:43:10 | 20/10/2010 15:43:10 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 15:43:10 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 15:43:10 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 15:43:10 | 20/10/2010 15:43:10 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:43:10 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 15:43:10 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 15:43:10 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 15:43:10 | 20/10/2010 15:43:10 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:43:10 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 15:43:10 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:43:10 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:43:10 | 20/10/2010 15:43:10 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 15:43:10 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+INFO   | jvm 1    | 2010/10/20 15:43:12 | 20/10/2010 15:43:12 org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog doInternalRecovery
+INFO   | jvm 1    | 2010/10/20 15:43:12 | INFO: Non clean shutdown detected on log [neo4j-rest-db/nioneo_logical.log.1]. Recovery started ...
+INFO   | jvm 1    | 2010/10/20 15:43:13 | 20/10/2010 15:43:12 org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog doInternalRecovery
+INFO   | jvm 1    | 2010/10/20 15:43:13 | INFO: Non clean shutdown detected on log [neo4j-rest-db/lucene/lucene.log.1]. Recovery started ...
+INFO   | jvm 1    | 2010/10/20 15:43:13 | 20/10/2010 15:43:13 org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog doInternalRecovery
+INFO   | jvm 1    | 2010/10/20 15:43:13 | INFO: Non clean shutdown detected on log [neo4j-rest-db/lucene-fulltext/lucene.log.1]. Recovery started ...
+STATUS | wrapper  | 2010/10/20 15:45:32 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 15:45:33 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 2010-10-20 15:45:33.044:INFO::Stopped SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 15:45:33 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:45:33 | java.io.FileNotFoundException: neo4j-rest-db/nioneo_logical.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.close(NeoStoreXaDataSource.java:229)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.nioneo.xa.NioNeoDbPersistenceSource.stop(NioNeoDbPersistenceSource.java:78)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:269)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:45:33 | java.io.FileNotFoundException: neo4j-rest-db/lucene/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 15:45:33 | java.io.FileNotFoundException: neo4j-rest-db/lucene-fulltext/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 15:45:33 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+STATUS | wrapper  | 2010/10/20 15:45:33 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 15:46:39 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 15:46:40 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 15:46:40 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 15:46:40 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 15:46:40 | 
+INFO   | jvm 1    | 2010/10/20 15:46:40 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 15:46:40 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 15:46:40 | 2010-10-20 15:46:40.671:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 15:46:40 | 2010-10-20 15:46:40.742:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 15:46:40 | 2010-10-20 15:46:40.805:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 15:46:40 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 15:46:46 | 20/10/2010 15:46:46 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 15:46:46 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 15:46:46 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 15:46:46 | 20/10/2010 15:46:46 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:46:46 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 15:46:46 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 15:46:46 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 15:46:46 | 20/10/2010 15:46:46 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 15:46:46 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 15:46:46 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:46:46 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 15:46:46 | 20/10/2010 15:46:46 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 15:46:46 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 16:01:24 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:01:25 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 2010-10-20 16:01:25.012:INFO::Stopped SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:01:25 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 16:01:25 | java.io.FileNotFoundException: neo4j-rest-db/nioneo_logical.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.close(NeoStoreXaDataSource.java:229)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.nioneo.xa.NioNeoDbPersistenceSource.stop(NioNeoDbPersistenceSource.java:78)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:269)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 16:01:25 | java.io.FileNotFoundException: neo4j-rest-db/lucene/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | Unable to close logical log
+INFO   | jvm 1    | 2010/10/20 16:01:25 | java.io.FileNotFoundException: neo4j-rest-db/lucene-fulltext/lucene.log.active (No such file or directory)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.open(Native Method)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:212)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:98)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1358)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:709)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.xaframework.XaContainer.close(XaContainer.java:102)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.index.lucene.LuceneDataSource.close(LuceneDataSource.java:207)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterAllDataSources(XaDataSourceManager.java:139)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.impl.transaction.TxModule.stop(TxModule.java:101)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.GraphDbInstance.shutdown(GraphDbInstance.java:271)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.shutdown(EmbeddedGraphDbImpl.java:260)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.shutdown(EmbeddedGraphDatabase.java:118)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownGraphDatabase(DatabaseLocator.java:273)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.domain.DatabaseLocator.shutdownAndBlockGraphDatabase(DatabaseLocator.java:288)
+INFO   | jvm 1    | 2010/10/20 16:01:25 | 	at org.neo4j.rest.Main$1.run(Main.java:35)
+STATUS | wrapper  | 2010/10/20 16:01:25 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:02:04 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:02:05 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:02:05 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:02:05 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:02:05 | 
+INFO   | jvm 1    | 2010/10/20 16:02:05 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:02:05 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:02:05 | 2010-10-20 16:02:05.622:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:02:05 | 2010-10-20 16:02:05.677:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:02:05 | 2010-10-20 16:02:05.747:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:02:05 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 16:02:14 | 20/10/2010 16:02:14 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 16:02:14 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 16:02:14 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 16:02:14 | 20/10/2010 16:02:14 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:02:14 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 16:02:14 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 16:02:14 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 16:02:14 | 20/10/2010 16:02:14 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:02:14 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 16:02:14 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:02:14 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:02:14 | 20/10/2010 16:02:14 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 16:02:14 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 16:10:50 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:10:51 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:10:51 | 2010-10-20 16:10:51.338:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 16:10:51 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:37:59 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:37:59 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:37:59 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:37:59 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:37:59 | 
+INFO   | jvm 1    | 2010/10/20 16:37:59 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:37:59 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:37:59 | 2010-10-20 16:37:59.868:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:37:59 | 2010-10-20 16:37:59.920:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 2010-10-20 16:37:59.979:WARN::failed SocketConnector@0.0.0.0:9999: java.net.BindException: Address already in use
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 2010-10-20 16:37:59.979:WARN::failed Server@121ab80: java.net.BindException: Address already in use
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 
+INFO   | jvm 1    | 2010/10/20 16:38:00 | WrapperSimpleApp: Encountered an error running main: java.lang.RuntimeException: java.net.BindException: Address already in use
+INFO   | jvm 1    | 2010/10/20 16:38:00 | java.lang.RuntimeException: java.net.BindException: Address already in use
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.neo4j.rest.Jetty6BasedWebServer.startServer(Jetty6BasedWebServer.java:43)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.neo4j.rest.Main.main(Main.java:20)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.lang.Thread.run(Thread.java:619)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | Caused by: java.net.BindException: Address already in use
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.net.PlainSocketImpl.socketBind(Native Method)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:365)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.net.ServerSocket.bind(ServerSocket.java:319)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.net.ServerSocket.<init>(ServerSocket.java:185)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at java.net.ServerSocket.<init>(ServerSocket.java:141)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.jetty.bio.SocketConnector.newServerSocket(SocketConnector.java:80)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.jetty.bio.SocketConnector.open(SocketConnector.java:73)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.jetty.AbstractConnector.doStart(AbstractConnector.java:283)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.jetty.bio.SocketConnector.doStart(SocketConnector.java:147)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.jetty.Server.doStart(Server.java:235)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	at org.neo4j.rest.Jetty6BasedWebServer.startServer(Jetty6BasedWebServer.java:39)
+INFO   | jvm 1    | 2010/10/20 16:38:00 | 	... 7 more
+STATUS | wrapper  | 2010/10/20 16:38:01 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:45:34 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:45:34 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:45:34 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:45:34 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:45:34 | 
+INFO   | jvm 1    | 2010/10/20 16:45:35 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:45:35 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:45:35 | 2010-10-20 16:45:35.099:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:45:35 | 2010-10-20 16:45:35.151:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:45:35 | 2010-10-20 16:45:35.213:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:45:35 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 16:46:16 | 20/10/2010 16:46:16 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 16:46:16 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 16:46:16 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 16:46:16 | 20/10/2010 16:46:16 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:46:16 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 16:46:16 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 16:46:16 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 16:46:16 | 20/10/2010 16:46:16 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:46:16 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 16:46:16 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:46:16 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:46:16 | 20/10/2010 16:46:16 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 16:46:16 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 16:46:27 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:46:28 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:46:28 | 2010-10-20 16:46:28.071:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 16:46:28 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:49:33 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:49:34 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:49:34 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:49:34 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:49:34 | 
+INFO   | jvm 1    | 2010/10/20 16:49:34 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:49:34 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:49:34 | 2010-10-20 16:49:34.647:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:49:34 | 2010-10-20 16:49:34.701:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:49:34 | 2010-10-20 16:49:34.769:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:49:34 | Press Ctrl-C to kill the server
+STATUS | wrapper  | 2010/10/20 16:49:49 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:49:50 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:49:50 | 2010-10-20 16:49:50.635:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 16:49:50 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:51:26 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:51:27 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:51:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:51:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:51:27 | 
+INFO   | jvm 1    | 2010/10/20 16:51:27 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:51:27 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:51:27 | 2010-10-20 16:51:27.684:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:51:27 | 2010-10-20 16:51:27.755:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:51:27 | 2010-10-20 16:51:27.822:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:51:27 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 16:51:43 | 20/10/2010 16:51:43 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 16:51:43 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 16:51:43 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 16:51:44 | 20/10/2010 16:51:44 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:51:44 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 16:51:44 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 16:51:44 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 16:51:44 | 20/10/2010 16:51:44 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:51:44 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 16:51:44 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:51:44 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:51:44 | 20/10/2010 16:51:44 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 16:51:44 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 16:53:00 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:53:01 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:53:01 | 2010-10-20 16:53:01.242:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 16:53:01 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:53:21 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:53:21 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:53:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:53:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:53:22 | 
+INFO   | jvm 1    | 2010/10/20 16:53:22 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:53:22 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:53:22 | 2010-10-20 16:53:22.398:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:53:22 | 2010-10-20 16:53:22.475:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:53:22 | 2010-10-20 16:53:22.539:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:53:22 | Press Ctrl-C to kill the server
+STATUS | wrapper  | 2010/10/20 16:53:50 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:53:51 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:53:51 | 2010-10-20 16:53:51.470:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 16:53:51 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:57:32 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:57:32 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:57:32 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:57:32 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:57:32 | 
+INFO   | jvm 1    | 2010/10/20 16:57:32 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:57:32 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:57:32 | 2010-10-20 16:57:32.854:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:57:32 | 2010-10-20 16:57:32.909:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:57:33 | 2010-10-20 16:57:32.968:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:57:33 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 16:57:46 | 20/10/2010 16:57:46 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/20 16:57:46 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/20 16:57:46 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/20 16:57:46 | 20/10/2010 16:57:46 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:57:46 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/20 16:57:46 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/20 16:57:46 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/20 16:57:46 | 20/10/2010 16:57:46 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/20 16:57:46 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/20 16:57:46 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:57:46 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/20 16:57:46 | 20/10/2010 16:57:46 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/20 16:57:46 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/20 16:58:42 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 16:58:42 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 16:58:42 | 2010-10-20 16:58:42.823:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 16:58:43 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 16:59:21 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 16:59:22 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 16:59:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 16:59:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 16:59:22 | 
+INFO   | jvm 1    | 2010/10/20 16:59:22 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 16:59:22 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 16:59:22 | 2010-10-20 16:59:22.657:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 16:59:22 | 2010-10-20 16:59:22.727:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 16:59:22 | 2010-10-20 16:59:22.785:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 16:59:22 | Press Ctrl-C to kill the server
+STATUS | wrapper  | 2010/10/20 17:08:50 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 17:08:51 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 17:08:51 | 2010-10-20 17:08:51.102:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 17:08:51 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 17:10:34 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 17:10:34 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 17:10:35 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 17:10:35 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 17:10:35 | 
+INFO   | jvm 1    | 2010/10/20 17:10:35 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 17:10:35 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 17:10:35 | 2010-10-20 17:10:35.359:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 17:10:35 | 2010-10-20 17:10:35.412:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 17:10:35 | 2010-10-20 17:10:35.472:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 17:10:35 | Press Ctrl-C to kill the server
+STATUS | wrapper  | 2010/10/20 17:13:24 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 17:13:25 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 17:13:25 | 2010-10-20 17:13:25.248:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 17:13:25 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 17:13:45 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 17:13:45 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 17:13:45 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 17:13:45 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 17:13:45 | 
+INFO   | jvm 1    | 2010/10/20 17:13:45 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 17:13:45 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 17:13:45 | 2010-10-20 17:13:45.826:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 17:13:45 | 2010-10-20 17:13:45.878:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 17:13:45 | 2010-10-20 17:13:45.936:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 17:13:45 | Press Ctrl-C to kill the server
+STATUS | wrapper  | 2010/10/20 17:19:16 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 17:19:17 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 17:19:17 | 2010-10-20 17:19:17.014:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 17:19:17 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 17:28:55 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 17:28:55 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 17:28:55 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 17:28:55 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 17:28:55 | 
+INFO   | jvm 1    | 2010/10/20 17:28:55 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 17:28:55 | Running server at [http://localhost:9999/]
+STATUS | wrapper  | 2010/10/20 17:28:55 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 17:28:55 | 2010-10-20 17:28:55.782:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 17:28:55 | 2010-10-20 17:28:55.853:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 17:28:55 | 2010-10-20 17:28:55.911:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 17:28:55 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 17:28:56 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 17:28:56 | 2010-10-20 17:28:56.665:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 17:28:56 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 17:28:56 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 17:28:57 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 17:28:57 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 17:28:57 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 17:28:57 | 
+INFO   | jvm 1    | 2010/10/20 17:28:57 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 17:28:57 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 17:28:57 | 2010-10-20 17:28:57.618:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+STATUS | wrapper  | 2010/10/20 17:28:57 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 17:28:57 | 2010-10-20 17:28:57.689:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 17:28:57 | 2010-10-20 17:28:57.747:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 17:28:57 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 17:28:58 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 17:28:58 | 2010-10-20 17:28:58.510:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 17:28:58 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 17:28:58 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 17:28:59 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 17:28:59 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 17:28:59 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 17:28:59 | 
+STATUS | wrapper  | 2010/10/20 17:28:59 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 17:28:59 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 17:28:59 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 17:28:59 | 2010-10-20 17:28:59.639:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 17:28:59 | 2010-10-20 17:28:59.695:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 17:28:59 | 2010-10-20 17:28:59.755:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 17:28:59 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 17:29:00 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 17:29:00 | 2010-10-20 17:29:00.509:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 17:29:00 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 18:07:47 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 18:07:48 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 18:07:48 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 18:07:48 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 18:07:48 | 
+STATUS | wrapper  | 2010/10/20 18:07:48 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 18:07:48 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 18:07:48 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 18:07:48 | 2010-10-20 18:07:48.599:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 18:07:48 | 2010-10-20 18:07:48.654:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 18:07:48 | 2010-10-20 18:07:48.714:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 18:07:48 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 18:07:49 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 18:07:49 | 2010-10-20 18:07:49.484:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 18:07:49 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 18:07:49 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 18:07:50 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 18:07:50 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 18:07:50 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 18:07:50 | 
+STATUS | wrapper  | 2010/10/20 18:07:50 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 18:07:50 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 18:07:50 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 18:07:50 | 2010-10-20 18:07:50.642:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 18:07:50 | 2010-10-20 18:07:50.696:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 18:07:50 | 2010-10-20 18:07:50.767:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 18:07:50 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 18:07:51 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 18:07:51 | 2010-10-20 18:07:51.522:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 18:07:51 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 18:07:51 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 18:07:52 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 18:07:52 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 18:07:52 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 18:07:52 | 
+STATUS | wrapper  | 2010/10/20 18:07:52 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 18:07:52 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 18:07:52 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 18:07:52 | 2010-10-20 18:07:52.509:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 18:07:52 | 2010-10-20 18:07:52.563:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 18:07:52 | 2010-10-20 18:07:52.637:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 18:07:52 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 18:07:53 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 18:07:53 | 2010-10-20 18:07:53.392:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 18:07:53 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 18:12:10 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 18:12:11 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 18:12:11 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 18:12:11 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 18:12:11 | 
+INFO   | jvm 1    | 2010/10/20 18:12:11 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 18:12:11 | Running server at [http://localhost:9999/]
+STATUS | wrapper  | 2010/10/20 18:12:11 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 18:12:11 | 2010-10-20 18:12:11.622:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 18:12:11 | 2010-10-20 18:12:11.692:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 18:12:11 | 2010-10-20 18:12:11.771:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 18:12:11 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 18:12:12 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 18:12:12 | 2010-10-20 18:12:12.525:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 18:12:12 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 18:12:12 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 18:12:13 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 18:12:13 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 18:12:13 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 18:12:13 | 
+INFO   | jvm 1    | 2010/10/20 18:12:13 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 18:12:13 | Running server at [http://localhost:9999/]
+STATUS | wrapper  | 2010/10/20 18:12:13 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 18:12:13 | 2010-10-20 18:12:13.576:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 18:12:13 | 2010-10-20 18:12:13.658:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 18:12:13 | 2010-10-20 18:12:13.727:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 18:12:13 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 18:12:14 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 18:12:14 | 2010-10-20 18:12:14.493:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 18:12:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/20 18:12:15 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/20 18:12:16 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/20 18:12:16 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/20 18:12:16 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/20 18:12:16 | 
+STATUS | wrapper  | 2010/10/20 18:12:16 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/20 18:12:16 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/20 18:12:16 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/20 18:12:16 | 2010-10-20 18:12:16.584:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/20 18:12:16 | 2010-10-20 18:12:16.640:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/20 18:12:16 | 2010-10-20 18:12:16.700:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/20 18:12:16 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/20 18:12:17 | Shutting down the server
+INFO   | jvm 1    | 2010/10/20 18:12:17 | 2010-10-20 18:12:17.471:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/20 18:12:17 | <-- Wrapper Stopped
