@@ -760,3 +760,770 @@ INFO   | jvm 1    | 2010/10/20 18:12:16 | Press Ctrl-C to kill the server
 INFO   | jvm 1    | 2010/10/20 18:12:17 | Shutting down the server
 INFO   | jvm 1    | 2010/10/20 18:12:17 | 2010-10-20 18:12:17.471:INFO::Stopped SocketConnector@0.0.0.0:9999
 STATUS | wrapper  | 2010/10/20 18:12:17 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:26:14 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:26:15 | Launching a JVM...
+STATUS | wrapper  | 2010/10/21 10:26:15 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:26:15 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:26:15 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:26:15 | 
+STATUS | wrapper  | 2010/10/21 10:26:16 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:26:18 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:26:18 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:26:18 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:26:18 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:26:18 | 
+STATUS | wrapper  | 2010/10/21 10:26:18 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:26:18 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:26:18 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:26:18 | 2010-10-21 10:26:18.874:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:26:19 | 2010-10-21 10:26:19.153:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:26:19 | 2010-10-21 10:26:19.411:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:26:19 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:26:20 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:26:20 | 2010-10-21 10:26:20.175:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:26:20 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:26:21 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:26:21 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:26:21 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:26:21 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:26:21 | 
+STATUS | wrapper  | 2010/10/21 10:26:21 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:26:21 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:26:21 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:26:22 | 2010-10-21 10:26:22.020:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:26:22 | 2010-10-21 10:26:22.122:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:26:22 | 2010-10-21 10:26:22.183:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:26:22 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:26:22 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:26:22 | 2010-10-21 10:26:22.966:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:26:23 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:33:28 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:33:28 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:33:28 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:33:28 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:33:28 | 
+INFO   | jvm 1    | 2010/10/21 10:33:28 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:33:28 | Running server at [http://localhost:9999/]
+STATUS | wrapper  | 2010/10/21 10:33:28 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:33:28 | 2010-10-21 10:33:28.850:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:33:28 | 2010-10-21 10:33:28.938:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:33:29 | 2010-10-21 10:33:29.001:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:33:29 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:33:29 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:33:29 | 2010-10-21 10:33:29.755:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:33:29 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:34:41 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:34:41 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:34:41 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:34:41 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:34:41 | 
+INFO   | jvm 1    | 2010/10/21 10:34:41 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:34:41 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:34:41 | 2010-10-21 10:34:41.808:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:34:41 | 2010-10-21 10:34:41.879:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:34:41 | 2010-10-21 10:34:41.937:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:34:41 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:34:55 | 21/10/2010 10:34:55 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:34:55 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:34:55 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:34:55 | 21/10/2010 10:34:55 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:34:55 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:34:55 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:34:55 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:34:55 | 21/10/2010 10:34:55 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:34:55 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:34:55 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:34:55 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:34:56 | 21/10/2010 10:34:56 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:34:56 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:36:30 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:36:30 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:36:30 | 2010-10-21 10:36:30.826:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:36:31 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:39:50 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:39:51 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:39:51 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:39:51 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:39:51 | 
+INFO   | jvm 1    | 2010/10/21 10:39:51 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:39:51 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:39:51 | 2010-10-21 10:39:51.620:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:39:51 | 2010-10-21 10:39:51.685:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:39:51 | 2010-10-21 10:39:51.753:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:39:51 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:40:16 | 21/10/2010 10:40:16 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:40:16 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:40:16 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:40:16 | 21/10/2010 10:40:16 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:40:16 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:40:16 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:40:16 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:40:16 | 21/10/2010 10:40:16 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:40:16 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:40:16 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:40:16 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:40:16 | 21/10/2010 10:40:16 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:40:16 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:41:09 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:41:10 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:41:10 | 2010-10-21 10:41:09.982:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:41:10 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:49:56 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:49:56 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:49:56 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:49:56 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:49:56 | 
+INFO   | jvm 1    | 2010/10/21 10:49:56 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:49:56 | Running server at [http://localhost:9999/]
+STATUS | wrapper  | 2010/10/21 10:49:56 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:49:57 | 2010-10-21 10:49:56.985:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:49:57 | 2010-10-21 10:49:57.077:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:49:57 | 2010-10-21 10:49:57.136:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:49:57 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:49:57 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:49:57 | 2010-10-21 10:49:57.900:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:49:57 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:51:01 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:51:01 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:51:02 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:51:02 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:51:02 | 
+INFO   | jvm 1    | 2010/10/21 10:51:02 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:51:02 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:51:02 | 2010-10-21 10:51:02.189:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:51:02 | 2010-10-21 10:51:02.269:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:51:02 | 2010-10-21 10:51:02.327:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:51:02 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:51:03 | 21/10/2010 10:51:03 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:51:03 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:51:03 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:51:03 | 21/10/2010 10:51:03 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:51:03 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:51:03 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:51:03 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:51:03 | 21/10/2010 10:51:03 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:51:03 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:51:03 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:51:03 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:51:03 | 21/10/2010 10:51:03 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:51:03 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:51:06 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:51:06 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:51:06 | 2010-10-21 10:51:06.875:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:51:07 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:52:49 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:52:49 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:52:49 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:52:49 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:52:49 | 
+INFO   | jvm 1    | 2010/10/21 10:52:49 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:52:49 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:52:49 | 2010-10-21 10:52:49.866:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:52:49 | 2010-10-21 10:52:49.941:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:52:50 | 2010-10-21 10:52:50.003:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:52:50 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:52:53 | 21/10/2010 10:52:53 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:52:53 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:52:53 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:52:53 | 21/10/2010 10:52:53 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:52:53 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:52:53 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:52:53 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:52:53 | 21/10/2010 10:52:53 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:52:53 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:52:53 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:52:53 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:52:53 | 21/10/2010 10:52:53 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:52:53 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:56:00 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:56:01 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:56:01 | 2010-10-21 10:56:00.945:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:56:01 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:56:19 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:56:19 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:56:19 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:56:19 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:56:19 | 
+INFO   | jvm 1    | 2010/10/21 10:56:19 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:56:19 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:56:19 | 2010-10-21 10:56:19.735:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:56:19 | 2010-10-21 10:56:19.811:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:56:19 | 2010-10-21 10:56:19.887:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:56:19 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:56:20 | 21/10/2010 10:56:20 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:56:20 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:56:20 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:56:20 | 21/10/2010 10:56:20 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:56:20 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:56:20 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:56:20 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:56:20 | 21/10/2010 10:56:20 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:56:20 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:56:20 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:56:20 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:56:21 | 21/10/2010 10:56:21 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:56:21 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:56:23 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:56:24 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:56:24 | 2010-10-21 10:56:24.147:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:56:24 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:58:08 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:58:08 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:58:09 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:58:09 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:58:09 | 
+INFO   | jvm 1    | 2010/10/21 10:58:09 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:58:09 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:58:09 | 2010-10-21 10:58:09.534:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:58:09 | 2010-10-21 10:58:09.590:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:58:09 | 2010-10-21 10:58:09.652:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:58:09 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:58:10 | 21/10/2010 10:58:10 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:58:10 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:58:10 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:58:10 | 21/10/2010 10:58:10 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:58:10 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:58:10 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:58:10 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:58:10 | 21/10/2010 10:58:10 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:58:10 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:58:10 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:58:10 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:58:10 | 21/10/2010 10:58:10 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:58:10 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:58:13 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:58:13 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:58:13 | 2010-10-21 10:58:13.824:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:58:14 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:58:58 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:58:58 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:58:59 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:58:59 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:58:59 | 
+INFO   | jvm 1    | 2010/10/21 10:58:59 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:58:59 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:58:59 | 2010-10-21 10:58:59.327:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:58:59 | 2010-10-21 10:58:59.387:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:58:59 | 2010-10-21 10:58:59.451:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:58:59 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:59:00 | 21/10/2010 10:59:00 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:59:00 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:59:00 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:59:00 | 21/10/2010 10:59:00 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:59:00 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:59:00 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:59:00 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:59:00 | 21/10/2010 10:59:00 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:59:00 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:59:00 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:59:00 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:59:00 | 21/10/2010 10:59:00 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:59:00 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 10:59:04 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 10:59:05 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 10:59:05 | 2010-10-21 10:59:05.384:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 10:59:06 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 10:59:28 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 10:59:28 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 10:59:29 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 10:59:29 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 10:59:29 | 
+INFO   | jvm 1    | 2010/10/21 10:59:29 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 10:59:29 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 10:59:29 | 2010-10-21 10:59:29.296:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 10:59:29 | 2010-10-21 10:59:29.351:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 10:59:29 | 2010-10-21 10:59:29.416:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 10:59:29 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 10:59:35 | 21/10/2010 10:59:35 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 10:59:35 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 10:59:35 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 10:59:35 | 21/10/2010 10:59:35 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:59:35 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 10:59:35 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 10:59:35 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 10:59:35 | 21/10/2010 10:59:35 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 10:59:35 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 10:59:35 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:59:35 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 10:59:35 | 21/10/2010 10:59:35 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 10:59:35 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:03:47 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:03:47 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:03:47 | 2010-10-21 11:03:47.828:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:03:48 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:04:29 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:04:29 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:04:29 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:04:29 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:04:29 | 
+INFO   | jvm 1    | 2010/10/21 11:04:29 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:04:29 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:04:29 | 2010-10-21 11:04:29.954:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:04:30 | 2010-10-21 11:04:30.014:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:04:30 | 2010-10-21 11:04:30.086:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:04:30 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:04:30 | 21/10/2010 11:04:30 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:04:30 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:04:30 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:04:31 | 21/10/2010 11:04:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:04:31 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:04:31 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:04:31 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:04:31 | 21/10/2010 11:04:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:04:31 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:04:31 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:04:31 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:04:31 | 21/10/2010 11:04:31 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:04:31 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:04:35 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:04:36 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:04:36 | 2010-10-21 11:04:36.104:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:04:36 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:05:08 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:05:08 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:05:09 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:05:09 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:05:09 | 
+INFO   | jvm 1    | 2010/10/21 11:05:09 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:05:09 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:05:09 | 2010-10-21 11:05:09.351:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:05:09 | 2010-10-21 11:05:09.431:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:05:09 | 2010-10-21 11:05:09.492:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:05:09 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:05:10 | 21/10/2010 11:05:10 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:05:10 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:05:10 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:05:10 | 21/10/2010 11:05:10 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:05:10 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:05:10 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:05:10 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:05:10 | 21/10/2010 11:05:10 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:05:10 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:05:10 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:05:10 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:05:10 | 21/10/2010 11:05:10 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:05:10 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:05:26 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:05:27 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:05:27 | 2010-10-21 11:05:27.023:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:05:27 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:09:55 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:09:55 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:09:56 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:09:56 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:09:56 | 
+INFO   | jvm 1    | 2010/10/21 11:09:56 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:09:56 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:09:56 | 2010-10-21 11:09:56.441:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:09:56 | 2010-10-21 11:09:56.497:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:09:56 | 2010-10-21 11:09:56.559:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:09:56 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:09:57 | 21/10/2010 11:09:57 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:09:57 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:09:57 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:09:57 | 21/10/2010 11:09:57 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:09:57 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:09:57 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:09:57 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:09:57 | 21/10/2010 11:09:57 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:09:57 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:09:57 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:09:57 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:09:57 | 21/10/2010 11:09:57 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:09:57 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:10:01 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:10:02 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:10:02 | 2010-10-21 11:10:02.361:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:10:03 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:12:47 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:12:47 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:12:48 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:12:48 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:12:48 | 
+INFO   | jvm 1    | 2010/10/21 11:12:48 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:12:48 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:12:48 | 2010-10-21 11:12:48.359:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:12:48 | 2010-10-21 11:12:48.421:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:12:48 | 2010-10-21 11:12:48.488:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:12:48 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:12:49 | 21/10/2010 11:12:49 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:12:49 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:12:49 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:12:49 | 21/10/2010 11:12:49 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:12:49 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:12:49 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:12:49 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:12:49 | 21/10/2010 11:12:49 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:12:49 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:12:49 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:12:49 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:12:49 | 21/10/2010 11:12:49 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:12:49 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:12:53 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:12:54 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:12:54 | 2010-10-21 11:12:54.737:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:12:55 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:14:34 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:14:34 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:14:34 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:14:34 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:14:34 | 
+INFO   | jvm 1    | 2010/10/21 11:14:34 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:14:34 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:14:34 | 2010-10-21 11:14:34.805:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:14:34 | 2010-10-21 11:14:34.916:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:14:35 | 2010-10-21 11:14:35.048:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:14:35 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:14:35 | 21/10/2010 11:14:35 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:14:35 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:14:35 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:14:35 | 21/10/2010 11:14:35 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:14:35 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:14:35 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:14:35 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:14:35 | 21/10/2010 11:14:35 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:14:35 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:14:35 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:14:35 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:14:36 | 21/10/2010 11:14:36 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:14:36 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:14:40 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:14:40 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:14:40 | 2010-10-21 11:14:40.805:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:14:41 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:18:26 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:18:26 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:18:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:18:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:18:27 | 
+INFO   | jvm 1    | 2010/10/21 11:18:27 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:18:27 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:18:27 | 2010-10-21 11:18:27.493:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:18:27 | 2010-10-21 11:18:27.569:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:18:27 | 2010-10-21 11:18:27.633:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:18:27 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:19:31 | 21/10/2010 11:19:31 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:19:31 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:19:31 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:19:31 | 21/10/2010 11:19:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:19:31 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:19:31 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:19:31 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:19:31 | 21/10/2010 11:19:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:19:31 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:19:31 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:19:31 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:19:31 | 21/10/2010 11:19:31 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:19:31 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:49:15 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:49:16 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:49:16 | 2010-10-21 11:49:16.393:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:49:16 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:57:56 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:57:56 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:57:56 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:57:56 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:57:56 | 
+INFO   | jvm 1    | 2010/10/21 11:57:57 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:57:57 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:57:57 | 2010-10-21 11:57:57.096:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:57:57 | 2010-10-21 11:57:57.152:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:57:57 | 2010-10-21 11:57:57.228:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:57:57 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:57:58 | 21/10/2010 11:57:58 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:57:58 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:57:58 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:57:58 | 21/10/2010 11:57:58 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:57:58 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:57:58 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:57:58 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:57:58 | 21/10/2010 11:57:58 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:57:58 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:57:58 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:57:58 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:57:58 | 21/10/2010 11:57:58 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:57:58 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:58:02 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:58:03 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:58:03 | 2010-10-21 11:58:03.116:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:58:03 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:58:04 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:58:04 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:58:05 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:58:05 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:58:05 | 
+INFO   | jvm 1    | 2010/10/21 11:58:05 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:58:05 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:58:05 | 2010-10-21 11:58:05.471:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:58:05 | 2010-10-21 11:58:05.530:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:58:05 | 2010-10-21 11:58:05.598:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:58:05 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:58:06 | 21/10/2010 11:58:06 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:58:06 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:58:06 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:58:06 | 21/10/2010 11:58:06 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:58:06 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:58:06 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:58:06 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:58:06 | 21/10/2010 11:58:06 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:58:06 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:58:06 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:58:06 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:58:06 | 21/10/2010 11:58:06 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:58:06 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:58:09 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:58:10 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:58:10 | 2010-10-21 11:58:10.181:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:58:10 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 11:58:11 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 11:58:11 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 11:58:12 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 11:58:12 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 11:58:12 | 
+INFO   | jvm 1    | 2010/10/21 11:58:12 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 11:58:12 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 11:58:12 | 2010-10-21 11:58:12.427:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 11:58:12 | 2010-10-21 11:58:12.498:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 11:58:12 | 2010-10-21 11:58:12.566:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 11:58:12 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 11:58:13 | 21/10/2010 11:58:13 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 11:58:13 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 11:58:13 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 11:58:13 | 21/10/2010 11:58:13 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:58:13 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 11:58:13 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 11:58:13 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 11:58:13 | 21/10/2010 11:58:13 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 11:58:13 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 11:58:13 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:58:13 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 11:58:13 | 21/10/2010 11:58:13 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 11:58:13 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 11:58:16 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 11:58:16 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 11:58:16 | 2010-10-21 11:58:16.898:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 11:58:17 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:36:14 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:36:15 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:36:15 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:36:15 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:36:15 | 
+INFO   | jvm 1    | 2010/10/21 12:36:15 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:36:15 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:36:15 | 2010-10-21 12:36:15.677:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:36:15 | 2010-10-21 12:36:15.747:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:36:15 | 2010-10-21 12:36:15.811:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:36:15 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:36:16 | 21/10/2010 12:36:16 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:36:16 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:36:16 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:36:16 | 21/10/2010 12:36:16 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:16 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:16 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:36:16 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:36:16 | 21/10/2010 12:36:16 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:16 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:16 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:16 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:16 | 21/10/2010 12:36:16 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:36:16 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:36:21 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:36:22 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:36:22 | 2010-10-21 12:36:22.030:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:36:22 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:36:23 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:36:23 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:36:24 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:36:24 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:36:24 | 
+INFO   | jvm 1    | 2010/10/21 12:36:24 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:36:24 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:36:24 | 2010-10-21 12:36:24.544:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:36:24 | 2010-10-21 12:36:24.599:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:36:24 | 2010-10-21 12:36:24.678:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:36:24 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:36:25 | 21/10/2010 12:36:25 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:36:25 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:36:25 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:36:25 | 21/10/2010 12:36:25 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:25 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:25 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:36:25 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:36:25 | 21/10/2010 12:36:25 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:25 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:25 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:25 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:25 | 21/10/2010 12:36:25 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:36:25 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:36:28 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:36:29 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:36:29 | 2010-10-21 12:36:29.117:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:36:29 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:36:30 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:36:30 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:36:31 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:36:31 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:36:31 | 
+INFO   | jvm 1    | 2010/10/21 12:36:31 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:36:31 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:36:31 | 2010-10-21 12:36:31.499:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:36:31 | 2010-10-21 12:36:31.568:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:36:31 | 2010-10-21 12:36:31.646:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:36:31 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:36:32 | 21/10/2010 12:36:32 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:36:32 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:36:32 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:36:32 | 21/10/2010 12:36:32 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:32 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:32 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:36:32 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:36:32 | 21/10/2010 12:36:32 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:32 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:32 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:32 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:32 | 21/10/2010 12:36:32 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:36:32 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:36:35 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:36:35 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:36:35 | 2010-10-21 12:36:35.843:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:36:36 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:36:37 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:36:37 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:36:37 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:36:37 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:36:37 | 
+INFO   | jvm 1    | 2010/10/21 12:36:38 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:36:38 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:36:38 | 2010-10-21 12:36:38.080:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:36:38 | 2010-10-21 12:36:38.135:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:36:38 | 2010-10-21 12:36:38.214:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:36:38 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:36:39 | 21/10/2010 12:36:39 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:36:39 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:36:39 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:36:39 | 21/10/2010 12:36:39 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:39 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:39 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:36:39 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:36:39 | 21/10/2010 12:36:39 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:36:39 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:36:39 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:39 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:36:39 | 21/10/2010 12:36:39 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:36:39 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:36:42 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:36:42 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:36:42 | 2010-10-21 12:36:42.788:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:36:43 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:38:13 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:38:13 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:38:13 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:38:13 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:38:13 | 
+INFO   | jvm 1    | 2010/10/21 12:38:14 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:38:14 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:38:14 | 2010-10-21 12:38:14.028:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:38:14 | 2010-10-21 12:38:14.082:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:38:14 | 2010-10-21 12:38:14.154:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:38:14 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:38:15 | 21/10/2010 12:38:14 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:38:15 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:38:15 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:38:15 | 21/10/2010 12:38:15 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:15 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:15 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:38:15 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:38:15 | 21/10/2010 12:38:15 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:15 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:15 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:15 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:15 | 21/10/2010 12:38:15 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:38:15 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:38:19 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:38:20 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:38:20 | 2010-10-21 12:38:19.954:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:38:20 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:38:21 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:38:21 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:38:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:38:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:38:22 | 
+INFO   | jvm 1    | 2010/10/21 12:38:22 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:38:22 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:38:22 | 2010-10-21 12:38:22.482:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:38:22 | 2010-10-21 12:38:22.535:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:38:22 | 2010-10-21 12:38:22.609:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:38:22 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:38:23 | 21/10/2010 12:38:23 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:38:23 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:38:23 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:38:23 | 21/10/2010 12:38:23 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:23 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:23 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:38:23 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:38:23 | 21/10/2010 12:38:23 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:23 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:23 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:23 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:23 | 21/10/2010 12:38:23 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:38:23 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:38:27 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:38:28 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:38:28 | 2010-10-21 12:38:28.259:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:38:29 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:38:29 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:38:29 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:38:30 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:38:30 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:38:30 | 
+INFO   | jvm 1    | 2010/10/21 12:38:30 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:38:30 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:38:30 | 2010-10-21 12:38:30.522:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:38:30 | 2010-10-21 12:38:30.573:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:38:30 | 2010-10-21 12:38:30.638:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:38:30 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:38:31 | 21/10/2010 12:38:31 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:38:31 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:38:31 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:38:31 | 21/10/2010 12:38:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:31 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:31 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:38:31 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:38:31 | 21/10/2010 12:38:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:31 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:31 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:31 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:31 | 21/10/2010 12:38:31 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:38:31 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:38:35 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:38:36 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:38:36 | 2010-10-21 12:38:36.607:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:38:37 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/21 12:38:38 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/21 12:38:38 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/21 12:38:38 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/21 12:38:38 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/21 12:38:38 | 
+INFO   | jvm 1    | 2010/10/21 12:38:38 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/21 12:38:38 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/21 12:38:38 | 2010-10-21 12:38:38.821:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/21 12:38:38 | 2010-10-21 12:38:38.899:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/21 12:38:38 | 2010-10-21 12:38:38.973:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/21 12:38:38 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/21 12:38:39 | 21/10/2010 12:38:39 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/21 12:38:39 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/21 12:38:39 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/21 12:38:39 | 21/10/2010 12:38:39 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:39 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:39 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/21 12:38:39 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/21 12:38:39 | 21/10/2010 12:38:39 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/21 12:38:39 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/21 12:38:39 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:39 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/21 12:38:40 | 21/10/2010 12:38:40 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/21 12:38:40 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/21 12:38:44 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/21 12:38:45 | Shutting down the server
+INFO   | jvm 1    | 2010/10/21 12:38:45 | 2010-10-21 12:38:45.236:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/21 12:38:45 | <-- Wrapper Stopped
