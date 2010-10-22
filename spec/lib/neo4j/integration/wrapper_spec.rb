@@ -36,9 +36,17 @@ describe Neo4j::Wrapper do
     no.data.tipo.should eql 'comentario'
   end
   
+  it "deveria criar um nó e adicionar no indice para ser buscado" do
+    pending    
+  end
+  
+  it "deveria buscar por um nó pelo indice" do
+    pending    
+  end      
+  
   it "deveria recuperar um nó por id" do
     no = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    no_recuperado = @server.find_node no.self
+    no_recuperado = @server.get_node 1
     no.data.descricao.should eql 'O ruby conf foi muito bom'
     no.data.tipo.should eql 'comentario'
   end  
@@ -46,7 +54,7 @@ describe Neo4j::Wrapper do
   it "deveria criar um relacionamento" do
     no_origem = @server.create_node :nome => 'Alberto', :tipo => 'usuario'
     no_destino = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    relation = @server.create_relation no_origem['create relationship'] ,no_destino.self,'comentario'
+    relation = @server.create_relation 1 , 2, 'comentario'
     relation.type.should eql 'comentario'
     relation.start.should eql no_origem.self
     relation.end.should eql no_destino.self
@@ -55,20 +63,20 @@ describe Neo4j::Wrapper do
   it "deveria criar um relacionamento com propriedades" do      
     no_origem = @server.create_node :nome => 'Alberto', :tipo => 'usuario'
     no_destino = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    relation = @server.create_relation no_origem['create relationship'] ,no_destino.self,'comentario',:evento => 1
+    relation = @server.create_relation 1, 2, 'comentario', :evento => 1
     relation.type.should eql 'comentario'
     relation.data.evento.should eql 1
     relation.start.should eql no_origem.self
     relation.end.should eql no_destino.self            
   end
   
-  it "deveria buscar os nos de uma determinada propriedade" do      
+  it "deveria recuperar um no baseado em alguma propriedade" do      
     no_origem = @server.create_node :nome => 'Alberto', :tipo => 'usuario'
     no_destino = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    relation = @server.create_relation no_origem['create relationship'] ,no_destino.self,'comentario',:evento => 1
-    relation.type.should eql 'comentario'
-    relation.data.evento.should eql 1
-    relation.start.should eql no_origem.self
-    relation.end.should eql no_destino.self            
+    no_encontrado = @server.find_by_properties :key => 'tipo', :value => 'comentario'
+    no_encontrado.data.tipo.should eql 'comentario'
   end  
+  
+  
+    
 end

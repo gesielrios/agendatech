@@ -5,17 +5,21 @@ class Neo4j::Wrapper
   end
   
   
-  def create_node(properties={})
+  def create_node(false,properties={})
     Restfulie.at("#{@host}/node").accepts('application/json').as('application/json').post!(properties)
   end
   
-  def create_relation(relation_uri,to_uri,type,properties={})
-    Restfulie.at(relation_uri).accepts('application/json').as('application/json').post!(
-    :to => to_uri,:type => type,:data => properties)
+  def index(node_id,key,value)
+    # descobrir como indexa
+  end  
+  
+  def create_relation(from_id,to_id,type,properties={})
+    Restfulie.at("#{@host}/node/#{from_id}/relationships").accepts('application/json').as('application/json').post!(
+    :to => "#{@host}/node/#{to_id}",:type => type,:data => properties)
   end
   
-  def find_node(uri)  
-    Restfulie.at(uri).accepts('application/json').get!
+  def get_node(id)
+    Restfulie.at("#{@host}/node/#{id}").accepts('application/json').get!
   end
   
 end
