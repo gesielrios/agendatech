@@ -1891,3 +1891,547 @@ STATUS | wrapper  | 2010/10/22 11:34:20 | TERM trapped.  Shutting down.
 INFO   | jvm 1    | 2010/10/22 11:34:21 | Shutting down the server
 INFO   | jvm 1    | 2010/10/22 11:34:21 | 2010-10-22 11:34:21.217:INFO::Stopped SocketConnector@0.0.0.0:9999
 STATUS | wrapper  | 2010/10/22 11:34:21 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:16:54 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:16:54 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:16:55 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:16:55 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:16:55 | 
+INFO   | jvm 1    | 2010/10/28 11:16:55 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:16:55 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:16:55 | 2010-10-28 11:16:55.232:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:16:55 | 2010-10-28 11:16:55.485:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:16:55 | 2010-10-28 11:16:55.782:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:16:55 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:16:56 | 28/10/2010 11:16:56 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:16:56 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:16:56 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:16:57 | 28/10/2010 11:16:57 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:16:57 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:16:57 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:16:57 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:16:57 | 28/10/2010 11:16:57 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:16:57 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:16:57 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:16:57 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:16:57 | 28/10/2010 11:16:57 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:16:57 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:02 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:03 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:03 | 2010-10-28 11:17:03.260:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:04 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:17:04 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:17:05 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:17:05 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:17:05 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:17:05 | 
+INFO   | jvm 1    | 2010/10/28 11:17:05 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:17:05 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:17:05 | 2010-10-28 11:17:05.648:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:17:05 | 2010-10-28 11:17:05.704:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:17:05 | 2010-10-28 11:17:05.768:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:17:05 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:17:06 | 28/10/2010 11:17:06 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:17:06 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:17:06 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:17:06 | 28/10/2010 11:17:06 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:06 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:06 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:17:06 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:17:06 | 28/10/2010 11:17:06 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:06 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:06 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:06 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:06 | 28/10/2010 11:17:06 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:17:06 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:10 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:11 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:11 | 2010-10-28 11:17:11.599:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:12 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:17:13 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:17:13 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:17:13 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:17:13 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:17:13 | 
+INFO   | jvm 1    | 2010/10/28 11:17:13 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:17:13 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:17:13 | 2010-10-28 11:17:13.790:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:17:13 | 2010-10-28 11:17:13.843:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:17:13 | 2010-10-28 11:17:13.901:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:17:13 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:17:14 | 28/10/2010 11:17:14 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:17:14 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:17:14 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:17:14 | 28/10/2010 11:17:14 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:14 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:14 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:17:14 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:17:14 | 28/10/2010 11:17:14 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:14 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:14 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:14 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:15 | 28/10/2010 11:17:15 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:17:15 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:18 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:19 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:19 | 2010-10-28 11:17:19.565:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:20 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:17:21 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:17:21 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:17:21 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:17:21 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:17:21 | 
+INFO   | jvm 1    | 2010/10/28 11:17:21 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:17:21 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:17:21 | 2010-10-28 11:17:21.817:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:17:21 | 2010-10-28 11:17:21.873:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:17:22 | 2010-10-28 11:17:21.932:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:17:22 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:17:22 | 28/10/2010 11:17:22 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:17:22 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:17:22 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:17:22 | 28/10/2010 11:17:22 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:22 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:22 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:17:22 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:17:22 | 28/10/2010 11:17:22 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:22 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:22 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:22 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:23 | 28/10/2010 11:17:23 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:17:23 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:27 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:27 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:27 | 2010-10-28 11:17:27.821:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:28 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:17:29 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:17:29 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:17:29 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:17:29 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:17:29 | 
+INFO   | jvm 1    | 2010/10/28 11:17:29 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:17:29 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:17:30 | 2010-10-28 11:17:29.990:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:17:30 | 2010-10-28 11:17:30.063:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:17:30 | 2010-10-28 11:17:30.125:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:17:30 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:17:31 | 28/10/2010 11:17:31 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:17:31 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:17:31 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:17:31 | 28/10/2010 11:17:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:31 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:31 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:17:31 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:17:31 | 28/10/2010 11:17:31 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:31 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:31 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:31 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:31 | 28/10/2010 11:17:31 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:17:31 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:35 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:36 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:36 | 2010-10-28 11:17:36.234:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:36 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:17:37 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:17:37 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:17:38 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:17:38 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:17:38 | 
+INFO   | jvm 1    | 2010/10/28 11:17:38 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:17:38 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:17:38 | 2010-10-28 11:17:38.438:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:17:38 | 2010-10-28 11:17:38.516:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:17:38 | 2010-10-28 11:17:38.574:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:17:38 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:17:39 | 28/10/2010 11:17:39 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:17:39 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:17:39 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:17:39 | 28/10/2010 11:17:39 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:39 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:39 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:17:39 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:17:39 | 28/10/2010 11:17:39 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:39 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:39 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:39 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:39 | 28/10/2010 11:17:39 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:17:39 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:43 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:44 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:44 | 2010-10-28 11:17:44.617:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:45 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 11:17:46 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 11:17:46 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 11:17:46 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 11:17:46 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 11:17:46 | 
+INFO   | jvm 1    | 2010/10/28 11:17:46 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 11:17:46 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 11:17:46 | 2010-10-28 11:17:46.885:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 11:17:46 | 2010-10-28 11:17:46.948:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 11:17:47 | 2010-10-28 11:17:47.017:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 11:17:47 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 11:17:47 | 28/10/2010 11:17:47 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 11:17:47 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 11:17:47 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 11:17:47 | 28/10/2010 11:17:47 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:47 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:47 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 11:17:47 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 11:17:47 | 28/10/2010 11:17:47 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 11:17:47 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 11:17:47 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:47 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 11:17:48 | 28/10/2010 11:17:48 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 11:17:48 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+STATUS | wrapper  | 2010/10/28 11:17:52 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 11:17:52 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 11:17:52 | 2010-10-28 11:17:52.899:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 11:17:53 | <-- Wrapper Stopped
+STATUS | wrapper  | 2010/10/28 13:37:03 | --> Wrapper Started as Daemon
+STATUS | wrapper  | 2010/10/28 13:37:04 | Launching a JVM...
+INFO   | jvm 1    | 2010/10/28 13:37:04 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2010/10/28 13:37:04 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2010/10/28 13:37:04 | 
+INFO   | jvm 1    | 2010/10/28 13:37:04 | Using database at [neo4j-rest-db]
+INFO   | jvm 1    | 2010/10/28 13:37:04 | Running server at [http://localhost:9999/]
+INFO   | jvm 1    | 2010/10/28 13:37:04 | 2010-10-28 13:37:04.553:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+INFO   | jvm 1    | 2010/10/28 13:37:04 | 2010-10-28 13:37:04.626:INFO::jetty-6.1.25
+INFO   | jvm 1    | 2010/10/28 13:37:04 | 2010-10-28 13:37:04.686:INFO::Started SocketConnector@0.0.0.0:9999
+INFO   | jvm 1    | 2010/10/28 13:37:04 | Press Ctrl-C to kill the server
+INFO   | jvm 1    | 2010/10/28 13:39:38 | 28/10/2010 13:39:38 com.sun.jersey.api.core.PackagesResourceConfig init
+INFO   | jvm 1    | 2010/10/28 13:39:38 | INFO: Scanning for root resource and provider classes in the packages:
+INFO   | jvm 1    | 2010/10/28 13:39:38 |   org.neo4j.rest.web
+INFO   | jvm 1    | 2010/10/28 13:39:38 | 28/10/2010 13:39:38 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 13:39:38 | INFO: Root resource classes found:
+INFO   | jvm 1    | 2010/10/28 13:39:38 |   class org.neo4j.rest.web.ResourcesService
+INFO   | jvm 1    | 2010/10/28 13:39:38 |   class org.neo4j.rest.web.JsonAndHtmlWebService
+INFO   | jvm 1    | 2010/10/28 13:39:38 | 28/10/2010 13:39:38 com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO   | jvm 1    | 2010/10/28 13:39:38 | INFO: Provider classes found:
+INFO   | jvm 1    | 2010/10/28 13:39:38 |   class org.neo4j.rest.web.DatabaseBlockedExceptionMapper
+INFO   | jvm 1    | 2010/10/28 13:39:38 |   class org.neo4j.rest.web.security.AuthenticationExceptionMapper
+INFO   | jvm 1    | 2010/10/28 13:39:38 | 28/10/2010 13:39:38 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO   | jvm 1    | 2010/10/28 13:39:38 | INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 04:53 PM'
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 28/10/2010 15:12:26 com.sun.jersey.spi.container.ContainerResponse mapMappableContainerException
+INFO   | jvm 1    | 2010/10/28 15:12:27 | SEVERE: The RuntimeException could not be mapped to a response, re-throwing to the HTTP container
+INFO   | jvm 1    | 2010/10/28 15:12:27 | java.lang.NumberFormatException: For input string: "1""
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.Long.parseLong(Long.java:419)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.Long.parseLong(Long.java:468)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.neo4j.rest.web.GenericWebService.getNodeIdFromUri(GenericWebService.java:434)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 2010-10-28 15:12:26.929:WARN::/index/node/tipo/usuario
+INFO   | jvm 1    | 2010/10/28 15:12:27 | java.lang.NumberFormatException: For input string: "1""
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.Long.parseLong(Long.java:419)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.Long.parseLong(Long.java:468)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.neo4j.rest.web.GenericWebService.getNodeIdFromUri(GenericWebService.java:434)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:12:27 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 28/10/2010 15:12:53 com.sun.jersey.spi.container.ContainerResponse mapMappableContainerException
+INFO   | jvm 1    | 2010/10/28 15:12:53 | SEVERE: The RuntimeException could not be mapped to a response, re-throwing to the HTTP container
+INFO   | jvm 1    | 2010/10/28 15:12:53 | java.lang.NumberFormatException: For input string: "1""
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.Long.parseLong(Long.java:419)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.Long.parseLong(Long.java:468)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.neo4j.rest.web.GenericWebService.getNodeIdFromUri(GenericWebService.java:434)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 2010-10-28 15:12:53.754:WARN::/index/node/tipo/usuario
+INFO   | jvm 1    | 2010/10/28 15:12:53 | java.lang.NumberFormatException: For input string: "1""
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.Long.parseLong(Long.java:419)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.Long.parseLong(Long.java:468)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.neo4j.rest.web.GenericWebService.getNodeIdFromUri(GenericWebService.java:434)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:12:53 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 28/10/2010 15:41:19 com.sun.jersey.spi.container.ContainerResponse mapMappableContainerException
+INFO   | jvm 1    | 2010/10/28 15:41:19 | SEVERE: The RuntimeException could not be mapped to a response, re-throwing to the HTTP container
+INFO   | jvm 1    | 2010/10/28 15:41:19 | org.neo4j.graphdb.NotFoundException: Node[123]
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.kernel.impl.core.NodeManager.getNodeById(NodeManager.java:393)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.getNodeById(EmbeddedGraphDbImpl.java:223)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.getNodeById(EmbeddedGraphDatabase.java:103)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.domain.StorageActions.addNodeToIndex(StorageActions.java:464)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.web.GenericWebService$IndexType$1.add(GenericWebService.java:677)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 2010-10-28 15:41:19.019:WARN::/index/node/tipo/usuario
+INFO   | jvm 1    | 2010/10/28 15:41:19 | org.neo4j.graphdb.NotFoundException: Node[123]
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.kernel.impl.core.NodeManager.getNodeById(NodeManager.java:393)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.getNodeById(EmbeddedGraphDbImpl.java:223)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.getNodeById(EmbeddedGraphDatabase.java:103)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.domain.StorageActions.addNodeToIndex(StorageActions.java:464)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.web.GenericWebService$IndexType$1.add(GenericWebService.java:677)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:41:19 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 28/10/2010 15:48:21 com.sun.jersey.spi.container.ContainerResponse mapMappableContainerException
+INFO   | jvm 1    | 2010/10/28 15:48:21 | SEVERE: The RuntimeException could not be mapped to a response, re-throwing to the HTTP container
+INFO   | jvm 1    | 2010/10/28 15:48:21 | org.neo4j.graphdb.NotFoundException: Node[123]
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.kernel.impl.core.NodeManager.getNodeById(NodeManager.java:393)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.getNodeById(EmbeddedGraphDbImpl.java:223)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.getNodeById(EmbeddedGraphDatabase.java:103)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.domain.StorageActions.addNodeToIndex(StorageActions.java:464)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.web.GenericWebService$IndexType$1.add(GenericWebService.java:677)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 2010-10-28 15:48:21.289:WARN::/index/node/tipo/usuario
+INFO   | jvm 1    | 2010/10/28 15:48:21 | org.neo4j.graphdb.NotFoundException: Node[123]
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.kernel.impl.core.NodeManager.getNodeById(NodeManager.java:393)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.kernel.EmbeddedGraphDbImpl.getNodeById(EmbeddedGraphDbImpl.java:223)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.kernel.EmbeddedGraphDatabase.getNodeById(EmbeddedGraphDatabase.java:103)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.domain.StorageActions.addNodeToIndex(StorageActions.java:464)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.web.GenericWebService$IndexType$1.add(GenericWebService.java:677)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.web.GenericWebService.addToIndex(GenericWebService.java:568)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.neo4j.rest.web.JsonAndHtmlWebService.jsonAddToIndexPlainText(JsonAndHtmlWebService.java:300)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at java.lang.reflect.Method.invoke(Method.java:597)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:184)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:67)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:276)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:83)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:133)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:71)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1171)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1103)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1053)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1043)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:406)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:477)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:662)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:390)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.Server.handle(Server.java:326)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:943)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:756)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+INFO   | jvm 1    | 2010/10/28 15:48:21 | 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+STATUS | wrapper  | 2010/10/28 16:01:48 | TERM trapped.  Shutting down.
+INFO   | jvm 1    | 2010/10/28 16:01:49 | Shutting down the server
+INFO   | jvm 1    | 2010/10/28 16:01:49 | 2010-10-28 16:01:49.014:INFO::Stopped SocketConnector@0.0.0.0:9999
+STATUS | wrapper  | 2010/10/28 16:01:49 | <-- Wrapper Stopped

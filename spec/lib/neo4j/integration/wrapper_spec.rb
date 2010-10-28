@@ -10,7 +10,7 @@ describe Neo4j::Wrapper do
   def wait_server(port=9999)
     (1..15).each do
       begin
-        Net::HTTP.get(URI.parse("http://localhost:#{port}/"))
+        retorno = Net::HTTP.get(URI.parse("http://localhost:#{port}/"))
         return
       rescue
         sleep 1
@@ -36,8 +36,9 @@ describe Neo4j::Wrapper do
     no.data.tipo.should eql 'comentario'
   end
   
-  it "deveria criar um nó e adicionar no indice para ser buscado" do
-    pending    
+  it "deveria adicionar no indice para ser buscado" do
+    no = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
+    @server.index 1,'tipo','comentario'    
   end
   
   it "deveria buscar por um nó pelo indice" do

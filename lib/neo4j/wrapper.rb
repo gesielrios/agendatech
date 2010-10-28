@@ -5,12 +5,16 @@ class Neo4j::Wrapper
   end
   
   
-  def create_node(false,properties={})
+  def create_node(properties={})
     Restfulie.at("#{@host}/node").accepts('application/json').as('application/json').post!(properties)
   end
   
   def index(node_id,key,value)
-    # descobrir como indexa
+      uri = URI.parse(@host)      
+      response = Net::HTTP.start(uri.host,uri.port){ |req|
+                    req.post("/index/node/#{key}/#{value}","#{@host}/node/#{node_id}",{'Content-Type' => 'text/plain'})
+                 }
+      raise "Não foi possivel adicionar o nó no indice com as propriedades. Código de retorno => #{response.code}" unless response.code == 201               
   end  
   
   def create_relation(from_id,to_id,type,properties={})
