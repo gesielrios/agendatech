@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe Neo4j::Wrapper do
 
-  before(:all) do
-     @server = Neo4j::Wrapper.new('http://localhost:9999')     
+  before(:all) do    
+     @host = 'http://localhost:9999'
   end
  
   #retirado do restfulie
@@ -31,53 +31,56 @@ describe Neo4j::Wrapper do
    
 
   it "deveria criar um nó com propriedades" do
-    no = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    no.data.descricao.should eql 'O ruby conf foi muito bom'
-    no.data.tipo.should eql 'comentario'
+    node = Neo4j::Node.create(@host,:descricao => 'O ruby conf foi muito bom', :tipo => 'comentario')
+    node.descricao.should eql 'O ruby conf foi muito bom'
+    node.tipo.should eql 'comentario'
+    node.id.should eql 1
   end
   
   it "deveria adicionar no indice para ser buscado" do
-    no = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    @server.index 1,'tipo','comentario'    
+    node = Neo4j::Node.create(@host,:descricao => 'O ruby conf foi muito bom', :tipo => 'comentario')    
+    node.index_with('tipo','comentario')
   end
   
-  it "deveria buscar por um nó pelo indice" do
-    pending    
-  end      
+  it "deveria lancar exception caso o nó a ser adicionado no indice não exista" do
+    fake_node = Neo4j::Node.new(@host,100)
+    lambda {fake_node.index_with 'nome','alberto'}.should raise_error(Exception)
+  end  
+  
+  it "deveria recuperar um no baseado em alguma propriedade" do      
+    node = Neo4j::Node.create(@host,:descricao => 'O ruby conf foi muito bom', :tipo => 'comentario')    
+    node_index_with('tipo','usuario')
+    usuarios = Node.find_by_properties(node,'tipo','usuario')
+    usuarios.length.should eql 1
+    usuarios[0].data.nome.should eql 'Alberto'
+    usuarios[0].data.tipo.should eql 'usuario'
+  end    
+  
+        
   
   it "deveria recuperar um nó por id" do
-    no = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    no_recuperado = @server.get_node 1
-    no.data.descricao.should eql 'O ruby conf foi muito bom'
-    no.data.tipo.should eql 'comentario'
+    node = Neo4j::Node.create(@host,:descricao => 'O ruby conf foi muito bom', :tipo => 'comentario')        
+    no_recuperado = Node.find_by_id(node.id)
+    no_recuperado.descricao.should eql 'O ruby conf foi muito bom'
+    no_recuperado.tipo.should eql 'comentario'
   end  
   
   it "deveria criar um relacionamento" do
-    no_origem = @server.create_node :nome => 'Alberto', :tipo => 'usuario'
-    no_destino = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    relation = @server.create_relation 1 , 2, 'comentario'
+    no_origem = Neo4j::Node.create(@host,:nome => 'Alberto', :tipo => 'usuario')        
+    no_destino = Neo4j::Node.create(@host,:descricao => 'O ruby conf foi muito bom', :tipo => 'comentario')        
+    relation = no_origem.create_relation_with(no_destino, 'comentario')
     relation.type.should eql 'comentario'
-    relation.start.should eql no_origem.self
-    relation.end.should eql no_destino.self
+    relation.start.should eql no_origem.uri
+    relation.end.should eql no_destino.uri
   end
 
   it "deveria criar um relacionamento com propriedades" do      
-    no_origem = @server.create_node :nome => 'Alberto', :tipo => 'usuario'
-    no_destino = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    relation = @server.create_relation 1, 2, 'comentario', :evento => 1
+    no_origem = Neo4j::Node.create(@host,:nome => 'Alberto', :tipo => 'usuario')        
+    no_destino = Neo4j::Node.create(@host,:descricao => 'O ruby conf foi muito bom', :tipo => 'comentario')        
+    relation = no_origem.create_relation_with(no_destino, 'comentario',{:evento => 1})
     relation.type.should eql 'comentario'
-    relation.data.evento.should eql 1
-    relation.start.should eql no_origem.self
-    relation.end.should eql no_destino.self            
+    relation.evento.should eql 1
+    relation.start.should eql no_origem.uri
+    relation.end.should eql no_destino.uri            
   end
-  
-  it "deveria recuperar um no baseado em alguma propriedade" do      
-    no_origem = @server.create_node :nome => 'Alberto', :tipo => 'usuario'
-    no_destino = @server.create_node :descricao => 'O ruby conf foi muito bom', :tipo => 'comentario'
-    no_encontrado = @server.find_by_properties :key => 'tipo', :value => 'comentario'
-    no_encontrado.data.tipo.should eql 'comentario'
-  end  
-  
-  
-    
 end
