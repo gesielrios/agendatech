@@ -53,6 +53,10 @@ describe Neo4j::Node do
     no_recuperado = @server.find_node_by_id(node.id)
     no_recuperado.descricao.should eql 'O ruby conf foi muito bom'
     no_recuperado.tipo.should eql 'comentario'
-  end 
+  end
+  
+  it "deveria lancar exception caso o no a ser recuperado nao exista" do
+        lambda {@server.find_node_by_id(100)}.should raise_error(Exception)
+  end    
   
 end

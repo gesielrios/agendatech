@@ -35,7 +35,7 @@ describe Neo4j::Node do
     node.index_with('tipo','comentario')
   end
   
-  it "deveria lancar exception caso o nó a ser adicionado no indice não exista" do
+  it "deveria lancar exception caso seja instanciado um no que nao existe no servidor" do
     fake_node = Neo4j::Node.new(@host,100)
     lambda {fake_node.index_with 'nome','alberto'}.should raise_error(Exception)
   end    

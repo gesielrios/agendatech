@@ -4,17 +4,17 @@ module Neo4j
     include GraphPart
     @@mime_type =  'application/json'
     @properties
-    attr_reader :id,:properties
+    attr_reader :id
     
     def initialize(host,id)
+      @server = Server.new(host)
       @id = id
-      @host = host
     end  
     
     def index_with(key,value)
-        uri = URI.parse(@host)      
+        uri = URI.parse(@server.host)      
         response = Net::HTTP.start(uri.host,uri.port){ |req|
-                      req.post("/index/node/#{key}/#{value}","#{@host}/node/#{@id}",{'Content-Type' => 'text/plain'})
+                      req.post("/index/node/#{key}/#{value}","#{@server.host}/node/#{@id}",{'Content-Type' => 'text/plain'})
                    }                 
         if response.code.to_i != 201                                        
           raise "Não foi possivel adicionar o nó no indice com as propriedades. Código de retorno => #{response.code}" 
@@ -42,6 +42,7 @@ module Neo4j
   
   class Server    
     @@mime_type =  'application/json'
+    attr_reader :host
     def initialize(host)
       @host = host
     end            
