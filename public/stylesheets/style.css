@@ -48,11 +48,15 @@ blockquote, q {
 
 body{
 	font-family: helvetica;
+        background: url("http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_body.jpg") repeat scroll 0 0 transparent;
 }
+
 
 #header{
 	color: #F2F2F2;
-	margin-top: 20px;
+        background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_header.jpg');
+        height: 75px;
+        margin-bottom:30px;
 }
 
 #gray-bg {
@@ -75,13 +79,12 @@ body{
 	-webkit-border-radius:10px 10px 0px 0px;	
 	background: repeat scroll 0 0 #f2f2f2;
 	color:#4A4A47;
-	overflow:auto;
-	padding:20px 20px 0;
-	width:920px;
+	width:960px;
 }
 
 #footer{
-	background-color: #4d4d46;
+	background-color: #212121;
+        margin-top: 30px;
 	text-align: center;
 	padding: 20px;
 
@@ -102,6 +105,7 @@ body{
 	font-size:34px;
 	font-weight:bold;
 	color: #f2f2f2  !important;
+        padding-top: 30px;
 }
 
 
@@ -114,6 +118,7 @@ h1{
 	font-size: 72px;
 	font-weight: bold;
 	margin-bottom: 5px;
+        float: left;
 }
 
 h1 span{
@@ -127,18 +132,23 @@ h3 span{
 
 h3{
 	font-size: 12px;
-	margin-bottom: 25px;
-	margin-top: 20px;	
+        left:20px;
+        padding-top:37px;
+        position:relative;
+        float: left;
 }
 
 #left{
 	background-color:#F2F2F2;
 	float:left;
-	margin-left:-20px;
-	margin-top:-20px;
 	padding-left:20px;
 	width:660px;
 	min-height:1900px;	
+        -moz-border-radius:10px 10px 10px 10px;
+        -moz-box-shadow:0 0 2px #CDCEC8;
+        background-color:#FFFFFF;
+        border:1px solid #CDCEC8;
+        padding:12px;
 }
 
 #right{
@@ -380,7 +390,7 @@ text-decoration:none;
 
 a:link,
 a:visited {
-	color:#FFFFFF;
+	color:#555555;
 	line-height:18px;
 	text-decoration:none;
 }
@@ -458,14 +468,15 @@ a:visited {
 #estado, #mes{
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color:#4A4A47;
-	color:#f2f2f2;
+	background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_escuro.png');
+	color:#555555;
 	display:inline-block;
 	font-size:12px;
 	font-weight:normal;
 	margin-bottom:20px;
 	padding:20px;
 	width:200px;
+        border: 1px solid #CCCCCC;
 }
 
 .bold{
@@ -536,13 +547,11 @@ a:visited {
 }
 
 #menu ul a{
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
-	-webkit-border-radius-topleft:5px;
-	-webkit-border-radius-topright:5px;	
-	float:left;
-	font-size:12px;
+	float:right;
+	font-size:13px;
 	padding:10px;
+        margin: 24px 0 0;
+        color: #999999;
 }
 
 .menu_select{
@@ -550,12 +559,11 @@ a:visited {
 	color: #4A4A47;
 }
 
-.menu_inicial{
-	background-color: #4A4A47;
-}
 .menu_inicial:hover{
-	background-color: #f2f2f2;
-	color: #4A4A47;
+        -moz-border-radius:6px 6px 6px 6px;
+        -moz-box-shadow:0 -1px 0 #0B0A0B, 0 1px 0 #666666;
+        background:url("/sites/all/themes/openjobs2010/images/bg_menu_active.jpg") repeat scroll left top transparent !important;
+        color:#FFFFFF;
 }
 
 #menu li.last a {

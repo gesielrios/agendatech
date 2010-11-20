@@ -10,7 +10,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :grupos, :only => [:index, :destroy], :member => {:aprovar => :put}
   end
 
-	map.feed 'rss/feed.:format', :controller => 'rss', :action => 'feed'
+  map.feed 'rss/feed.:format', :controller => 'rss', :action => 'feed'
+  
   map.root :controller => "eventos"
   map.resources :eventos
   map.resources :comentarios

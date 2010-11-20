@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<title>agendatech || Eventos de tecnologia</title>
+		<title>Agendatech - Eventod de tecnologia</title>
 		<%= stylesheet_link_tag 'style' %>
 		<%= stylesheet_link_tag 'form' %>
 		<%= stylesheet_link_tag 'contato' %>
@@ -11,35 +11,24 @@
     <%= auto_discovery_link_tag :rss, feed_path('rss') %>
 	</head>
 	<body>
-		<div id="gray-bg">
-			<img width="100%" height="100%" src="/images/bg.jpg">
-		</div>
 		<div id="header">
 			
 			<div class="container">
 				<h1>
 					<a href="/">
-						<p class="logo_home">agenda<span>tech</span></p>
+						<p class="logo_home">AGENDA<span>TECH</span></p>
 					</a>
 				</h1>
 				<h3>Eventos de tecnologia.</h3>
 			</div>
 			
 		
-			<div style="clear:both"></div>
-			
-		</div>
-		
-		<div id="content">
 			<div id="menu">
 				<ul>
 					<li><%= tab_link_to "Eventos", eventos_path %></li>
 					<li><%= tab_link_to "Grupos",  grupos_path %></li>
 					<li><%= tab_link_to "Contato", contato_path %></li>
 					<li><%= tab_link_to "Sobre", sobre_path %></li>
-					<li><%= tab_link_to "Colaboradores", colaboradores_path %></li>
-					<li><%= tab_link_to 'RSS', feed_path('rss') %></li>
-					<li><%= tab_link_to "iCal", calendario_link_path %></li>
 					<% if admin_signed_in?%>	
 						<li><%= tab_link_to "Aprovação Eventos", admin_eventos_path %></li>
 						<li><%= tab_link_to "Aprovação Grupos",  admin_grupos_path %></li>
@@ -47,6 +36,11 @@
 					<%end%>
 				</ul>
 			</div>
+			<div style="clear:both"></div>
+			
+		</div>
+		
+		<div id="content">
 			<div style="clear: both"></div>
 			<div class="container">
 
@@ -142,9 +136,6 @@
 									            </div>
 									            <% end  %>
 			          </div>
-          </div>
-
-
 					<div id="tags">
 					  <% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
 						<%= link_to tag.name, { :action => :tag, :controller => :eventos,:id => tag.name }, :class => css_class %>
@@ -156,6 +147,9 @@
 		  <a href="http://www.caelum.com.br/" alt="Caelum ensindo e inovação" target="_blank" ><img src="/images/caelum.jpg" /></a><br/><br/>
 			<a href="http://www.rubyinside.com.br/" alt="O maior site de ruby on rails do mundo" target="_blank" ><img src="/images/logo-br.gif" /></a>
 		</div>
+          </div>
+
+
 
 
 				</div>
