@@ -19,16 +19,16 @@
 						<p class="logo_home">AGENDA<span>TECH</span></p>
 					</a>
 				</h1>
-				<h3>Eventos de tecnologia.</h3>
+				<h3>Eventos de tecnologia no Brasil</h3>
 			</div>
 			
 		
 			<div id="menu">
 				<ul>
-					<li><%= tab_link_to "Eventos", eventos_path %></li>
-					<li><%= tab_link_to "Grupos",  grupos_path %></li>
 					<li><%= tab_link_to "Contato", contato_path %></li>
 					<li><%= tab_link_to "Sobre", sobre_path %></li>
+					<li><%= tab_link_to "Grupos",  grupos_path %></li>
+					<li><%= tab_link_to "Eventos", eventos_path %></li>
 					<% if admin_signed_in?%>	
 						<li><%= tab_link_to "Aprovação Eventos", admin_eventos_path %></li>
 						<li><%= tab_link_to "Aprovação Grupos",  admin_grupos_path %></li>
@@ -45,6 +45,16 @@
 			<div class="container">
 
 				<div id="left" >
+                                        <div id="busca_estado">
+                                          <p class="busca">Busca por estado:</p>
+                                          <p class="sigla"><a href="#">SP</a></p>
+                                          <p class="sigla"><a href="#">SP</a></p>
+                                          <p class="sigla"><a href="#">SP</a></p>
+                                          <p class="sigla"><a href="#">SP</a></p>
+                                          <p class="sigla"><a href="#">SP</a></p>
+                                          <%= image_tag 'rss.png' %>
+                                          <%= image_tag 'ical.jpg' %>
+                                        </div>  
 					<p class="breadcrumb"><% if @mes %>Eventos em <%= @mes %><% end %></p>
 					<p class="breadcrumb"><% if @tag %>Eventos de <%= @tag	%><% end %></p>
 
@@ -53,14 +63,16 @@
 				</div>
 				<div id="right" >
 
+
 					<div class="cadastre">
 							<a href=<%= new_evento_path %>>CADASTRAR NOVO EVENTO</a>
 					</div>
-
-					<div class="cadastre">
-							<a href=<%= new_grupo_path %>>CADASTRAR NOVO GRUPO</img></a>
-					</div>
-
+                                        <div id="about">
+                                          <p><strong>A Agendatech busca facilitar o networking dos profissionais
+                                          de tecnologia do Brasil.</strong></p>
+                                          <p>Cadastre todos os eventos de todos os estados, dojos, palestras, encontros de grupos de usuários, etc.
+                                          </p>
+                                        </div>
 						<div id="mes">
 							<p class="bold">Últimos Comentários</p><br />
 
@@ -119,12 +131,6 @@
 								</div>
 							</div>
 
-								<div class="cadastre">
-									<a href="http://www.twitter.com/agendatech">AGENDATECH NO TWITTER</a>
-								</div>
-
-							
-				
 
 									<div id="twitter">
 									            <p>Eventos no twitter</p>
