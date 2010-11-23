@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 describe Neo4j::Node do
 
   before(:all) do    
