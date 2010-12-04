@@ -1,34 +1,47 @@
 
-	<div class="evento clearfix">
-		<div class="data">
-		  <%if evento.ta_rolando? %>
-			  <p><%= Date.today.day %></p>
-			  <small><%= l(Date.today, :format => :month) %></small>
-			<%else%>
-			  <p><%= evento.data.day %></p>
-			  <small><%= l(evento.data, :format => :month) %></small>			
-			<%end%>
-		</div>
+<div class="evento clearfix">
+  <div class="data">
+    <%if evento.ta_rolando? %>
+      <p><%= Date.today.day %></p>
+      <small><%= l(Date.today, :format => :month) %></small>
+    <%else%>
+      <p><%= evento.data.day %></p>
+      <small><%= l(evento.data, :format => :month) %></small>			
+    <%end%>
+  </div>
 
-		<div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %> </div>
+  <div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %> </div>
 
-		<div class="info">
-			<p id="evento"><%= link_to evento.nome, evento_full_path(evento) %></p>
-			<small><%= nome_do_estado evento.estado %></small><br/>
+  <div class="info">
+    <p id="evento"><%= link_to evento.nome, evento_full_path(evento) %></p>
+    <small><%= nome_do_estado evento.estado %></small><br/>
 
-			<p class="tags">
-				<% evento.tags.each do |tag| %>
-					<%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
-				<% end %>
-			</p>
-			<br/>
-			<a href=<%= evento_full_path(evento) %>><img src="/images/info.png"></img></a>
-			<a href="http://twitter.com/home?status=RT%20@agendatech%20<%= evento.nome %> <%= ShortURL.shorten evento.site, :tinyurl %>"><img src="/images/twitter_icon.png" width="25" /></a>			
-		
-			<!--iframe src="http://www.facebook.com/plugins/like.php?href=<%= evento_full_url(evento)%>&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" 
-			        scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:25px;" 
-			        allowTransparency="true"></iframe-->
-		</div>
-	</div>
+    <p class="tags">
+    <% evento.tags.each do |tag| %>
+      <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => "tag tags" %>
+    <% end %>
+    </p>
+    <br/>
+    <a href=<%= evento_full_path(evento) %>><!--img src="/images/info.png"></img></a>
+    <a href="http://twitter.com/home?status=RT%20@agendatech%20<%= evento.nome %> <%= ShortURL.shorten evento.site, :tinyurl %>"><img src="/images/twitter_icon.png" width="25" /></ai-->			
+
+      <!--iframe src="http://www.facebook.com/plugins/like.php?href=<%= evento_full_url(evento)%>&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" 
+      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:25px;" 
+      allowTransparency="true"></iframe-->
+    </div>
+    <div class="quem_vai">
+      <div class="quem_vai_pics">
+        <div class="quem_vai_pic">
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+          <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="30px" height="30px" />
+        </div>
+      </div>
+    </div>    
+  </div>
 
 

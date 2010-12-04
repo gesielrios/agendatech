@@ -7,393 +7,398 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 /* remember to define focus styles! */
 :focus {
-	outline: 0;
+  outline: 0;
 }
 body {
-	line-height: 1;
-	color: black;
-	background: white;
+  line-height: 1;
+  color: black;
+  background: white;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-	border-collapse: separate;
-	border-spacing: 0;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 caption, th, td {
-	text-align: left;
-	font-weight: normal;
+  text-align: left;
+  font-weight: normal;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: "";
+  content: "";
 }
 blockquote, q {
-	quotes: "" "";
+  quotes: "" "";
 }
 
 body{
-	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-        background: url("http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_body.jpg") repeat scroll 0 0 transparent;
+  font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+  background: url("http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_body.jpg") repeat scroll 0 0 transparent;
 }
 
 
 #header{
-	color: #F2F2F2;
-        background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_header.jpg');
-        height: 75px;
-        margin-bottom:30px;
+  color: #F2F2F2;
+  background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_header.jpg');
+  height: 75px;
+  margin-bottom:30px;
 }
 
 #gray-bg {
-	height:100%;
-	position:fixed;
-	right:0;
-	top:0;
-	width:100%;
-	z-index:-1;
+  height:100%;
+  position:fixed;
+  right:0;
+  top:0;
+  width:100%;
+  z-index:-1;
 }
 
 .container{
-	margin-left:auto;
-	margin-right:auto;
-	width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
 }
 
 #content .container{
-	-moz-border-radius:10px 10px 0px 0px;
-	-webkit-border-radius:10px 10px 0px 0px;	
-	background: repeat scroll 0 0 #f2f2f2;
-	color:#4A4A47;
-	width:960px;
+  -moz-border-radius:10px 10px 0px 0px;
+  -webkit-border-radius:10px 10px 0px 0px;	
+  background: repeat scroll 0 0 #f2f2f2;
+  color:#4A4A47;
+  width:960px;
 }
 
 #footer{
-	background-color: #212121;
-        margin-top: 30px;
-	text-align: center;
-	padding: 20px;
+  background-color: #212121;
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
 
 }
 
 #footer p{
-	color: #fdd011;
-	font-size: 11px;
+  color: #fdd011;
+  font-size: 11px;
 }
 
 .logo_footer{
-	font-size: 18px !important;
-	margin-bottom: 15px  !important;
-	color: #f2f2f2  !important;
+  font-size: 18px !important;
+  margin-bottom: 15px  !important;
+  color: #f2f2f2  !important;
 }
 
 .logo_home{
-	font-size:34px;
-	font-weight:bold;
-	color: #f2f2f2  !important;
-        padding-top: 30px;
+  font-size:34px;
+  font-weight:bold;
+  color: #f2f2f2  !important;
+  padding-top: 30px;
 }
 
 
 .logo_footer span{
-	color: #fdd011  !important;
+  color: #fdd011  !important;
 }
 
 
 h1{
-	font-size: 72px;
-	font-weight: bold;
-	margin-bottom: 5px;
-        float: left;
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  float: left;
 }
 
 h1 span{
-	color: #fdd011;
+  color: #fdd011;
 }
 
 h3 span{
-	color: #fdd011;
-	font-weight: bold;
+  color: #fdd011;
+  font-weight: bold;
 }
 
 h3{
-	font-size: 12px;
-        left:20px;
-        padding-top:33px;
-        position:relative;
-        float: left;
-        font-style: italic;
+  font-size: 12px;
+  left:20px;
+  padding-top:33px;
+  position:relative;
+  float: left;
+  font-style: italic;
 }
 
 #left{
-	background-color:#F2F2F2;
-	float:left;
-	padding-left:20px;
-	width:660px;
-	min-height:1900px;	
-        -moz-border-radius:10px 10px 10px 10px;
-        -moz-box-shadow:0 0 2px #CDCEC8;
-        background-color:#FFFFFF;
-        border:1px solid #CDCEC8;
-        padding:12px;
+  background-color:#F2F2F2;
+  float:left;
+  padding-left:20px;
+  width:660px;
+  min-height:1900px;	
+  -moz-border-radius:10px 10px 10px 10px;
+  -moz-box-shadow:0 0 2px #CDCEC8;
+  background-color:#FFFFFF;
+  border:1px solid #CDCEC8;
+  padding:12px;
 }
 
 #right{
-	float: right;
-	width: 240px;
+  float: right;
+  width: 240px;
 }
 
 .breadcrumb{
-	font-size: 12px;
-	margin-bottom: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .breadcrumb span{
-	color: #fdd011;
-	font-weight: bold;
+  color: #fdd011;
+  font-weight: bold;
 }
 
 .data{
-	font-weight: bold;
-	float: left;
-	margin-right: 20px;
-	text-align: center;
-	min-width: 76px;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  min-width: 76px;
 }
 .data p{
-	font-size: 72px;
+  font-size: 50px;
 }
 .data small{
-	background-color:#4A4A47;
-	color:#F2F2F2;
-	display:block;
-	font-size:16px;
-	font-weight:normal;
-	padding:2px;
+  background-color:#4A4A47;
+  color:#F2F2F2;
+  display:block;
+  font-size:14px;
+  font-weight:normal;
+  padding:2px;
 }
 
 .logo{
-	float: left;
-	margin-right: 20px;
-	width: 97px;
-	height: 97px;
+  background-color:#212121;
+  border:2px solid #CCCCCC;
+  float:left;
+  height:72px;
+  margin-right:20px;
+  width:72px;
 }
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .info p, #detalhe_right strong, #contato h1{
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 
 #evento a:link, #evento a:visited {
-color:#4A4A47;
-text-decoration:none;
+  color:#4A4A47;
+  text-decoration:none;
+  line-height: 24px;
 }
 
 .info small, #detalhe_right small{
-	font-size: 14px;
-	font-weight: normal;
-/*	font-style: italic;*/
+  font-size: 14px;
+  font-weight: normal;
+  /*	font-style: italic;*/
 }
 
 .space{
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .info_button{
-	-moz-border-radius:5px 5px 5px 5px;
-	-webkit-border-radius:5px 5px 5px 5px;
-	background-color:#4A4A47;
-	color:#FDD011;
-	cursor:pointer;
-	display:inline-block;
-	font-size:11px !important;
-	font-weight:normal !important;
-	margin-top:15px;
-	padding:5px;
-	width:71px;
+  -moz-border-radius:5px 5px 5px 5px;
+  -webkit-border-radius:5px 5px 5px 5px;
+  background-color:#4A4A47;
+  color:#FDD011;
+  cursor:pointer;
+  display:inline-block;
+  font-size:11px !important;
+  font-weight:normal !important;
+  margin-top:15px;
+  padding:5px;
+  width:71px;
 }
 
 .desc_button{
-	background-color: #4a4a47;
-	display: inline-block;
-	font-size: 12px !important;
-	color: #fdd011;
-	font-weight: normal !important;
-	padding: 5px;
-	margin-top: 15px;
-	width: 104px;
+  background-color: #4a4a47;
+  display: inline-block;
+  font-size: 12px !important;
+  color: #fdd011;
+  font-weight: normal !important;
+  padding: 5px;
+  margin-top: 15px;
+  width: 104px;
 }
 
 .evento{
-	border-bottom:1px solid #CCCCCC;
-	margin-bottom:30px;
-	padding:20px;
-	width:600px;
+  border-top:1px dotted #CCCCCC;
+  padding:10px 20px;
+  width:618px;
 }
 
+.evento:hover {
+  background-color:#FFFFD7;
+}
 .grupo{
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color:#CCCCCC;
-	border:5px solid #818181;
-	margin-bottom:30px;
-	padding:20px;
-	width:150px;
-	float: left;
-	margin-right: 20px;
-	text-align: center;
-	height: 200px;
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;	
+  background-color:#CCCCCC;
+  border:5px solid #818181;
+  margin-bottom:30px;
+  padding:20px;
+  width:150px;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  height: 200px;
 }
 
 .cadastre{
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color: #278941;
-	color:#F2F2F2;
-	cursor:pointer;
-	display:inline-block;
-	font-size:12px;
-	margin-bottom:20px;
-	padding:10px;
-	text-align:center;
-	width:220px;
-	height: 18px;
-	text-indent: -9999;
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;	
+  background-color: #278941;
+  color:#F2F2F2;
+  cursor:pointer;
+  display:inline-block;
+  font-size:12px;
+  margin-bottom:20px;
+  padding:10px;
+  text-align:center;
+  width:220px;
+  height: 18px;
+  text-indent: -9999;
 }
 
 .cadastre a img{
-	left:-10px;
-	position:relative;
-	top:-10px;
+  left:-10px;
+  position:relative;
+  top:-10px;
 }
 
 .cadastre p{
-	font-size: 14px;
-	color: #fdd011 !important;
+  font-size: 14px;
+  color: #fdd011 !important;
 }
 
 .site{
-	font-size: 14px;
-	color: #212121;
+  font-size: 14px;
+  color: #212121;
 }
 
 #twitter p{
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 #twitter{
-	background-color: #4a4a47;
-	font-size: 12px;
-	color: #fdd011;
-	display: inline-block;
-	font-weight: bold;
-	padding: 10px;
-	width: 220px;
-	margin-bottom: 10px;
+  background-color: #4a4a47;
+  font-size: 12px;
+  color: #fdd011;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  width: 220px;
+  margin-bottom: 10px;
 }
 
 .twit{
-	background-color:#4a4a47;
-	border:5px solid #F2F2F2;
-	height:66px;
-	margin-top:5px;
-	padding: 15px;
+  background-color:#4a4a47;
+  border:5px solid #F2F2F2;
+  height:66px;
+  margin-top:5px;
+  padding: 15px;
 }
 
 .yellow{
-	color: #FDD011 !important;
+  color: #FDD011 !important;
 }
 
 .twit img{
-	float: left;
-	margin-right: 5px;	
+  float: left;
+  margin-right: 5px;	
 }
 
 .twit small{
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .twit p{
-	font-weight: normal !important;
-	color: #f2f2f2;
-	font-size: 12px;
+  font-weight: normal !important;
+  color: #f2f2f2;
+  font-size: 12px;
 }
 
 #meses_left{
-	margin-top: 15px;
-	float: left;
-	font-weight: normal;
-	line-height: 1.1;
-	float: left;
+  margin-top: 15px;
+  float: left;
+  font-weight: normal;
+  line-height: 1.1;
+  float: left;
 }
 
 #meses p a:hover{
-	color: #FDD011;
+  color: #FDD011;
 }
 
 
 #mapa{
-	padding: 7px;
-	float: right;
+  padding: 7px;
+  float: right;
 }
 
 #detalhe_left{
-	float: left;
-	margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 #detalhe_right{
-	float: left;
+  float: left;
 
 }
 
 #detalhe_right p{
-	font-weight: normal;
-	margin-bottom: 5px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
 #detalhe_right p span{
-	font-weight: bold;
-	float: left;
-	padding-right: 5px;
+  font-weight: bold;
+  float: left;
+  padding-right: 5px;
 }
 
 #detalhe_desc{
-	font-size:14px;
-	line-height:1.1;
-	margin-top:20px;
-	text-align:justify;
-	width:640px;
+  font-size:14px;
+  line-height:1.1;
+  margin-top:20px;
+  text-align:justify;
+  width:640px;
 }
 
 a:link,
 a:visited {
-	color:#555555;
-	line-height:18px;
-	text-decoration:none;
+  color:#555555;
+  line-height:18px;
+  text-decoration:none;
 }
 
 
@@ -402,40 +407,40 @@ a:visited {
 .info_button a:visited,
 .cadastre a:link,
 .cadastre a:visited {
-	color:#ffffff;
-	line-height:18px;
-	text-decoration:none;
+  color:#ffffff;
+  line-height:18px;
+  text-decoration:none;
 }
 
 
 .notice{
-	color:#666666;
-	font-size:14px;
-	margin-bottom:20px;
-	width:400px;
+  color:#666666;
+  font-size:14px;
+  margin-bottom:20px;
+  width:400px;
 }
 
 .tags{
-	font-size: 12px !important;
-	margin-top: 5px;
-	color: #4A4A47 !important;
+  font-size: 12px !important;
+  margin-top: 5px;
+  color: #4A4A47 !important;
 }
 
 .tag:hover{
-		text-decoration: underline;
+  text-decoration: underline;
 }
 
 #geeks{
-	background:url("/images/geeks.jpg") no-repeat scroll 0 0 #F2F2F2;
-	height:100px;
-	left:-20px;
-	margin-top:0;
-	position:relative;
-	width:680px;}
+  background:url("/images/geeks.jpg") no-repeat scroll 0 0 #F2F2F2;
+  height:100px;
+  left:-20px;
+  margin-top:0;
+  position:relative;
+  width:680px;}
 
 .copy{
-	padding-top: 5px;
-	color: #f2f2f2 !important;
+  padding-top: 5px;
+  color: #f2f2f2 !important;
 }
 
 .css1 { font-size: 1.0em; }
@@ -444,41 +449,41 @@ a:visited {
 .css4 { font-size: 1.6em; }
 
 #tags{
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color: #4a4a47;
-	font-size: 12px;
-	font-weight: normal;
-	color: #fdd011;
-	display: inline-block;
-	padding: 10px;
-	width: 220px;
-	margin-bottom: 20px;
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;	
+  background-color: #4a4a47;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fdd011;
+  display: inline-block;
+  padding: 10px;
+  width: 220px;
+  margin-bottom: 20px;
 }
 
 #detalhe_right a:link, #detalhe_right a:visited{
-	color: #4A4A47;
-	font-size: 12px;
+  color: #4A4A47;
+  font-size: 12px;
 }
 
 .left{
-	float:left;
-	margin-right: 20px;
+  float:left;
+  margin-right: 20px;
 }
 
 #estado, #mes, #about{
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_escuro.png');
-	color:#555555;
-	display:inline-block;
-	font-size:12px;
-	font-weight:normal;
-	margin-bottom:20px;
-	padding:15px;
-	width:200px;
-        border: 1px solid #CCCCCC;
-        line-height:18px
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;	
+  background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_escuro.png');
+  color:#555555;
+  display:inline-block;
+  font-size:12px;
+  font-weight:normal;
+  margin-bottom:20px;
+  padding:15px;
+  width:200px;
+  border: 1px solid #CCCCCC;
+  line-height:18px
 }
 
 #about p strong{
@@ -492,92 +497,92 @@ a:visited {
 
 
 .bold{
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .titulo {
-	font-weight: bold;
-	font-size: 20px;
-	margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 3px;
 }
 
 .sub_titulo{
-	font-size: 14px;
-	color: #666666;
+  font-size: 14px;
+  color: #666666;
 }
 
 .item {
-	font-size: 16px;
-	font-weight: bold;
-	margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .item_desc {
-	font-size: 14px;
-	color: #666666;
-	line-height: 1.2;
-	text-align:justify;
-	width:650px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.2;
+  text-align:justify;
+  width:650px;
 }
 
 #banner{
-	width: 664px;
-	height: 158px;
-	background-color: #4A4A47;
-	margin-bottom: 10px;
+  width: 664px;
+  height: 158px;
+  background-color: #4A4A47;
+  margin-bottom: 10px;
 }
 
 .evento_destaque{
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color:#CCCCCC;
-	border:5px solid #818181;
-	margin-bottom:20px;
-	padding:20px;
-	width:590px;}
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;	
+  background-color:#CCCCCC;
+  border:5px solid #818181;
+  margin-bottom:20px;
+  padding:20px;
+  width:590px;}
 
 #twitter_images{
-	padding:5px;
-	margin-top: 20px;
-	float: left;
+  padding:5px;
+  margin-top: 20px;
+  float: left;
 }
 
 #twitter_images img{
-	float: left;
+  float: left;
 }
 
 #twitter_images p{
-	font-size: 12px;
-	font-weight: bold;
-	margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #menu{
-	margin-left:auto;
-	margin-right:auto;
-	width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
 }
 
 #menu ul a{
-	float:right;
-	font-size:13px;
-	padding:10px;
-        margin: 29px 0 0;
-        color: #999999;
-        line-height:0;
+  float:right;
+  font-size:13px;
+  padding:10px;
+  margin: 29px 0 0;
+  color: #999999;
+  line-height:0;
 }
 
 .menu_select{
-	background-color: #f2f2f2;
-	color: #4A4A47;
+  background-color: #f2f2f2;
+  color: #4A4A47;
 }
 
 .menu_inicial:hover{
-        -moz-border-radius:6px 6px 6px 6px;
-        -moz-box-shadow:0 -1px 0 #0B0A0B, 0 1px 0 #666666;
-        background:url("http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_menu_active.jpg") repeat scroll left top transparent !important;
-        color:#FFFFFF !important;
-        height: 2px;
+  -moz-border-radius:6px 6px 6px 6px;
+  -moz-box-shadow:0 -1px 0 #0B0A0B, 0 1px 0 #666666;
+  background:url("http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_menu_active.jpg") repeat scroll left top transparent !important;
+  color:#FFFFFF !important;
+  height: 2px;
 }
 
 #menu li.last a {
@@ -591,7 +596,7 @@ a:visited {
   margin: 13px 0 0 !important;
   padding-right:9px;
 }
-  
+
 .sigla a:link, .sigla a:visited{
   color: #333333;
   float: left;
@@ -606,6 +611,7 @@ a:visited {
 }
 #busca_estado{
   margin-top: 8px;
+  margin-bottom: 80px;
 }
 
 #busca_estado img{
@@ -613,54 +619,78 @@ a:visited {
   margin-right:10px;
 }
 a:link.menu_select, a:visited.menu_select  {
-	color:#4A4A47;
-	font-weight: bold;
-	text-decoration:none;
+  color:#4A4A47;
+  font-weight: bold;
+  text-decoration:none;
 }
 
 
 #peixe{
-	float: right;
+  float: right;
 }
 
 .colaboradores  {
-	-moz-border-radius:10px 10px 10px 10px;
-	-webkit-border-radius:10px 10px 10px 10px;	
-	background-color:#4A4A47;
-	color:#F2F2F2;
-	display:inline-block;
-	font-size:12px;
-	font-weight:normal;
-	margin-bottom:20px;
-	padding:20px;
-	width:200px;
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;	
+  background-color:#4A4A47;
+  color:#F2F2F2;
+  display:inline-block;
+  font-size:12px;
+  font-weight:normal;
+  margin-bottom:20px;
+  padding:20px;
+  width:200px;
 }
 
 .logo a img{
-	left: 25px;
-	position: relative;
-	bottom: 5px;
+  left: 25px;
+  position: relative;
+  bottom: 5px;
 }
 
 .comentario img{
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	width: 48px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 48px;
 }
 
 .comentario_twitter{
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .comentario_descricao{
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .comentario_data{
-	font-size: 10px;
+  font-size: 10px;
 }
 
 .comentario{
-	border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
+
+.quem_vai {
+  float: right;
+  width: 521px;
+  margin-top: 9px;
+}
+
+.quem_vai_pic img{
+  border: 2px solid #ccc;
+}
+
+
+a.button{
+  background:url(img/button.gif);
+  display:block;
+  color:#555555;
+  font-weight:bold;
+  height:30px;
+  line-height:29px;
+  margin-bottom:14px;
+  text-decoration:none;
+  width:191px;
+}
+

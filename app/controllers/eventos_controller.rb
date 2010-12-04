@@ -19,6 +19,7 @@ class EventosController < ApplicationController
   end
 
   def create
+    puts "teste"
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
     unless @evento.data_termino?
