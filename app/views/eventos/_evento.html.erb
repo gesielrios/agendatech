@@ -1,4 +1,3 @@
-
 <div class="evento clearfix">
   <div class="data">
     <%if evento.ta_rolando? %>
@@ -22,13 +21,9 @@
     <% end %>
     </p>
     <br/>
-    <a href=<%= evento_full_path(evento) %>><!--img src="/images/info.png"></img></a>
-    <a href="http://twitter.com/home?status=RT%20@agendatech%20<%= evento.nome %> <%= ShortURL.shorten evento.site, :tinyurl %>"><img src="/images/twitter_icon.png" width="25" /></ai-->			
+    
+    <div class="separador"></div>
 
-      <!--iframe src="http://www.facebook.com/plugins/like.php?href=<%= evento_full_url(evento)%>&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" 
-      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:25px;" 
-      allowTransparency="true"></iframe-->
-      <div class="separador"></div>
       <div class="quem_vai">
         <div class="quem_vai_pics">
           <div class="quem_vai_pic">
@@ -39,6 +34,13 @@
             <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
             <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
             <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <!--máximo 12 participantes -->
+
+          <FORM>
+            <INPUT TYPE="BUTTON" VALUE="Eu vou!" class="botao" style="width: 60px;"
+                        ONCLICK="window.location.href='<%= new_evento_path %>'">
+          </FORM>
+
           </div>
         </div>
       </div>    
