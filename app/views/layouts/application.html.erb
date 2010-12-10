@@ -1,206 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-	<head>
-		<title>Agendatech - Eventod de tecnologia</title>
-		<%= stylesheet_link_tag 'style' %>
-		<%= stylesheet_link_tag 'form' %>
-		<%= stylesheet_link_tag 'contato' %>
-		<%= stylesheet_link_tag 'jquery-ui' %>
-	  <%= include_tiny_mce_if_needed %>
+  <head>
+    <title>Agendatech - Eventod de tecnologia</title>
+    <%= stylesheet_link_tag 'style' %>
+    <%= stylesheet_link_tag 'form' %>
+    <%= stylesheet_link_tag 'contato' %>
+    <%= stylesheet_link_tag 'jquery-ui' %>
+    <%= include_tiny_mce_if_needed %>
     <%= auto_discovery_link_tag :rss, feed_path('rss') %>
-	</head>
-	<body>
-		<div id="header">
-			
-			<div class="container">
-				<h1>
-					<a href="/">
-						<p class="logo_home">AGENDA<span>TECH</span></p>
-					</a>
-				</h1>
-				<h3>Eventos de tecnologia no Brasil</h3>
-			</div>
-			
-		
-			<div id="menu">
-				<ul>
-					<li><%= tab_link_to "Contato", contato_path %></li>
-					<li><%= tab_link_to "Sobre", sobre_path %></li>
-					<li><%= tab_link_to "Grupos",  grupos_path %></li>
-					<li><%= tab_link_to "Eventos", eventos_path %></li>
-					<% if admin_signed_in?%>	
-						<li><%= tab_link_to "Aprovação Eventos", admin_eventos_path %></li>
-						<li><%= tab_link_to "Aprovação Grupos",  admin_grupos_path %></li>
-	        	<li class="last"><%= tab_link_to "Logout", destroy_admin_session_path %></li>
-					<%end%>
-				</ul>
-			</div>
-			<div style="clear:both"></div>
-			
-		</div>
-		
-		<div id="content">
-			<div style="clear: both"></div>
-			<div class="container">
+  </head>
+  <body>
+    <div id="header">
 
-				<div id="left" >
-                                        <div id="busca_estado">
-                                          <p class="busca">Busca por estado:</p>
-                                          <p class="sigla"><a href="#">SP</a></p>
-                                          <p class="sigla"><a href="#">SP</a></p>
-                                          <p class="sigla"><a href="#">SP</a></p>
-                                          <p class="sigla"><a href="#">SP</a></p>
-                                          <p class="sigla"><a href="#">SP</a></p>
-                                          <%= image_tag 'rss.png' %>
-                                          <%= image_tag 'ical.jpg' %>
-                                        </div>  
-					<p class="breadcrumb"><% if @mes %>Eventos em <%= @mes %><% end %></p>
-					<p class="breadcrumb"><% if @tag %>Eventos de <%= @tag	%><% end %></p>
-
-					<%= yield %>
-
-				</div>
-				<div id="right" >
+      <div class="container">
+        <h1>
+          <a href="/">
+            <p class="logo_home">agenda<span>tech</span></p>
+          </a>
+        </h1>
+        <h3>Eventos de tecnologia no Brasil</h3>
+      </div>
 
 
-					<div class="cadastre">
-							<a href=<%= new_evento_path %>>CADASTRAR NOVO EVENTO</a>
-					</div>
-                                        <div id="about">
-                                          <p><strong>A Agendatech busca facilitar o networking dos profissionais
-                                          de tecnologia do Brasil.</strong></p>
-                                          <p>Cadastre todos os eventos de todos os estados, dojos, palestras, encontros de grupos de usuários, etc.
-                                          </p>
-                                        </div>
-						<div id="mes">
-							<p class="bold">Últimos Comentários</p><br />
+      <div id="menu">
+        <ul>
+          <li><%= tab_link_to "Contato", contato_path %></li>
+          <li><%= tab_link_to "Sobre", sobre_path %></li>
+          <li><%= tab_link_to "Grupos",  grupos_path %></li>
+          <li><%= tab_link_to "Eventos", eventos_path %></li>
+          <% if admin_signed_in?%>	
+            <li><%= tab_link_to "Aprovação Eventos", admin_eventos_path %></li>
+            <li><%= tab_link_to "Aprovação Grupos",  admin_grupos_path %></li>
+            <li class="last"><%= tab_link_to "Logout", destroy_admin_session_path %></li>
+          <%end%>
+        </ul>
+      </div>
+      <div style="clear:both"></div>
 
-							<% for comentario in @ultimos_comentarios %>
-							<div class="comentario">
-								<p class="comentario_descricao">@<%=comentario.twitter%></p><br/>
-								<div style="clear:both;"></div>
+    </div>
 
-								<p class="comentario_descricao"><%= comentario.descricao %></p>
-								<p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
+    <div id="content">
+      <div style="clear: both"></div>
+      <div class="container">
 
-							</div>
-							<br />
-							<% end %>
+        <div id="left" >
+        <!--p class="breadcrumb"><% if @mes %>Eventos em <%= @mes %><% end %></p>
+        <p class="breadcrumb"><% if @tag %>Eventos de <%= @tag	%><% end %></p-->
 
-						</div>
+          <%= yield %>
 
-
-						<div id="mes">
-							<p class="bold">Eventos por mês</p><br />
-
-							<div id="meses">
-								<div class="left">
-									<p><%= link_to 'Janeiro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Janeiro") %></p>
-									<p><%= link_to 'Fevereiro'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Fevereiro") %></p>
-									<p><%= link_to 'Março'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Março") %></p>
-									<p><%= link_to 'Abril'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Abril") %></p>
-									<p><%= link_to 'Maio'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Maio") %></p>
-									<p><%= link_to 'Junho'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Junho") %></p>
-								</div>
-
-								<div class="">
-									<p><%= link_to 'Julho'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Julho") %></p>
-									<p><%= link_to 'Agosto'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Agosto") %></p>
-									<p><%= link_to 'Setembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Setembro") %></p>
-									<p><%= link_to 'Outubro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Outubro") %></p>
-									<p><%= link_to 'Novembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Novembro") %></p>
-									<p><%= link_to 'Dezembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Dezembro") %></p>
-								</div>
-							</div>
-						</div>
+        </div>
+        <div id="right" >
 
 
+          <FORM>
+            <INPUT TYPE="BUTTON" VALUE="Cadastrar novo evento" class="botao" style="width: 230px;"
+                        ONCLICK="window.location.href='<%= new_evento_path %>'">
+          </FORM>
+
+          <br/>
+
+          <div id="about">
+            <div class="inner">
+              
+
+            <p><strong>A Agendatech busca facilitar o networking dos profissionais
+              de tecnologia do Brasil.</strong></p>
+            <p>Cadastre todos os eventos de todos os estados, dojos, palestras, encontros de grupos de usuários, etc.
+            </p>
+            </div>
+
+          </div>
+          <div id="mes">
+            <div class="header">
+              <p>Últimos comentários</p>              
+            </div>
+
+            <% for comentario in @ultimos_comentarios %>
+              <div class="comentario">
+                <p class="comentario_descricao">@<%=comentario.twitter%></p><br/>
+                <div style="clear:both;"></div>
+
+                <p class="comentario_descricao"><%= comentario.descricao %></p>
+                <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
+
+              </div>
+              <br />
+            <% end %>
+
+          </div>
 
 
+          <div id="mes">
+            <div class="header">
+              <p class="bold">Eventos por mês (12)</p><br />
+            </div>
 
+            <div class="inner">
+              <div class="left">
+                <p><%= link_to 'Janeiro (2)'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Janeiro") %></p>
+                <p><%= link_to 'Fevereiro (3)'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Fevereiro") %></p>
+                <p><%= link_to 'Março'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Março") %></p>
+                <p><%= link_to 'Abril'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Abril") %></p>
+                <p><%= link_to 'Maio'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Maio") %></p>
+                <p><%= link_to 'Junho'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Junho") %></p>
+              </div>
 
-							<div id="estado">
-								<p class="bold">Eventos por estado</p><br/>
-								<div id="meses">
-								<% for sigla in estados_com_eventos %>
-                     <p>
-                        <%= link_to nome_do_estado(sigla), eventos_por_estado_path(:estado => nome_do_estado(sigla)) %>
-                    </p>
-								<% end %>
-								</div>
-							</div>
-
-
-									<div id="twitter">
-									            <p>Eventos no twitter</p>
-									            <% for t in @twits %>
-									            <div class="twit">
-									              <img src="<%= t.profile_image_url %>" width="48px" height="48px">
-									              <small><a href="http://www.twitter.com/<%= t.from_user %>" target="blank">@<%= t.from_user %></a></small>
-									              <p><%= t.text %></p>
-									            </div>
-									            <% end  %>
-			          </div>
-					<div id="tags">
-					  <% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
-						<%= link_to tag.name, { :action => :tag, :controller => :eventos,:id => tag.name }, :class => css_class %>
-					  <% end %>
-					</div>
-
-
-		<div id="qcon">
-		  <a href="http://www.caelum.com.br/" alt="Caelum ensindo e inovação" target="_blank" ><img src="/images/caelum.jpg" /></a><br/><br/>
-			<a href="http://www.rubyinside.com.br/" alt="O maior site de ruby on rails do mundo" target="_blank" ><img src="/images/logo-br.gif" /></a>
-		</div>
+              <div class="">
+                <p><%= link_to 'Julho'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Julho") %></p>
+                <p><%= link_to 'Agosto'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Agosto") %></p>
+                <p><%= link_to 'Setembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Setembro") %></p>
+                <p><%= link_to 'Outubro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Outubro") %></p>
+                <p><%= link_to 'Novembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Novembro") %></p>
+                <p><%= link_to 'Dezembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Dezembro") %></p>
+              </div>
+            </div>
           </div>
 
 
 
 
-				</div>
-				<div style="clear: both"></div>
 
 
-			</div>
-		</div>
+          <div id="estado">
+            <div class="header">
+              <p>Eventos por Estado (37)</p>  
+            </div>
+            <div class="inner">
+              <% for sigla in estados_com_eventos %>
+                <p>
+                <%= link_to nome_do_estado(sigla), eventos_por_estado_path(:estado => nome_do_estado(sigla)) %>
+                </p>
+              <% end %>
+            </div>
+          </div>
 
 
-		<div id="footer">
+          <div id="twitter">
+            <div class="header">
+              <p>Eventos no Twitter</p>
+            </div>
+            <div class="inner">
 
-			<div class="container">
-				<a href="/">
-				<p class="logo_footer">agenda<span>tech</span></p>
-				</a>
+              <% for t in @twits %>
+                <div class="twit">
+                  <img src="<%= t.profile_image_url %>" width="48px" height="48px">
+                  <small><a href="http://www.twitter.com/<%= t.from_user %>" target="blank">@<%= t.from_user %></a></small>
+                  <p><%= t.text %></p>
+                </div>
+              <% end  %>
 
-				<p><%= link_to "Home", :controller => 'eventos' %> |
-				   <%= link_to "Rails", :controller => 'eventos/tag/rails' %>	|
-				   <%= link_to "Java", :controller => 'eventos/tag/java' %> |
-				   <%= link_to "Arquitetura", :controller => 'eventos/tag/arquitetura' %> |
-				   <%= link_to "Ruby", :controller => 'eventos/tag/ruby' %> |
-				   <%= link_to "Design", :controller => 'eventos/tag/design' %> |
-				   <%= link_to "Colaboradores", :controller => 'sobre', :action => 'colaboradores' %> |
-				   <%= link_to "Sobre", :controller => 'sobre' %> | <%= link_to "Contato", :controller => 'notifier' %></p>
-				<p class="copy">Copyright © 2010. All Rights Reserved.</p>
-			</div>
-		</div>
+            </div>
+          </div>
+          <div id="tags">
+            <div class="header">
+              <p>Assuntos em alta</p>
+            </div>
+
+            <div class="inner">
+              <% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
+                <%= link_to tag.name, { :action => :tag, :controller => :eventos,:id => tag.name }, :class => css_class %>
+              <% end %>
+
+            </div>
+          </div>
 
 
-	</body>
+          <div id="qcon">
+            <a href="http://www.caelum.com.br/" alt="Caelum ensindo e inovação" target="_blank" ><img src="/images/caelum.jpg" /></a><br/><br/>
+            <a href="http://www.rubyinside.com.br/" alt="O maior site de ruby on rails do mundo" target="_blank" ><img src="/images/logo-br.gif" /></a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div style="clear: both"></div>
+
+
+    </div>
+  </div>
+
+
+  <div id="footer">
+
+    <div class="container">
+      <a href="/">
+        <p class="logo_footer">agenda<span>tech</span></p>
+      </a>
+
+      <p><%= link_to "Home", :controller => 'eventos' %> |
+      <%= link_to "Rails", :controller => 'eventos/tag/rails' %>	|
+      <%= link_to "Java", :controller => 'eventos/tag/java' %> |
+      <%= link_to "Arquitetura", :controller => 'eventos/tag/arquitetura' %> |
+      <%= link_to "Ruby", :controller => 'eventos/tag/ruby' %> |
+      <%= link_to "Design", :controller => 'eventos/tag/design' %> |
+      <%= link_to "Colaboradores", :controller => 'sobre', :action => 'colaboradores' %> |
+      <%= link_to "Sobre", :controller => 'sobre' %> | <%= link_to "Contato", :controller => 'notifier' %></p>
+      <p class="copy">Copyright © 2010. All Rights Reserved.</p>
+    </div>
+  </div>
+
+
+</body>
 </html>
 <%=yield :javascript%>
-	<!-- Google Analytics -->
-	<script type="text/javascript">
+<!-- Google Analytics -->
+<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-17774509-1']);
-	  _gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17774509-1']);
+  _gaq.push(['_trackPageview']);
 
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	<!-- Google Analytics -->
+  (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+<!-- Google Analytics -->
 
-	</script>
+</script>

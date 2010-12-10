@@ -27,7 +27,11 @@
 	<%= @evento.descricao %>
 </div>
 
-<p class="desc_button"><%= link_to '< Voltar para home', root_path %></p>
+<br>
+<FORM>
+  <INPUT TYPE="BUTTON" VALUE="Voltar" class="botao" style="width: 100px;"
+            ONCLICK="window.location.href='<%= root_path %>'">
+</FORM>
 
 <hr />
 <p>Comente sobre esse evento:</p>

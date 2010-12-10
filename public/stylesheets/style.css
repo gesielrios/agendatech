@@ -47,8 +47,7 @@ blockquote, q {
 }
 
 body{
-  font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-  background: url("http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_body.jpg") repeat scroll 0 0 transparent;
+  font-family: Helvetica,Verdana,Arial,sans-serif;
 }
 
 
@@ -122,7 +121,7 @@ h1{
 }
 
 h1 span{
-  color: #fdd011;
+  color: #0CBADF;
 }
 
 h3 span{
@@ -140,16 +139,11 @@ h3{
 }
 
 #left{
-  background-color:#F2F2F2;
   float:left;
-  padding-left:20px;
   width:660px;
   min-height:1900px;	
-  -moz-border-radius:10px 10px 10px 10px;
-  -moz-box-shadow:0 0 2px #CDCEC8;
-  background-color:#FFFFFF;
-  border:1px solid #CDCEC8;
-  padding:12px;
+  padding:0 12px 12px;
+  border-right: 5px solid #cccccc;
 }
 
 #right{
@@ -209,17 +203,25 @@ h3{
   margin-bottom: 0px;
 }
 
+.info{
+  background-color:#E6E6E6;
+  float:right;
+  padding:10px;
+  width:406px;
+}
 
 #evento a:link, #evento a:visited {
-  color:#4A4A47;
+  color:#444444;
+  font-size:20px;
+  font-weight:bold;
+  line-height:24px;
   text-decoration:none;
-  line-height: 24px;
 }
 
 .info small, #detalhe_right small{
-  font-size: 14px;
-  font-weight: normal;
-  /*	font-style: italic;*/
+  color:#666666;
+  font-size:13px;
+  font-weight:normal;
 }
 
 .space{
@@ -252,14 +254,15 @@ h3{
 }
 
 .evento{
-  border-top:1px dotted #CCCCCC;
-  padding:10px 20px;
+  border:1px solid #CCCCCC;
+  padding:10px;
   width:618px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 13px;
+  background-color: #F9F9F9;
 }
 
-.evento:hover {
-  background-color:#FFFFD7;
-}
 .grupo{
   -moz-border-radius:10px 10px 10px 10px;
   -webkit-border-radius:10px 10px 10px 10px;	
@@ -277,7 +280,7 @@ h3{
 .cadastre{
   -moz-border-radius:10px 10px 10px 10px;
   -webkit-border-radius:10px 10px 10px 10px;	
-  background-color: #278941;
+  background-color: #0CBADF;
   color:#F2F2F2;
   cursor:pointer;
   display:inline-block;
@@ -308,17 +311,6 @@ h3{
 
 #twitter p{
   margin-bottom: 15px;
-}
-
-#twitter{
-  background-color: #4a4a47;
-  font-size: 12px;
-  color: #fdd011;
-  display: inline-block;
-  font-weight: bold;
-  padding: 10px;
-  width: 220px;
-  margin-bottom: 10px;
 }
 
 .twit{
@@ -448,19 +440,6 @@ a:visited {
 .css3 { font-size: 1.4em; }
 .css4 { font-size: 1.6em; }
 
-#tags{
-  -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;	
-  background-color: #4a4a47;
-  font-size: 12px;
-  font-weight: normal;
-  color: #fdd011;
-  display: inline-block;
-  padding: 10px;
-  width: 220px;
-  margin-bottom: 20px;
-}
-
 #detalhe_right a:link, #detalhe_right a:visited{
   color: #4A4A47;
   font-size: 12px;
@@ -471,19 +450,17 @@ a:visited {
   margin-right: 20px;
 }
 
-#estado, #mes, #about{
+#estado, #mes, #about, #twitter, #tags{
   -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;	
-  background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_escuro.png');
-  color:#555555;
+  border:1px solid #CCCCCC;
+  color:#666666;
   display:inline-block;
   font-size:12px;
   font-weight:normal;
+  line-height:18px;
   margin-bottom:20px;
-  padding:15px;
-  width:200px;
-  border: 1px solid #CCCCCC;
-  line-height:18px
+  width:230px;
+  background-color: #F9F9F9;
 }
 
 #about p strong{
@@ -568,7 +545,7 @@ a:visited {
   font-size:13px;
   padding:10px;
   margin: 29px 0 0;
-  color: #999999;
+  color: #ffffff;
   line-height:0;
 }
 
@@ -673,12 +650,14 @@ a:link.menu_select, a:visited.menu_select  {
 
 .quem_vai {
   float: right;
-  width: 521px;
-  margin-top: 9px;
+  width: 408px;
+  padding-top: 9px;
+  border-top: 1px solid #ffffff;
 }
 
 .quem_vai_pic img{
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
+  padding: 2px;
 }
 
 
@@ -694,3 +673,34 @@ a.button{
   width:191px;
 }
 
+.separador{
+  border-bottom: 1px solid #cccccc;
+}
+
+.header{
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+  background:none repeat scroll 0 0 #0CBADF;
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+  font-weight:bold;
+  height:16px;
+  margin-bottom:-1px !important;
+  padding:8px 10px;
+  position:relative;
+  z-index:40;
+  color: #ffffff;
+}  
+
+.inner{
+  padding: 8px 10px ;
+}
+
+.botao{
+  background-color:#0CBADF;
+  color:#FFFFFF;
+  display:inline-block;
+  font-size:12px !important;
+  font-weight:normal !important;
+  padding:5px;
+  width:104px;
+}
