@@ -198,9 +198,10 @@ h3{
 }
 
 .info p, #detalhe_right strong, #contato h1{
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 0px;
+  line-height: 20px;
 }
 
 .info{

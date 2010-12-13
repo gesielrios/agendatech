@@ -1,5 +1,5 @@
 source :rubygems
-gem "rails"            , "2.3.8"
+gem "rails"            , "2.3.10"
 gem "mysql"
 gem "paperclip"
 gem "twitter"          , "0.9.8"
@@ -7,7 +7,8 @@ gem "devise"           , "1.0.8"
 gem "icalendar"        , "1.1.5"
 gem "friendly_id"      , "3.1.6"
 gem 'shorturl'         , "0.8.8"   
-gem 'restfulie'        , "0.9.1"
+gem "omniauth"
+
 
 group :production do
 gem "aws-s3"
