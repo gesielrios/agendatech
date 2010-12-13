@@ -1,5 +1,6 @@
 <% form_for :notifier, :url => '/notifier/notifier',:html => { :id => 'contato' } do |f| %>
 	<h1 class="contato">Contato</h1>
+        <div style="clear: both;"></div>
 	<h5 class="aviso">Entre em contato conosco.</h5>
 	<br />
 	<p>
@@ -15,6 +16,6 @@
 	  <textarea id="mensagem" name="contato[mensagem]"></textarea>
 	</p>
 	<br />
-	<input type="submit" />
+	<input class="botao" value="Enviar" type="submit" />
 	<%= flash[:notice] %>	
 <%end%>

@@ -44,6 +44,9 @@
       <div style="clear: both"></div>
       <div class="container">
 
+        <% if flash[:aguarde] %>
+          <p class="notice"><%=flash[:aguarde]%></p>
+        <% end  %>
         <div id="left" >
         <!--p class="breadcrumb"><% if @mes %>Eventos em <%= @mes %><% end %></p>
         <p class="breadcrumb"><% if @tag %>Eventos de <%= @tag	%><% end %></p-->
@@ -56,19 +59,19 @@
 
           <FORM>
             <INPUT TYPE="BUTTON" VALUE="Cadastrar novo evento" class="botao" style="width: 230px;"
-                        ONCLICK="window.location.href='<%= new_evento_path %>'">
+            ONCLICK="window.location.href='<%= new_evento_path %>'">
           </FORM>
 
           <br/>
 
           <div id="about">
             <div class="inner">
-              
 
-            <p><strong>A Agendatech busca facilitar o networking dos profissionais
-              de tecnologia do Brasil.</strong></p>
-            <p>Cadastre todos os eventos de todos os estados, dojos, palestras, encontros de grupos de usuários, etc.
-            </p>
+
+              <p><strong>A Agendatech busca facilitar o networking dos profissionais
+                de tecnologia do Brasil.</strong></p>
+              <p>Cadastre todos os eventos de todos os estados, dojos, palestras, encontros de grupos de usuários, etc.
+              </p>
             </div>
 
           </div>
@@ -76,19 +79,20 @@
             <div class="header">
               <p>Últimos comentários</p>              
             </div>
+            <div class="inner">
 
-            <% for comentario in @ultimos_comentarios %>
-              <div class="comentario">
-                <p class="comentario_descricao">@<%=comentario.twitter%></p><br/>
-                <div style="clear:both;"></div>
+              <% for comentario in @ultimos_comentarios %>
+                <div class="comentario">
 
-                <p class="comentario_descricao"><%= comentario.descricao %></p>
-                <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
+                  <p class="comentario_descricao"><%= comentario.descricao %></p>
+                  <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
 
-              </div>
-              <br />
-            <% end %>
+                </div>
+                <br />
+              <% end %>
 
+
+            </div>
           </div>
 
 

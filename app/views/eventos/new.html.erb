@@ -38,7 +38,7 @@
     </p>
 
     <p>
-    <label for="email">Site</label>
+    <label for="email">* Site</label>
     <%=error_message_on :evento,:site%>
     <input type="text" name="evento[site]" value="<%=@evento.site%>"/>
     </p>
@@ -61,7 +61,7 @@
 
 
     <br />
-    <input type="submit" value="Cadastrar"/>
+    <input type="submit" value="Cadastrar" class="botao" />
   <% end %>
 
   <%-content_for :javascript do %>

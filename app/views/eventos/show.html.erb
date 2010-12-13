@@ -1,13 +1,23 @@
-<div id="detalhe_left">
-	 <%= image_tag @evento.logo.url(:medium) if @evento.logo? %>
-</div>
+<div class="evento clearfix">
+  <div class="data">
+    <%if @evento.ta_rolando? %>
+      <p><%= Date.today.day %></p>
+      <small><%= l(Date.today, :format => :month) %></small>
+    <%else%>
+      <p><%= @evento.data.day %></p>
+      <small><%= l(@evento.data, :format => :month) %></small>			
+    <%end%>
+  </div>
 
-<div id="detalhe_right" >
-	<strong><%= @evento.nome %></strong><br />
-	<small><%= nome_do_estado @evento.estado %></small>
+  <div class="logo clearfix"> <%= image_tag @evento.logo.url(:thumb) if @evento.logo? %> </div>
+
+  <div class="info">
+    <p id="evento"><%= link_to @evento.nome, evento_full_path(@evento) %></p>
+    <small><%= nome_do_estado @evento.estado %></small><br/>
+
     <p><span>Data:</span><%= @evento.data.day %>/<%= l(@evento.data, :format => :month) %></p>
 	<small><%= evento_do @evento.grupo %></small>
-	<br/><br/><br/>
+        <br/><br/>
 
 	<p><span>Tags:</span>
 
@@ -19,19 +29,38 @@
 
 	<p><span>Site:</span><a href="<%= @evento.site %>" target="blank"><%= @evento.site %></a></p>
 	<p><span>Twitter:</span><a href="http://www.twitter.com/<%= @evento.twitter %>" target="blank">@<%= @evento.twitter %></a></p>
-</div>
 
-<div style="clear:both;"></div>
 
 <div id="detalhe_desc" >
 	<%= @evento.descricao %>
 </div>
 
-<br>
-<FORM>
-  <INPUT TYPE="BUTTON" VALUE="Voltar" class="botao" style="width: 100px;"
-            ONCLICK="window.location.href='<%= root_path %>'">
-</FORM>
+   
+    <div class="separador"></div>
+
+      <div class="quem_vai">
+        <div class="quem_vai_pics">
+          <div class="quem_vai_pic">
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
+            <!--máximo 12 participantes -->
+
+          <FORM>
+            <INPUT TYPE="BUTTON" VALUE="Eu vou!" class="botao" style="width: 60px;"
+                        ONCLICK="window.location.href='<%= new_evento_path %>'">
+          </FORM>
+
+          </div>
+        </div>
+      </div>    
+
+    </div>
+    <div style="clear: both;"></div>
 
 <hr />
 <p>Comente sobre esse evento:</p>
@@ -72,3 +101,15 @@
 	<input type="submit" value="Comentar"/>
 
 <% end  %>	
+<hr>
+<FORM>
+  <INPUT TYPE="BUTTON" VALUE="Voltar" class="botao" style="width: 100px;"
+            ONCLICK="window.location.href='<%= root_path %>'">
+</FORM>
+
+
+
+  </div>
+
+<br>
+

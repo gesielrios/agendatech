@@ -53,7 +53,7 @@ body{
 
 #header{
   color: #F2F2F2;
-  background: url('http://openjobs.com.br/sites/all/themes/openjobs2010/images/bg_header.jpg');
+  background: url('/images/bg_header.jpg');
   height: 75px;
   margin-bottom:30px;
 }
@@ -383,7 +383,6 @@ h3{
   line-height:1.1;
   margin-top:20px;
   text-align:justify;
-  width:640px;
 }
 
 a:link,
@@ -406,10 +405,13 @@ a:visited {
 
 
 .notice{
+  background-color:#F1E997;
   color:#666666;
   font-size:14px;
   margin-bottom:20px;
-  width:400px;
+  padding:10px;
+  text-align:center;
+  width:940px;
 }
 
 .tags{
@@ -696,11 +698,13 @@ a.button{
 }
 
 .botao{
-  background-color:#0CBADF;
-  color:#FFFFFF;
+  background-color:#0CBADF !important;
+  color:#FFFFFF !important;
   display:inline-block;
   font-size:12px !important;
   font-weight:normal !important;
   padding:5px;
   width:104px;
+  cursor: hand;
+  cursor: pointer;
 }
