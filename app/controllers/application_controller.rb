@@ -81,11 +81,13 @@ class ApplicationController < ActionController::Base
     eventos = Evento.find_by_sql("select distinct twitter_hash from eventos where aprovado = true limit 3")
     @twits = []
 
-    #eventos.each do |e|
-    #   Twitter::Search.new(e.twitter_hash).page(1).per_page(1).each do |r|
-    #     @twits << r
-    #   end
-    #end
+    eventos.each do |e|
+       if e.twitter_hash != "" 
+        Twitter::Search.new.q(e.twitter_hash).page(1).per_page(1).each do |r|
+          @twits << r
+        end
+       end
+    end
     @twits
     
   end

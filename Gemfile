@@ -5,7 +5,7 @@ gem "paperclip"
 gem "twitter"
 gem "devise"
 gem "icalendar"        , "1.1.5"
-gem "friendly_id"      , "3.1.6"
+gem "friendly_id"
 gem 'shorturl'         , "0.8.8"   
 gem 'validates_timeliness', '~> 3.0.2'
 gem "omniauth"

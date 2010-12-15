@@ -10,6 +10,7 @@ Agendatech::Application.routes.draw do
   match 'rss/feed.:format' => 'rss#feed', :as => :feed
   match '/' => 'eventos#index'
   resources :eventos
+  root :to => 'eventos#index'
   resources :comentarios
   match 'calendario/eventos' => 'calendario#index', :as => :calendario
   match 'calendario/eventos/:estado' => 'calendario#index', :as => :calendario_por_estado
