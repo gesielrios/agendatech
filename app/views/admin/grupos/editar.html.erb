@@ -1,5 +1,5 @@
 <h2 class="titulo">Grupos de usuários</h2>
-<% form_for @grupo, :url => {:action=> "update"}, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
+<%= form_for @grupo, :url => {:action=> "update"}, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
 
 	<input type="hidden" name="id" value="<%=@grupo.id%>"/>
 

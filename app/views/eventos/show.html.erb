@@ -87,7 +87,7 @@
 <% end %>
 
 <br/> <br/>
-<% form_for @comentario, :url => {:action => "comentar"}, :html => { :class => 'resource_form' } do |f| %>
+<%= form_for @comentario, :url => {:action => "comentar"}, :html => { :class => 'resource_form' } do |f| %>
 	<input type="hidden" name="comentario[evento_id]" value="<%= @evento.id %>"/>
 	<p>
 		<label for="twitter">Seu Twitter: (sem @)</label><br />

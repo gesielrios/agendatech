@@ -3,7 +3,7 @@
 	No agendatech você pode cadastrar o seu grupo de usuários e divulgar os seus encontros.
 	Cadastre-o no formulário abaixo e logo poderá promovê-lo!
 </p>
-<% form_for @grupo, grupos_path, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
+<%= form_for @grupo, grupos_path, :method => :post, :html => {:multipart => true, :class => 'resource_form' } do |f| %>
 	<p>
 		<%= f.label :nome %><br/>
 		<%= error_message_on :grupo, :nome%>

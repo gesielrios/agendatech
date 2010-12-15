@@ -1,11 +1,13 @@
 class Notifier < ActionMailer::Base
 
+  default :from => "contato@agendatech.com.br"
+
   def envia_email (contato)
-    
-    from "contato@agendatech.com.br"
-    recipients ["andersonlfl@gmail.com", "alots.ssa@gmail.com"]
-    subject "Contato agendatech"
-    body :contato => contato
+
+    mail( :subject => "Contato agendatech",
+          :to =>  ["andersonlfl@gmail.com", "alots.ssa@gmail.com"]
+        )
+    @contato = contato
     
   end
 

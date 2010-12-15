@@ -5,13 +5,13 @@ class EnvironmentHack
   end
   
   def producao(&block)
-    if RAILS_ENV=='production'
+    if Rails.env=='production'
       block.call unless block.nil?
     end
   end
   
   def outros(&block)
-    unless RAILS_ENV=='production'
+    unless Rails.env=='production'
       block.call unless block.nil?
     end
   end  

@@ -1,3 +1,6 @@
+require 'plugins'
+require 'environment_hack'
+
 class Evento < ActiveRecord::Base
   has_many :comentarios
   belongs_to :grupo
@@ -12,9 +15,9 @@ class Evento < ActiveRecord::Base
   validate :termino_depois_do_inicio?,:if => Proc.new { |evento| !evento.aprovado }
   validates_format_of :site, :with => /(^$)|(^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$)/ix
 
-  named_scope :estado_aprovado, lambda { |estado| { :conditions => ["aprovado = ? AND estado = ?", true, estado], :order => 'data ASC' } }
+  scope :estado_aprovado, lambda { |estado| { :conditions => ["aprovado = ? AND estado = ?", true, estado], :order => 'data ASC' } }
 
-  named_scope :nao_ocorrido, {
+  scope :nao_ocorrido, {
     :conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today],
     :order => 'data ASC'
   }
