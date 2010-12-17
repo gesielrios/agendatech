@@ -6,6 +6,7 @@ Agendatech::Application.routes.draw do
 #  end 
 
 
+  match 'gadgets/:evento/:tipo' => 'gadgets#interagir', :as => :gadgets
   match 'admins' => 'admin/admin#index', :as => :devise_for
   match 'rss/feed.:format' => 'rss#feed', :as => :feed
   match '/' => 'eventos#index'
