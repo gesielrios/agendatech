@@ -19,7 +19,6 @@ class EventosController < ApplicationController
   end
 
   def create
-    puts "teste"
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
     unless @evento.data_termino?
@@ -34,7 +33,6 @@ class EventosController < ApplicationController
   end
 
   def show
-    p "#{params[:id]} <<<<=========="
     @evento = Evento.find_by_cached_slug(params[:id])
     @comentario = Comentario.new
   end
