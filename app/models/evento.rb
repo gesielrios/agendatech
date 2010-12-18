@@ -1,6 +1,3 @@
-require 'plugins'
-require 'environment_hack'
-
 class Evento < ActiveRecord::Base
   has_many :comentarios
   belongs_to :grupo
