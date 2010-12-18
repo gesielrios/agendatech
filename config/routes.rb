@@ -1,16 +1,24 @@
 Agendatech::Application.routes.draw do
-#  namespace :admin do 
-#    root :controller => 'admin' 
-#    resources :eventos, :only => [:index], :member => {:aprovar => :get, :remover => :get} 
-#    resources :grupos, :only => [:index, :destroy], :member => {:aprovar => :put} 
-#  end 
-
+  devise_for :admins
+  namespace :admin do 
+    root :to => 'admin#index'
+    resources :eventos, :only => [:index] do
+      member do
+        get 'aprovar'
+        get 'remover' 
+      end
+    end
+    resources :grupos, :only => [:index, :destroy] do 
+      member do
+        put 'aprovar'
+      end
+    end
+  end 
 
   match 'gadgets/:evento/:tipo' => 'gadgets#interagir', :as => :gadgets
-  match 'admins' => 'admin/admin#index', :as => :devise_for
   match 'rss/feed.:format' => 'rss#feed', :as => :feed
   match '/' => 'eventos#index'
-  resources :eventos
+  resources :eventos, :path_names => {:new => 'novo', :edit => 'editar'}
   root :to => 'eventos#index'
   resources :comentarios
   match 'calendario/eventos' => 'calendario#index', :as => :calendario
