@@ -3,13 +3,13 @@ class EventosController < ApplicationController
 
   def index
     if params[:month]
-      @eventos = Evento.all(:conditions=> ["aprovado = ? AND #{SQL.mes_do_evento} = ? ", true,  numero_do_mes(params[:month])], :order => 'data ASC')
+      @eventos = Evento.por_mes(params[:month]).top_gadgets(Gadget.tipos[:eu_vou])
       @mes = params[:month]
     else
       if params[:estado]
-        @eventos = Evento.estado_aprovado(estados.index(params[:estado]))
+        @eventos = Evento.estado_aprovado(estados.index(params[:estado])).top_gadgets(Gadget.tipos[:eu_vou])
       else
-        @eventos = Evento.nao_ocorrido
+        @eventos = Evento.nao_ocorrido.top_gadgets(Gadget.tipos[:eu_vou])
       end
     end
   end

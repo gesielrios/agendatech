@@ -27,18 +27,12 @@
       <div class="quem_vai">
         <div class="quem_vai_pics">
           <div class="quem_vai_pic">
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <!--máximo 12 participantes -->
-
+            <% evento.gadgets.each do |gadget| %>
+              <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" /-->
+           <%end%>
           <FORM>
             <INPUT TYPE="BUTTON" VALUE="Eu vou!" class="botao" style="width: 60px;"
-            ONCLICK="window.location.href='<%= gadgets_path(:evento => evento.id, :tipo => 'EU_VOU') %>'">
+            ONCLICK="window.location.href='<%= gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]) %>'">
           </FORM>
 
           </div>
