@@ -73,7 +73,7 @@ GEM
       faraday (~> 0.5.3)
     ffi (0.6.3)
       rake (>= 0.8.7)
-    friendly_id (3.1.6)
+    friendly_id (3.2.0.beta1)
       babosa (~> 0.2.0)
     gherkin (2.3.2)
       json (~> 1.4.6)
@@ -213,7 +213,7 @@ DEPENDENCIES
   cucumber-rails (>= 0.3.0)
   database_cleaner (>= 0.5.0)
   devise
-  friendly_id
+  friendly_id (= 3.2.0.beta1)
   icalendar (= 1.1.5)
   mysql2
   omniauth

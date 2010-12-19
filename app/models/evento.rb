@@ -18,7 +18,7 @@ class Evento < ActiveRecord::Base
     :conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today],
     :order => 'data ASC'
   }
-
+  
   private
 
   def termino_depois_do_inicio?
@@ -28,7 +28,7 @@ class Evento < ActiveRecord::Base
   end
 
   public
-
+  
   def ta_rolando?
     hoje = Date.today
     if data_termino.nil?
