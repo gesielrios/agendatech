@@ -19,7 +19,7 @@ class Evento < ActiveRecord::Base
 
   scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today).order('data ASC')
   
-  scope :top_gadgets, lambda {|tipo| joins(:gadgets).where('gadgets.tipo = ?',tipo)}
+  scope :top_gadgets, lambda {|tipo| includes(:gadgets).where('gadgets.tipo = ?',tipo)}
   
   private
 
