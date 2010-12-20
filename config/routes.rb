@@ -1,4 +1,8 @@
 Agendatech::Application.routes.draw do
+  resources :authentications
+
+  devise_for :users
+
   devise_for :admins
   namespace :admin do 
     root :to => 'admin#index'
@@ -13,8 +17,9 @@ Agendatech::Application.routes.draw do
         put 'aprovar'
       end
     end
-  end 
+  end
 
+  match '/auth/:provider/callback' => 'authentications#create'
   match 'gadgets/:evento/:tipo' => 'gadgets#interagir', :as => :gadgets
   match 'rss/feed.:format' => 'rss#feed', :as => :feed
   match '/' => 'eventos#index'
