@@ -53,4 +53,27 @@ describe Evento do
   it "deveria configurar o paperclip para usar o amazon-s3 em modo de producao" do
     pending
   end  
+  
+  it "deveria listar todos eventos que ainda vao ocorrer" do
+           Evento.new(:data => Date.today + 10,:nome => 'teste',
+                       :site => 'http://www.teste.com.br',
+                       :descricao => 'testando' ).save
+            Evento.new(:data => Date.today + 10,:nome => 'teste',
+                       :site => 'http://www.teste.com.br',
+                       :descricao => 'testando' ).save    
+  end           
+  
+  it "deveria listar todos os eventos do mes" do
+    pending
+  end
+  
+  it "deveria listar todos os eventos aprovados por estado"
+    pending
+  end
+  
+  it "deveria listar todos os eventos com os gadgets de algum tipo"
+    pending
+  end
+    
+       
 end

@@ -10,7 +10,6 @@ gem 'shorturl'         , "0.8.8"
 gem 'validates_timeliness', '~> 3.0.2'
 gem "omniauth"
 
-
 group :production do
 gem "aws-s3"
 end
