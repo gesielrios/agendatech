@@ -14,9 +14,16 @@ group :production do
 gem "aws-s3"
 end
 
+group :development do
+  gem 'rspec'            
+  gem 'rspec-rails'      , '>=2.0.1'
+  gem 'remarkable'       , '3.1.13'  , :require => false
+  gem 'remarkable_rails' , '3.1.13'  , :require => false
+end
+
 group :test do
-  gem 'rspec'            , '1.3.0'
-  gem 'rspec-rails'
+  gem 'rspec'            
+  gem 'rspec-rails'      , '>=2.0.1'
   gem 'remarkable'       , '3.1.13'  , :require => false
   gem 'remarkable_rails' , '3.1.13'  , :require => false
 end

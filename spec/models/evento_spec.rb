@@ -3,15 +3,9 @@ require 'spec_helper'
 describe Evento do
 
   before(:each) do
-     @evento = Evento.new :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => Time.now
+     @data_base = "10/10/2010"
+     @evento = Evento.new :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => @data_base
    end
-
-  it { should belong_to :grupo }
-
-  it { should have_scope :nao_ocorrido,
-    :conditions=> ["aprovado = ? AND ((? between data and data_termino) OR (data >= ?))  ", true, Date.today,Date.today],
-    :order => 'data ASC'
-  }
 
   it "deveria validar a data de inicio apenas para eventos não aprovados" do
     @evento.data = "10/10/10"
@@ -29,7 +23,7 @@ describe Evento do
 
 
   it "deveria falar que o evento esta rolando se a data de termino eh vazia e o dia eh hoje" do
-    @evento.data = Date.today
+    @evento.data = @data_base
     @evento.data_termino = nil
     @evento.should be_ta_rolando
   end
@@ -55,23 +49,23 @@ describe Evento do
   end  
   
   it "deveria listar todos eventos que ainda vao ocorrer" do
-           Evento.new(:data => Date.today + 10,:nome => 'teste',
-                       :site => 'http://www.teste.com.br',
-                       :descricao => 'testando' ).save
-            Evento.new(:data => Date.today + 10,:nome => 'teste',
-                       :site => 'http://www.teste.com.br',
-                       :descricao => 'testando' ).save    
+           Evento.create(:data => @evento.data + 10.day,:nome => 'teste',
+                         :site => 'http://www.teste.com.br',
+                         :descricao => 'testando' )
+            Evento.create(:data => @evento.data + 10.day,:nome => 'teste',
+                          :site => 'http://www.teste.com.br',
+                          :descricao => 'testando' )
   end           
   
   it "deveria listar todos os eventos do mes" do
     pending
   end
   
-  it "deveria listar todos os eventos aprovados por estado"
+  it "deveria listar todos os eventos aprovados por estado" do
     pending
   end
   
-  it "deveria listar todos os eventos com os gadgets de algum tipo"
+  it "deveria listar todos os eventos com os gadgets de algum tipo" do
     pending
   end
     

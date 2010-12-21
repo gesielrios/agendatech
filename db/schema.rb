@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(:version => 20101220215755) do
     t.datetime "logo_updated_at"
     t.string   "estado"
     t.datetime "data_termino"
-    t.integer  "grupo_id"
     t.string   "cached_slug"
+    t.integer  "grupo_id"
   end
 
   add_index "eventos", ["cached_slug"], :name => "index_eventos_on_cached_slug", :unique => true

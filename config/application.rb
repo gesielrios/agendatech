@@ -40,6 +40,8 @@ module Agendatech
     config.filter_parameters += [:password]
     config.time_zone = 'UTC'
     config.i18n.default_locale = :'pt-BR'
+    #para ativar a validacao do formato da data.
+    config.use_plugin_parser = true
   end
 end
 
