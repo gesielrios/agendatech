@@ -20,7 +20,7 @@ Agendatech::Application.routes.draw do
   end
 
   match '/auth/:provider/callback' => 'authentications#create'
-  match 'gadgets/:evento/:tipo' => 'gadgets#interagir', :as => :gadgets
+  match 'gadgets/:evento/:tipo' => 'gadgets#create', :as => :gadgets
   match 'rss/feed.:format' => 'rss#feed', :as => :feed
   match '/' => 'eventos#index'
   resources :eventos, :path_names => {:new => 'novo', :edit => 'editar'}

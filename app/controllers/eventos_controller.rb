@@ -9,7 +9,7 @@ class EventosController < ApplicationController
       if params[:estado]
         @eventos = Evento.estado_aprovado(estados.index(params[:estado])).top_gadgets(Gadget.tipos[:eu_vou])
       else
-        @eventos = Evento.nao_ocorrido.top_gadgets(Gadget.tipos[:eu_vou])
+        @eventos = Evento.nao_ocorrido#.top_gadgets(Gadget.tipos[:eu_vou])
       end
     end
   end

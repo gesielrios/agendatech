@@ -658,9 +658,15 @@ a:link.menu_select, a:visited.menu_select  {
   border-top: 1px solid #ffffff;
 }
 
+.quem_vai_pic {
+  float: left;
+}
+
 .quem_vai_pic img{
   border: 1px solid #ccc;
   padding: 2px;
+/*  float: left;*/
+  margin-right: 2px;
 }
 
 
@@ -711,17 +717,10 @@ a.button{
 }
 
 .spinner {
-	display: none;
-	height:46px;
-	opacity:0.8;
-	position:absolute;
-	top:124px;
-	width:400px;
-	z-index:50;
-}
-
-.spinner img {
-	left:90%;
-	position:absolute;
-	top:6%;
+  display: none;
+  float: left;	
+  position:relative;
+  top: 11px;
+  left: 7px;
+  width: 33px;
 }
