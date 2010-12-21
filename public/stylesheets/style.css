@@ -658,9 +658,15 @@ a:link.menu_select, a:visited.menu_select  {
   border-top: 1px solid #ffffff;
 }
 
+.quem_vai_pic {
+  float: left;
+}
+
 .quem_vai_pic img{
   border: 1px solid #ccc;
   padding: 2px;
+/*  float: left;*/
+  margin-right: 2px;
 }
 
 
@@ -708,4 +714,13 @@ a.button{
   width:104px;
   cursor: hand;
   cursor: pointer;
+}
+
+.spinner {
+  display: none;
+  float: left;	
+  position:relative;
+  top: 11px;
+  left: 7px;
+  width: 33px;
 }

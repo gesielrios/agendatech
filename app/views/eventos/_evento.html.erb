@@ -7,7 +7,7 @@
       <p><%= evento.data.day %></p>
       <small><%= l(evento.data, :format => :month) %></small>			
     <%end%>
-  </div>
+  </div><!-- fim class="data" -->
 
   <div class="logo clearfix"> <%= image_tag evento.logo.url(:thumb) if evento.logo? %> </div>
 
@@ -21,20 +21,28 @@
     <% end %>
     </p>
     <br/>
-    
+
     <div class="separador"></div>
 
-      <div class="quem_vai">
-        <div class="quem_vai_pics">
+    <div class="quem_vai">
+      <div class="quem_vai_pics">
+      <div class="spinner">
+        <%= image_tag 'ajax-loader.gif' %>
+      </div>
+        <% evento.gadgets.reverse[0..11].each do |gadget| %>
           <div class="quem_vai_pic">
-            <% evento.gadgets.each do |gadget| %>
-              <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" /-->
-           <%end%>
-          <FORM>
-            <INPUT TYPE="BUTTON" VALUE="Eu vou!" class="botao" style="width: 60px;"
-            ONCLICK="window.location.href='<%= gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]) %>'">
-          </FORM>
+            <%= image_tag User.find(gadget.user_id).image, :size => "25x25" %>
+          </div>
+        <%end%>
+        
+        <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
 
+      </div>
+
+          </div>
+          <div class="gadget_vou">
+
+              <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :remote => true %>
           </div>
         </div>
       </div>    
@@ -42,4 +50,21 @@
     </div>
   </div>
 
+<% content_for :javascript do %>
+  <script type="text/javascript"> 
+    //<![CDATA[
+    $("body").bind("ajax:loading", function(xhr) {
+      $(".quem_vai_pic").last().hide();
+      $(".spinner").show();
+    })
 
+    $("body").bind("ajax:complete", function(xhr) {
+      $(".spinner").hide();
+    })
+
+    $("body").bind("ajax:success", function(xhr, result) {
+      $(".quem_vai_pics").prepend(result);
+    })
+    //]]>
+  </script> 
+<% end %>

@@ -2,6 +2,7 @@
 
 <% for evento in @eventos %>
   <%= render evento %>
+  <p><%= current_user.inspect %></p>
 <% end -%>
 
 <%content_for :javascript do %>
