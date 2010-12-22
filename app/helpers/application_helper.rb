@@ -6,7 +6,7 @@ module ApplicationHelper
     eventos = Evento.find_by_sql("select distinct estado from eventos where aprovado = true order by estado asc")
     @estados = []
     eventos.each do |e|
-        @estados << e.estado
+      @estados << e.estado
     end
     @estados
   end

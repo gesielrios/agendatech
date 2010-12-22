@@ -38,14 +38,14 @@ class Evento < ActiveRecord::Base
     end
     hoje.between?(data.to_date, data_termino.to_date)
   end
-end
-private
 
-def password_required?
-  (authentications.empty? || !password.blank?) && (!persisted? || !password.nil? || !password_confirmation.nil?)
-end
+  private
 
-def email_required?
-  authentications.empty?
-end
+  def password_required?
+    (authentications.empty? || !password.blank?) && (!persisted? || !password.nil? || !password_confirmation.nil?)
+  end
 
+  def email_required?
+    authentications.empty?
+  end
+end

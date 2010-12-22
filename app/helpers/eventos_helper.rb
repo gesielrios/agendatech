@@ -11,5 +11,4 @@ module EventosHelper
     evento_url(:ano => evento.data.year,:id=>evento)
   end
 
-
 end
