@@ -35,12 +35,16 @@
             <%= image_tag User.find(gadget.user_id).image, :size => "25x25" %>
           </div>
         <%end%>
-        <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
+        
+        <% if evento.gadgets.size > 12 %>
+          <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
+        <% end %>
+          
       </div>
     </div>
 
     <div class="gadget_vou">
-      <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}", :remote => true %>
+        <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}", :remote => true %>
     </div>
 
   </div>

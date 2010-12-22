@@ -656,6 +656,7 @@ a:link.menu_select, a:visited.menu_select  {
   width: 408px;
   padding-top: 9px;
   border-top: 1px solid #ffffff;
+  margin-bottom: 10px;
 }
 
 .quem_vai_pic {
@@ -746,4 +747,12 @@ a.button{
   background: url('/images/bg_twitter.png');
   border: none;
   height: 180px;
+}
+
+.gadget_vou a{
+  background-color:#0CBADF;
+  color:#FFFFFF;
+  font-size:12px;
+  padding:5px;
+  border-color: #F2F2F2 #CCCCCC #CCCCCC #F2F2F2;
 }
