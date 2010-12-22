@@ -1,4 +1,4 @@
-<div class="evento clearfix">
+<div class="evento clearfix" id="evento_<%= evento.id %>">
 
   <div class="data">
     <%if evento.ta_rolando? %>
@@ -25,7 +25,7 @@
 
     <div class="separador"></div>
 
-    <div class="quem_vai">
+    <div class="quem_vai" id="quem_vai_<%= evento.id %>">
       <div class="quem_vai_pics">
         <div class="spinner">
           <%= image_tag 'ajax-loader.gif' %>
@@ -40,27 +40,45 @@
     </div>
     
     <div class="gadget_vou">
-      <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :remote => true %>
+      <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}", :remote => true %>
     </div>
 
     </div>
   </div>
 
-  <% content_for :javascript do %>
-    <script type="text/javascript"> 
-      //<![CDATA[
-    $("body").bind("ajax:loading", function(xhr) {
-        $(".quem_vai_pic").last().hide();
-        $(".spinner").show();
-        })
+<% content_for :javascript do %>
+  <script type="text/javascript"> 
+    //<![CDATA[
 
-$("body").bind("ajax:complete", function(xhr) {
-    $(".spinner").hide();
-    })
+    (function() {
 
-$("body").bind("ajax:success", function(xhr, result) {
-    $(".quem_vai_pics").prepend(result);
-    })
-//]]>
-</script> 
+      var evento_id = "";
+
+      $(".ajax_vou").bind("ajax:before", function(e) {
+        evento_id = $(this).attr("id").replace("ajax_vou_", "");
+      });
+
+      $(".evento").bind("ajax:loading", function(xhr) {
+        $(this).filter("#evento_" + evento_id).find(".quem_vai_pic").last().hide().end().end().find(".spinner").show();
+      });
+
+      $(".evento").bind("ajax:success", function(xhr, data, status) {
+        var json_data = eval("(" + data + ")");
+        
+        var quem_vai_pic = $("<div>", { "class" : "quem_vai_pic" });
+        var user_image = $("<img>", { "src" : json_data.gadget.image_url, "width" : "25", "height" : "25" });
+        
+        quem_vai_pic.append(user_image);
+
+        $(this).filter("#evento_" + evento_id).find(".quem_vai_pics").prepend(quem_vai_pic);
+      })
+
+      $(".evento").bind("ajax:complete", function(xhr) {
+        $(this).filter("#evento_" + evento_id).find(".spinner").hide();
+      })
+
+    })();
+
+    //]]>
+  </script> 
 <% end %>

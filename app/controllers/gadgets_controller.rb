@@ -1,5 +1,5 @@
 class GadgetsController < ApplicationController
-  respond_to :js
+  respond_to :json
 
   def create
     if params[:tipo] == "EU_VOU"

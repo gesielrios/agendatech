@@ -665,8 +665,9 @@ a:link.menu_select, a:visited.menu_select  {
 .quem_vai_pic img{
   border: 1px solid #ccc;
   padding: 2px;
-/*  float: left;*/
   margin-right: 2px;
+  width: 25px;
+  height: 25px;
 }
 
 
