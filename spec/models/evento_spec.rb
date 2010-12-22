@@ -23,7 +23,7 @@ describe Evento do
 
 
   it "deveria falar que o evento esta rolando se a data de termino eh vazia e o dia eh hoje" do
-    @evento.data = @data_base
+    @evento.data = Date.today
     @evento.data_termino = nil
     @evento.should be_ta_rolando
   end
