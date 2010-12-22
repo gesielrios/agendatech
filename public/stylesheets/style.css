@@ -453,7 +453,7 @@ a:visited {
   margin-right: 20px;
 }
 
-#estado, #mes, #about, #twitter, #tags{
+#estado, #mes, #about, #twitter, #tags, #twitter_bg {
   -moz-border-radius:10px 10px 10px 10px;
   border:1px solid #CCCCCC;
   color:#666666;
@@ -736,5 +736,14 @@ a.button{
 }
 
 .check{
-  background: url('check.png');
+  /*background: url('/images/check.png');
+  height: 12px;
+  width: 12px;
+  position: absolute;*/
+}
+
+#twitter_bg{
+  background: url('/images/bg_twitter.png');
+  border: none;
+  height: 180px;
 }

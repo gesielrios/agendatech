@@ -38,8 +38,8 @@
         <ul>
           <% unless user_signed_in? %>
             <li>
-              <%= link_to "Login com twitter", "/auth/twitter", :class => 'blue' %>
-              <span class="check"></span>
+            <%= link_to "Login com twitter", "/auth/twitter", :class => 'blue' %>
+            <span class="check"></span>
             </li>
           <% end %>
 
@@ -88,25 +88,11 @@
             </div>
 
           </div>
-          <div id="mes">
-            <div class="header">
-              <p>Últimos comentários</p>              
-            </div>
-            <div class="inner">
 
-              <% for comentario in @ultimos_comentarios %>
-                <div class="comentario">
+          <div id="twitter_bg">
 
-                  <p class="comentario_descricao"><%= comentario.descricao %></p>
-                  <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
-
-                </div>
-                <br />
-              <% end %>
-
-
-            </div>
           </div>
+
 
 
           <div id="mes">
@@ -153,6 +139,25 @@
             </div>
           </div>
 
+          <div id="mes">
+            <div class="header">
+              <p>Últimos comentários</p>              
+            </div>
+            <div class="inner">
+
+              <% for comentario in @ultimos_comentarios %>
+                <div class="comentario">
+
+                  <p class="comentario_descricao"><%= comentario.descricao %></p>
+                  <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
+
+                </div>
+                <br />
+              <% end %>
+
+
+            </div>
+          </div>
 
           <div id="twitter">
             <div class="header">
