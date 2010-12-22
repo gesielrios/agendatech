@@ -35,50 +35,47 @@
             <%= image_tag User.find(gadget.user_id).image, :size => "25x25" %>
           </div>
         <%end%>
-          <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
+        <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
       </div>
     </div>
-    
+
     <div class="gadget_vou">
       <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}", :remote => true %>
     </div>
 
-    </div>
   </div>
+</div>
 
 <% content_for :javascript do %>
   <script type="text/javascript"> 
     //<![CDATA[
 
-    (function() {
+  (function() {
 
-      var evento_id = "";
+   $(".ajax_vou").click(function (){
+     var evento_id = $(this).attr("id").replace("ajax_vou_", "");
 
-      $(".ajax_vou").bind("ajax:before", function(e) {
-        evento_id = $(this).attr("id").replace("ajax_vou_", "");
-      });
+     $("#evento_" + evento_id).bind("ajax:loading", function(xhr) {
+       $(this).find(".quem_vai_pic").last().hide().end().end().find(".spinner").show();
+     });
 
-      $(".evento").bind("ajax:loading", function(xhr) {
-        $(this).filter("#evento_" + evento_id).find(".quem_vai_pic").last().hide().end().end().find(".spinner").show();
-      });
+     $("#evento_" + evento_id)).bind("ajax:success", function(xhr, data, status) {
+       var json_data = eval("(" + data + ")");
 
-      $(".evento").bind("ajax:success", function(xhr, data, status) {
-        var json_data = eval("(" + data + ")");
-        
-        var quem_vai_pic = $("<div>", { "class" : "quem_vai_pic" });
-        var user_image = $("<img>", { "src" : json_data.gadget.image_url, "width" : "25", "height" : "25" });
-        
-        quem_vai_pic.append(user_image);
+       var quem_vai_pic = $("<div>", { "class" : "quem_vai_pic" });
+       var user_image = $("<img>", { "src" : json_data.gadget.image_url, "width" : "25", "height" : "25" });
 
-        $(this).filter("#evento_" + evento_id).find(".quem_vai_pics").prepend(quem_vai_pic);
-      })
+       quem_vai_pic.append(user_image);
 
-      $(".evento").bind("ajax:complete", function(xhr) {
-        $(this).filter("#evento_" + evento_id).find(".spinner").hide();
-      })
+       $(this).find(".quem_vai_pics").prepend(quem_vai_pic);
+     })
 
-    })();
+     $("#evento_" + evento_id)).bind("ajax:complete", function(xhr) {
+       $(this).find(".spinner").hide();
+     })
+   });
+  })();
 
-    //]]>
-  </script> 
+//]]>
+</script> 
 <% end %>
