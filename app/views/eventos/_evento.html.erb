@@ -1,4 +1,5 @@
 <div class="evento clearfix">
+
   <div class="data">
     <%if evento.ta_rolando? %>
       <p><%= Date.today.day %></p>
@@ -26,45 +27,41 @@
 
     <div class="quem_vai">
       <div class="quem_vai_pics">
-      <div class="spinner">
-        <%= image_tag 'ajax-loader.gif' %>
-      </div>
+        <div class="spinner">
+          <%= image_tag 'ajax-loader.gif' %>
+        </div>
         <% evento.gadgets.reverse[0..11].each do |gadget| %>
           <div class="quem_vai_pic">
             <%= image_tag User.find(gadget.user_id).image, :size => "25x25" %>
           </div>
         <%end%>
-        
-        <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
-
+          <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
       </div>
+    </div>
+    
+    <div class="gadget_vou">
+      <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :remote => true %>
+    </div>
 
-          </div>
-          <div class="gadget_vou">
-
-              <%= link_to "Eu vou!", gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :remote => true %>
-          </div>
-        </div>
-      </div>    
 
     </div>
   </div>
 
-<% content_for :javascript do %>
-  <script type="text/javascript"> 
-    //<![CDATA[
+  <% content_for :javascript do %>
+    <script type="text/javascript"> 
+      //<![CDATA[
     $("body").bind("ajax:loading", function(xhr) {
-      $(".quem_vai_pic").last().hide();
-      $(".spinner").show();
+        $(".quem_vai_pic").last().hide();
+        $(".spinner").show();
+        })
+
+$("body").bind("ajax:complete", function(xhr) {
+    $(".spinner").hide();
     })
 
-    $("body").bind("ajax:complete", function(xhr) {
-      $(".spinner").hide();
+$("body").bind("ajax:success", function(xhr, result) {
+    $(".quem_vai_pics").prepend(result);
     })
-
-    $("body").bind("ajax:success", function(xhr, result) {
-      $(".quem_vai_pics").prepend(result);
-    })
-    //]]>
-  </script> 
+//]]>
+</script> 
 <% end %>
