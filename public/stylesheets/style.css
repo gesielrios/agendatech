@@ -725,3 +725,16 @@ a.button{
   left: 7px;
   width: 33px;
 }
+.blue{
+  color: #0CBADF !important;
+  font-weight: bold;
+}
+
+#user_logged{
+  font-size: 11px;
+  float: right;
+}
+
+.check{
+  background: url('check.png');
+}
