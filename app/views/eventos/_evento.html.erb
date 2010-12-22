@@ -37,7 +37,9 @@
         <%end%>
         
         <% if evento.gadgets.size > 12 %>
-          <p style="clear:left;">E mais <%= evento.gadgets.size - 12 %> pessoas...</p>
+          <p style="clear:left;">
+            E mais <%= evento.gadgets.size - 12 %> <%= evento.gadgets.size == 13 ? "pessoa" : "pessoas" %>...
+          </p>
         <% end %>
           
       </div>
@@ -49,37 +51,3 @@
 
   </div>
 </div>
-
-<% content_for :javascript do %>
-  <script type="text/javascript"> 
-    //<![CDATA[
-
-  (function() {
-
-   $(".ajax_vou").click(function (){
-     var evento_id = $(this).attr("id").replace("ajax_vou_", "");
-
-     $("#evento_" + evento_id).bind("ajax:loading", function(xhr) {
-       $(this).find(".quem_vai_pic").last().hide().end().end().find(".spinner").show();
-     });
-
-     $("#evento_" + evento_id)).bind("ajax:success", function(xhr, data, status) {
-       var json_data = eval("(" + data + ")");
-
-       var quem_vai_pic = $("<div>", { "class" : "quem_vai_pic" });
-       var user_image = $("<img>", { "src" : json_data.gadget.image_url, "width" : "25", "height" : "25" });
-
-       quem_vai_pic.append(user_image);
-
-       $(this).find(".quem_vai_pics").prepend(quem_vai_pic);
-     })
-
-     $("#evento_" + evento_id)).bind("ajax:complete", function(xhr) {
-       $(this).find(".spinner").hide();
-     })
-   });
-  })();
-
-//]]>
-</script> 
-<% end %>
