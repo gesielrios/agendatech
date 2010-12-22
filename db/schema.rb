@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(:version => 20101220215755) do
     t.datetime "logo_updated_at"
     t.string   "estado"
     t.datetime "data_termino"
-    t.string   "cached_slug"
     t.integer  "grupo_id"
+    t.string   "cached_slug"
   end
 
   add_index "eventos", ["cached_slug"], :name => "index_eventos_on_cached_slug", :unique => true
@@ -135,7 +135,6 @@ ActiveRecord::Schema.define(:version => 20101220215755) do
     t.string   "image"
   end
 
-  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
