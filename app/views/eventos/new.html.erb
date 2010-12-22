@@ -20,7 +20,7 @@
   <input id="dataInicio" type="text" name="evento[data]" value="<%=l(@evento.data.to_date) if @evento.data%>"/>
   </p>
   <p>
-  <label for="data_termino">* Data de término</label>
+  <label for="data_termino">Data de término</label>
   <%=error_message_on @evento,:data_termino%>
   <input id="dataTermino" type="text" name="evento[data_termino]" value="<%=l(@evento.data_termino.to_date) if @evento.data_termino%>"/>
   </p>

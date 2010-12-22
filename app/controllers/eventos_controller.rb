@@ -19,6 +19,10 @@ class EventosController < ApplicationController
   end
 
   def create
+    # TODO: weird behavior...refactor me 
+    data = params[:evento][:data]
+    params[:evento][:data] = "#{data[6..9]}-#{data[3..4]}-#{data[0..1]}"
+    
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
     unless @evento.data_termino?
