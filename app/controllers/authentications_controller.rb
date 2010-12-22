@@ -17,7 +17,8 @@ class AuthenticationsController < ApplicationController
       redirect_to authentications_url  
     # new user  
     else  
-      user = User.new :nickname => omniauth['user_info']['nickname'], :image => omniauth['user_info']['image'] 
+      # TODO : email must be unique in devise...
+      user = User.new :email => omniauth['user_info']['nickname'], :nickname => omniauth['user_info']['nickname'], :image => omniauth['user_info']['image'] 
       user.authentications.build(:provider => omniauth['provider'], :uid => omniauth['uid'])
       user.save!  
       flash[:notice] = "Signed in successfully."  
