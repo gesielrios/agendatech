@@ -28,8 +28,13 @@ class Evento < ActiveRecord::Base
       errors.add(:data_termino, 'O término deve vir após o inicio :)')
     end
   end
+  
 
   public
+  
+  def me_da_gadgets
+    GadgetDSL.new(self.gadgets)
+  end
 
   def ta_rolando?
     hoje = Date.today
@@ -48,4 +53,14 @@ class Evento < ActiveRecord::Base
   def email_required?
     authentications.empty?
   end
+end
+
+class GadgetDSL
+  def initialize(gadgets)
+    @gadgets = gadgets
+  end
+  
+  def method_missing(tipo, *args, &block)  
+     @gadgets.select {|gadget| gadget.tipo == Gadget.tipos[tipo]}       
+  end  
 end
