@@ -1,6 +1,6 @@
 class Evento < ActiveRecord::Base
   has_many :comentarios
-  has_many :gadgets
+  has_many :gadgets, :order => 'id desc' 
   belongs_to :grupo
 
   acts_as_taggable
@@ -15,16 +15,16 @@ class Evento < ActiveRecord::Base
 
   scope :estado_aprovado, lambda { |estado| where("aprovado = ? AND estado = ?", true, estado).order('data ASC')}
 
-  scope :por_mes, lambda{|mes| where("aprovado = ? AND #{SQL.mes_do_evento} = ? ", true,  numero_do_mes(mes)).order('data ASC')}
+  scope :por_mes, lambda{|mes| where("aprovado = ? AND #{SQL.mes_do_evento} = ? ", true,  mes).order('data ASC')}
 
   scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today).order('data ASC')
 
-  scope :top_gadgets, lambda {|tipo| includes(:gadgets).where('gadgets.tipo = ?',tipo)}
+  scope :top_gadgets, includes(:gadgets)
 
   private
 
   def termino_depois_do_inicio?
-    if !errors.on(:data) && !errors.on(:data_termino) && data_termino && data_termino < data
+    if errors[:data].size == 0 && errors[:data_termino].size == 0 && data_termino && data_termino < data
       errors.add(:data_termino, 'O término deve vir após o inicio :)')
     end
   end

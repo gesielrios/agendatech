@@ -3,13 +3,12 @@ class EventosController < ApplicationController
 
   def index
     if params[:month]
-      @eventos = Evento.por_mes(params[:month]).top_gadgets(Gadget.tipos[:eu_vou])
-      @mes = params[:month]
+      @eventos = Evento.por_mes(numero_do_mes(params[:month])).top_gadgets
     else
       if params[:estado]
-        @eventos = Evento.estado_aprovado(estados.index(params[:estado])).top_gadgets(Gadget.tipos[:eu_vou])
+        @eventos = Evento.estado_aprovado(estados.index(params[:estado])).top_gadgets
       else
-        @eventos = Evento.nao_ocorrido.top_gadgets(Gadget.tipos[:eu_vou])
+        @eventos = Evento.nao_ocorrido.top_gadgets
       end
     end
   end
