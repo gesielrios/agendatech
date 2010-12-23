@@ -9,7 +9,7 @@ describe Evento do
 
   it "deveria validar a data de inicio apenas para eventos não aprovados" do    
     #por algum motivo, o qual desconheco :), nao ta rolando garantir so ano com 4 digitos. Mesmo assim o plugin
-    #ainda ta pegando.     
+    #ainda ta pegando certo.     
     @evento.data = "10/13/10"
     @evento.should_not be_valid
     @evento.aprovado = true
@@ -17,8 +17,6 @@ describe Evento do
   end
 
   it "deveria validar a data de termino apenas para eventos não aprovados" do
-      #por algum motivo, o qual desconheco :), nao ta rolando garantir so ano com 4 digitos. Mesmo assim o plugin
-      #ainda ta pegando.           
       @evento.data_termino = "10/13/10"
       @evento.should_not be_valid
       @evento.aprovado = true
