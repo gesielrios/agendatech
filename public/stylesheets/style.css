@@ -765,3 +765,7 @@ a.button{
 .tweet img{
   display: none;
  } 
+
+.ajax_vou_confirmado{
+  background-color: #A9C342 !important;
+ }
