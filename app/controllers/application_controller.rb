@@ -4,7 +4,7 @@
 class ApplicationController < ActionController::Base
 
   helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  #protect_from_forgery # See ActionController::RequestForgeryProtection for details
   before_filter :tag_cloud, :twitter_search
   helper_method :meses, :numero_do_mes, :estados, :nome_do_estado
 
