@@ -3,13 +3,12 @@ class EventosController < ApplicationController
 
   def index
     if params[:month]
-      @eventos = Evento.por_mes(params[:month]).top_gadgets(Gadget.tipos[:eu_vou])
-      @mes = params[:month]
+      @eventos = Evento.por_mes(numero_do_mes(params[:month])).top_gadgets
     else
       if params[:estado]
-        @eventos = Evento.estado_aprovado(estados.index(params[:estado])).top_gadgets(Gadget.tipos[:eu_vou])
+        @eventos = Evento.estado_aprovado(estados.index(params[:estado])).top_gadgets
       else
-        @eventos = Evento.nao_ocorrido#.top_gadgets(Gadget.tipos[:eu_vou])
+        @eventos = Evento.nao_ocorrido.top_gadgets
       end
     end
   end
@@ -19,10 +18,6 @@ class EventosController < ApplicationController
   end
 
   def create
-    # TODO: weird behavior...refactor me 
-    data = params[:evento][:data]
-    params[:evento][:data] = "#{data[6..9]}-#{data[3..4]}-#{data[0..1]}"
-    
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
     unless @evento.data_termino?
