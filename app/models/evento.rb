@@ -20,6 +20,9 @@ class Evento < ActiveRecord::Base
   scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today).order('data ASC')
 
   scope :top_gadgets, includes(:gadgets)
+  
+  #pegar agrupado por mes
+  #pegar agrupado por estado
 
   private
 
