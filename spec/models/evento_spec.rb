@@ -59,26 +59,32 @@ describe Evento do
     end    
   end  
   
-  describe "verificando as listagens dos eventos aprovados" do      
+  describe "listagens dos eventos aprovados" do      
     
-      it "deveria listar todos eventos que ainda vao ocorrer" do
+      it "que ainda vao ocorrer" do
           Evento.nao_ocorrido.length.should eq(3)
       end           
       
-      it "deveria listar todos os eventos do mes" do
+      it "do mes" do
           Evento.por_mes(1).length.should eq(2)
       end
       
-      it "deveria listar todos os eventos aprovados por estado" do
+      it "por estado" do
           Evento.estado_aprovado('BA').length.should eq(2)
       end
       
-      it "deveria listar todos os eventos com os gadgets de algum tipo" do
+      it "com os gadgets de algum tipo" do
           Evento.nao_ocorrido.top_gadgets.length.should eq(3)
-      end    
+      end 
+      
+      it "agrupados por estados" do 
+         estados = Evento.agrupado_por_estado
+         estados.size.should eq(2)
+         estados.has_key?('BA').should be_true
+      end
   end
   
-  describe "nome aqui para esse contexto" do 
+  describe "gadgets associados" do 
       it "deveria pegar apenas os gadgets do tipo eu vou" do
         Evento.find_by_id(1).me_da_gadgets.eu_vou.length.should eq(1)
       end

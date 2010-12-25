@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-    <title>Agendatech - Eventod de tecnologia</title>
+    <title>Agendatech - Eventos de tecnologia</title>
 
     <%= stylesheet_link_tag 'style' %>
     <%= stylesheet_link_tag 'form' %>
@@ -126,20 +126,19 @@
 
 
 
-
-
-          <div id="estado">
-            <div class="header">
-              <p>Eventos por Estado (37)</p>  
-            </div>
-            <div class="inner">
-              <% for sigla in estados_com_eventos %>
-                <p>
-                <%= link_to nome_do_estado(sigla), eventos_por_estado_path(:estado => nome_do_estado(sigla)) %>
-                </p>
-              <% end %>
-            </div>
-          </div>
+          <% estados,total = estados_com_total_de_eventos%>
+              <div id="estado">
+                  <div class="header">
+                    <p>Eventos por Estado (<%=total%>)</p>
+                  </div>
+                  <div class="inner">
+                    <% for sigla in estados.keys %>
+                      <p>
+                      <%= link_to "#{nome_do_estado(sigla)}(#{estados[sigla]})", eventos_por_estado_path(:estado => nome_do_estado(sigla)) %>
+                      </p>
+                    <% end %>
+                  </div>
+              </div>
 
           <div id="mes">
             <div class="header">

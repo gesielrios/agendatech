@@ -20,10 +20,15 @@ class Evento < ActiveRecord::Base
   scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today).order('data ASC')
 
   scope :top_gadgets, includes(:gadgets)
+    
+  module Scopes
+    def agrupado_por_estado
+        group('estado').where(:aprovado => true).order('estado asc').count
+    end
+  end
   
-  #pegar agrupado por mes
-  #pegar agrupado por estado
-
+  extend Scopes
+  
   private
 
   def termino_depois_do_inicio?

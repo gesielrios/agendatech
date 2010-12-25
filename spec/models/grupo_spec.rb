@@ -1,13 +1,6 @@
 require 'spec_helper'
 
 describe Grupo do
-  it { should have_many :eventos }
-  it { should validate_presence_of :nome }
-  it { should validate_presence_of :site }
-  it { should have_scope :nao_aprovados, :conditions => { :aprovado => false } }
-  it { should have_scope :aprovados, :order => 'nome ASC',:conditions => { :aprovado => true } }
-
-  it { should have_scope :por_nome, :order => 'nome ASC'  }
 
   describe "uniqueness of name" do
     before(:each) { Grupo.create(:nome => 'GURU-SP', :site => 'http://guru-sp.com/') }
