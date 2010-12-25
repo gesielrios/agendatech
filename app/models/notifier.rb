@@ -4,10 +4,10 @@ class Notifier < ActionMailer::Base
 
   def envia_email (contato)
 
-    mail( :subject => "Contato agendatech",
-          :to =>  ["andersonlfl@gmail.com", "alots.ssa@gmail.com"]
-        )
     @contato = contato
+    mail( :subject => "Contato agendatech",
+          :to => ["andersonlfl@gmail.com", "alots.ssa@gmail.com"].join(",")
+    )
     
   end
 
