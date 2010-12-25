@@ -3,16 +3,16 @@ require 'spec_helper'
 describe Evento do
   
     before(:all) do
-       @evento1 = Evento.create :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => '01/01/2011', :estado => 'BA',:aprovado => true
-       @evento2 = Evento.create :nome => "evento1", :descricao => "desc", :site => "http://www.example.com", :data => '01/01/2011', :estado => 'BA',:aprovado => true
-       @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => '01/02/2011', :estado => 'SP',:aprovado => true                           
+       @evento1 = Evento.create :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
+       @evento2 = Evento.create :nome => "evento1", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
+       @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'SP',:aprovado => true                           
        Gadget.create :tipo => Gadget.tipos[:eu_vou], :evento_id => @evento1.id, :user_id => 1
        Gadget.create :tipo => 'teste1', :evento_id => @evento1.id, :user_id => 1
        Gadget.create :tipo => 'teste2', :evento_id => @evento1.id, :user_id => 1
     end              
     
     before(:each) do
-       @data_base = "10/10/2010"
+       @data_base = Date.today
        @evento = Evento.new :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => @data_base
     end
   
@@ -37,7 +37,6 @@ describe Evento do
 
 
     it "deveria falar que o evento esta rolando se a data de termino eh vazia e o dia eh hoje" do
-      @evento.data = Date.today
       @evento.data_termino = nil
       @evento.should be_ta_rolando
     end
@@ -66,7 +65,7 @@ describe Evento do
       end           
       
       it "do mes" do
-          Evento.por_mes(1).length.should eq(2)
+          Evento.por_mes(Date.today.month).length.should eq(3)
       end
       
       it "por estado" do
@@ -81,6 +80,12 @@ describe Evento do
          estados = Evento.agrupado_por_estado
          estados.size.should eq(2)
          estados.has_key?('BA').should be_true
+      end
+      
+      it "agrupados por mes" do
+         meses = Evento.agrupado_por_mes
+         meses.size.should eq 1
+         meses.has_key?(Date.today.month).should be_true
       end
   end
   

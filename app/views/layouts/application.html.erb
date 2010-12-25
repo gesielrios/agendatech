@@ -96,29 +96,23 @@
           </div>
           </a>
 
-
+          <% meses_com_total,total = meses_com_total_de_eventos%>
           <div id="mes">
             <div class="header">
-              <p class="bold">Eventos por mês (12)</p><br />
+              <p class="bold">Eventos por mês (<%=total%>)</p><br />
             </div>
 
             <div class="inner">
               <div class="left">
-                <p><%= link_to 'Janeiro (2)'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Janeiro") %></p>
-                <p><%= link_to 'Fevereiro (3)'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Fevereiro") %></p>
-                <p><%= link_to 'Março'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Março") %></p>
-                <p><%= link_to 'Abril'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Abril") %></p>
-                <p><%= link_to 'Maio'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Maio") %></p>
-                <p><%= link_to 'Junho'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Junho") %></p>
+                <%(1..6).each do |numero| %>
+                  <p><%= link_to "#{meses.index(numero)} (#{meses_com_total[numero]})"  , eventos_por_mes_path(:ano => Time.now.year, :month => "#{meses.index(numero)}") %></p>
+                <%end%>
               </div>
 
               <div class="">
-                <p><%= link_to 'Julho'	, eventos_por_mes_path(:ano => Time.now.year, :month => "Julho") %></p>
-                <p><%= link_to 'Agosto'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Agosto") %></p>
-                <p><%= link_to 'Setembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Setembro") %></p>
-                <p><%= link_to 'Outubro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Outubro") %></p>
-                <p><%= link_to 'Novembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Novembro") %></p>
-                <p><%= link_to 'Dezembro'  , eventos_por_mes_path(:ano => Time.now.year, :month => "Dezembro") %></p>
+                <%(7..12).each do |numero| %>
+                  <p><%= link_to "#{meses.index(numero)} (#{meses_com_total[numero]})"  , eventos_por_mes_path(:ano => Time.now.year, :month => "#{meses.index(numero)}") %></p>
+                <%end%>
               </div>
             </div>
           </div>

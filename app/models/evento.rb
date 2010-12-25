@@ -25,6 +25,10 @@ class Evento < ActiveRecord::Base
     def agrupado_por_estado
         group('estado').where(:aprovado => true).order('estado asc').count
     end
+    
+    def agrupado_por_mes
+      group("#{SQL.mes_do_evento}").where(:aprovado => true).where("#{SQL.ano_do_evento} = #{Time.now.year}").order("#{SQL.mes_do_evento} asc").count
+    end
   end
   
   extend Scopes

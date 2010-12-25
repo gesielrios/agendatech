@@ -13,6 +13,13 @@ describe EventosHelper do
       estados.size.should eq 2
       total.should eq 3
   end
+  
+  it "deveria retornar os meses com numero de eventos e a somatoria de eventos do ano corrente" do
+    Evento.should_receive(:agrupado_por_mes).and_return({12 => 2,10 => 4})
+    meses,total = helper.meses_com_total_de_eventos
+      meses.size.should eq 2
+      total.should eq 6
+  end  
 
 
 end

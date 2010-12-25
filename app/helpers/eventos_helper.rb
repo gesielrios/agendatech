@@ -16,5 +16,12 @@ module EventosHelper
     total = estados.values.inject(0){|soma,por_estado| soma += por_estado}    
     return estados,total
   end
+  
+  def meses_com_total_de_eventos
+    meses = Evento.agrupado_por_mes
+    meses.default = 0    
+    total = meses.values.inject(0){|soma,por_mes| soma += por_mes}    
+    return meses,total
+  end  
 
 end
