@@ -69,8 +69,6 @@
     </div>
     <div style="clear: both;"></div>
 
-<hr />
-<p>Comente sobre esse evento:</p>
 <%=  flash[:comentario] %>
 <br />
 
@@ -81,8 +79,7 @@
 	<% for comentario in @evento.comentarios %>
 		<br/>
 		<div class="comentario">
-			<!-- <img src="<%= Twitter.user(comentario.twitter).profile_image_url %>" /> -->
-			<p class="comentario_descricao"><%= Twitter.user(comentario.twitter).name %></p><br/>
+			<!-- <img src="/images/" /> -->
 			<div style="clear:both;"></div>
 	
 			<p class="comentario_descricao"><%= comentario.descricao %></p>
