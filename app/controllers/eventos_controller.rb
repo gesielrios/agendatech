@@ -32,7 +32,7 @@ class EventosController < ApplicationController
   end
 
   def show
-    @evento = Evento.where(:nome => params[:id]).first
+    @evento = Evento.find(params[:id]).first
     @comentario = Comentario.new
   end
 

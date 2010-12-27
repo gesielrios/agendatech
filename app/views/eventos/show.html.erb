@@ -9,7 +9,14 @@
     <%end%>
   </div>
 
-  <div class="logo clearfix"> <%= image_tag @evento.logo.url(:thumb) if @evento.logo? %> </div>
+  <% if @evento.logo? %>
+  <div class="logo_img clearfix"> <%= image_tag @evento.logo.url(:thumb) %> </div>
+  <% else%>
+      <div class="logo clearfix">
+        
+      </div>
+  <% end %>
+
 
   <div class="info">
     <p id="evento"><%= link_to @evento.nome, evento_full_path(@evento) %></p>

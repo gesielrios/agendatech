@@ -180,6 +180,15 @@ h3{
   padding:2px;
 }
 
+.logo_img{
+  float:left;
+}
+
+.logo_img img{
+  height:  72px;
+  width: 72px;
+}
+
 .logo{
   background-color:#212121;
   border:2px solid #CCCCCC;
