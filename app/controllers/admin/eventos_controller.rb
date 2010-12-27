@@ -7,11 +7,11 @@ class Admin::EventosController < ApplicationController
   end
   
   def editar
-    @evento = Evento.find(params[:id]).first
+    @evento = Evento.find_by_cached_slug(params[:id])
   end
   
   def update
-     @evento = Evento.find(params[:id]).first
+     @evento = Evento.find_by_cached_slug(params[:id])
       if @evento.update_attributes(params[:evento])
         flash[:notice] = "Evento editado com sucesso"
         redirect_to :action => "index"

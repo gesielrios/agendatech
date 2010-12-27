@@ -32,7 +32,7 @@ class EventosController < ApplicationController
   end
 
   def show
-    @evento = Evento.find(params[:id]).first
+    @evento = Evento.find_by_cached_slug(params[:id])
     @comentario = Comentario.new
   end
 
