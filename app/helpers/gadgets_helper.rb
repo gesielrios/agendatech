@@ -10,7 +10,7 @@ module GadgetsHelper
         content << link_to( 'Eu vou!', gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}", :remote => true     )   
       end  
     else
-      content << link_to( 'Eu vou!', gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}", :remote => true     )   
+      content << link_to( 'Eu vou!', gadgets_path(:evento => evento.id, :tipo => Gadget.tipos[:eu_vou]), :class => 'ajax_vou', :id => "ajax_vou_#{evento.id}"    )   
     end
 
     content << "</div>"

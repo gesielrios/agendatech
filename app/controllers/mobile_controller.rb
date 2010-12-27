@@ -5,8 +5,14 @@ class MobileController < ApplicationController
   end
   
   def novo_evento
-    puts "recebeu!"
-    puts params[:nome]
+    nome =  params[:nome]
+    descricao = params[:descricao]
+    site = params[:site]
+    estado = params[:estado]
+    data = params[:data]
+
+    Evento.create :nome => nome, :descricao => descricao, :site => site, :estado => estado, :data => data, :aprovado => 0
+
     redirect_to :action => 'eventos'
   end
 end
