@@ -147,7 +147,7 @@
             <div class="inner">
 
               <% for comentario in @ultimos_comentarios %>
-                <div class="comentario">
+                <div>
 
                   <p class="comentario_descricao"><%= comentario.descricao %></p>
                   <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
