@@ -42,11 +42,6 @@ class EventosController < ApplicationController
     render :action => "index"
   end
 
-  def twits
-    @evento = Evento.find_by_id(params[:id])
-    render :layout => false
-  end
-
   def comentar
     @comentario = Comentario.new(params[:comentario])
     @comentario.twitter = current_user.nickname

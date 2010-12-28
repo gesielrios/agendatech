@@ -1,5 +1,4 @@
 <%content_for :javascript do %>
-  <%= javascript_include_tag "jquery.async.js" %>
   <script>
 
     $(".ajax_vou").bind("ajax:loading", function(xhr) {
@@ -35,21 +34,5 @@
       evento.find(".spinner").hide();
       $(this).html("Confirmado!").attr("href", "#").addClass("ajax_vou_confirmado")
     });
-
-    jQuery.whileAsync({
-      delay: 60000,
-      bulk: 0,
-      loop: function() {
-        $('div[id=twitter_images]').each(function(index,div) {
-          $.get(
-            "/eventos/twits/" + $(this).parent().attr('id'),
-            function(htmlDosTwits) {
-              $(div).html(htmlDosTwits).fadeIn("slow");
-            }
-          );
-        });
-      }
-    });
-
   </script>
 <%end%>

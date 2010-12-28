@@ -82,7 +82,7 @@ class ApplicationController < ActionController::Base
     @twits = []
 
     eventos.each do |e|
-       if e.twitter_hash != "" 
+       if e.twitter_hash && !e.twitter_hash == "" 
         Twitter::Search.new.q(e.twitter_hash).page(1).per_page(1).each do |r|
           @twits << r
         end
