@@ -39,32 +39,29 @@
 
 
 <div id="detalhe_desc" >
-	<%= @evento.descricao %>
+	<%= @evento.descricao.html_safe %>
 </div>
 
    
     <div class="separador"></div>
 
-      <div class="quem_vai">
-        <div class="quem_vai_pics">
-          <div class="quem_vai_pic">
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <img src="http://a1.twimg.com/profile_images/62221129/avatar_bigger.jpg" width="25px" height="25px" />
-            <!--máximo 12 participantes -->
 
-          <FORM>
-            <INPUT TYPE="BUTTON" VALUE="Eu vou!" class="botao" style="width: 60px;"
-                        ONCLICK="window.location.href='<%= new_evento_path %>'">
-          </FORM>
-
-          </div>
+    <div class="quem_vai" id="quem_vai_<%= @evento.id %>">
+      <div class="quem_vai_pics">
+        <div class="spinner">
+          <%= image_tag 'ajax-loader.gif' %>
         </div>
-      </div>    
+        <% @evento.gadgets.each do |gadget| %>
+          <div class="quem_vai_pic"> 
+            <%= image_tag "twimages/#{user_name gadget}.#{extension gadget}", :size => "25x25" %>
+          </div>
+        <%end%>
+        
+          
+      </div>
+    </div>
+
+
 
     </div>
     <div style="clear: both;"></div>
@@ -117,3 +114,5 @@
 
 <br>
 
+
+<%= render :partial => 'eventoajax' %>

@@ -1,0 +1,55 @@
+<%content_for :javascript do %>
+  <%= javascript_include_tag "jquery.async.js" %>
+  <script>
+
+    $(".ajax_vou").bind("ajax:loading", function(xhr) {
+
+      var evento_id = this.id.replace("ajax_vou_", "");
+      var evento = $("#evento_" + evento_id);
+
+      var quantos_vao = evento.find(".quem_vai_pic").length;
+      if ( quantos_vao >= 12 ) {
+        evento.find(".quem_vai_pic").last().hide();
+      }
+
+      evento.find(".spinner").show();
+    });
+
+    $("body").bind("ajax:success", function(xhr, data, status) {
+
+      var json_data = eval("(" + data + ")");
+      var evento = $("#evento_" + json_data.gadget.evento_id);
+
+      var quem_vai_pic = $("<div>", { "class" : "quem_vai_pic" });
+      var quem_vai_img = $("<img>", { "src" : json_data.gadget.image_url, "width" : "25", "height" : "25" })
+
+      quem_vai_pic.append(quem_vai_img);
+      evento.find(".quem_vai_pics").prepend(quem_vai_pic)
+    });
+
+    $(".ajax_vou").bind("ajax:complete", function(xhr) {
+
+      var evento_id = this.id.replace("ajax_vou_", "");
+      var evento = $("#evento_" + evento_id);
+
+      evento.find(".spinner").hide();
+      $(this).html("Confirmado!").attr("href", "#").addClass("ajax_vou_confirmado")
+    });
+
+    jQuery.whileAsync({
+      delay: 60000,
+      bulk: 0,
+      loop: function() {
+        $('div[id=twitter_images]').each(function(index,div) {
+          $.get(
+            "/eventos/twits/" + $(this).parent().attr('id'),
+            function(htmlDosTwits) {
+              $(div).html(htmlDosTwits).fadeIn("slow");
+            }
+          );
+        });
+      }
+    });
+
+  </script>
+<%end%>
