@@ -91,7 +91,7 @@
 
 <%= form_for @comentario, :url => {:action => "comentar"}, :html => { :class => 'resource_form' } do |f| %>
 	<input type="hidden" name="comentario[evento_id]" value="<%= @evento.id %>"/>
-	<input type="hidden" name="evento_nome" value="<%= @evento.nome %>"/>
+	<input type="hidden" name="evento_nome" value="<%=@evento.to_param%>"/>
 	<p>
 		<textarea style="width: 600px; height: 100px;" type="text" name="comentario[descricao]"> </textarea>
 	</p>
