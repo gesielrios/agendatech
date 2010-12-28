@@ -1,3 +1,5 @@
+require 'image_twitter'
+
 class AuthenticationsController < ApplicationController
   def index  
     @authentications = current_user.authentications if current_user 
@@ -21,6 +23,10 @@ class AuthenticationsController < ApplicationController
       user = User.new :email => omniauth['user_info']['nickname'], :nickname => omniauth['user_info']['nickname'], :image => omniauth['user_info']['image'] 
       user.authentications.build(:provider => omniauth['provider'], :uid => omniauth['uid'])
       user.save!  
+
+      # download user image
+      ImageTwitter.download omniauth['user_info']['nickname']
+      
       flash[:notice] = "Signed in successfully."  
       sign_in_and_redirect(:user, user)  
     end 

@@ -17,5 +17,12 @@ module GadgetsHelper
     content.html_safe
   end
 
+  def user_name gadget
+    User.find(gadget.user_id).nickname
+  end
 
+  def extension gadget
+    image = User.find(gadget.user_id).image
+    image[image.length-3, image.length]
+  end
 end

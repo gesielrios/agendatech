@@ -37,8 +37,8 @@
           <%= image_tag 'ajax-loader.gif' %>
         </div>
         <% evento.me_da_gadgets.eu_vou.each do |gadget| %>
-          <div class="quem_vai_pic">
-            <%= image_tag User.find(gadget.user_id).image, :size => "25x25" %>
+          <div class="quem_vai_pic"> 
+            <%= image_tag "twimages/#{user_name gadget}.#{extension gadget}", :size => "25x25" %>
           </div>
         <%end%>
         
