@@ -49,11 +49,11 @@ class EventosController < ApplicationController
 
   def comentar
     @comentario = Comentario.new(params[:comentario])
+    @comentario.twitter = current_user.nickname
     if @comentario.save
       flash[:comentario] = "Comentário cadastrado com sucesso!"
-      @evento = Evento.find @comentario.evento_id
-      @comentario = Comentario.new
-      render :action => "show"
+      @evento = Evento.find_by_cached_slug(params[:evento_nome])
+      redirect_to :action => "show"
     else
       render :action => "new"
     end

@@ -87,19 +87,13 @@
 
 <% end %>
 
-<br/> <br/>
 <%= form_for @comentario, :url => {:action => "comentar"}, :html => { :class => 'resource_form' } do |f| %>
 	<input type="hidden" name="comentario[evento_id]" value="<%= @evento.id %>"/>
+	<input type="hidden" name="evento_nome" value="<%= @evento.nome %>"/>
 	<p>
-		<label for="twitter">Seu Twitter: (sem @)</label><br />
-		<input type="text" name="comentario[twitter]"/>
+		<textarea style="width: 600px; height: 100px;" type="text" name="comentario[descricao]"> </textarea>
 	</p>
-	<p>
-		<label for="descricao">Comentário: </label><br />
-		<textarea type="text" name="comentario[descricao]"> </textarea>
-	</p>
-	<br/>
-	<input type="submit" value="Comentar"/>
+	<input style="position: static;" type="submit" value="Comentar"/>
 
 <% end  %>	
 <hr>
