@@ -656,7 +656,7 @@ a:link.menu_select, a:visited.menu_select  {
 .comentario{
   background-color: #E6E6E6;
   padding: 10px;
-  
+  overflow: auto;  
 }
 
 .quem_vai {
