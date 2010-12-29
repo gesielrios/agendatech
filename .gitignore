@@ -10,3 +10,4 @@ public/images/twimages
 .bundle/config
 .rvmrc
 .DS_Store
+public/images/twimages/*
