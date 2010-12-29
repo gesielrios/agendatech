@@ -71,6 +71,7 @@
 
 <% if @evento.comentarios.empty?%>
  <p>Seja o primeiro a comentar sobre esse evento!</p>
+        
 <% else  %>
 
 	<% for comentario in @evento.comentarios %>
@@ -89,6 +90,7 @@
 
 <% end %>
 
+<% if user_signed_in? %>
 <%= form_for @comentario, :url => {:action => "comentar"}, :html => { :class => 'resource_form' } do |f| %>
 	<input type="hidden" name="comentario[evento_id]" value="<%= @evento.id %>"/>
 	<input type="hidden" name="evento_nome" value="<%=@evento.to_param%>"/>
@@ -103,7 +105,10 @@
   <INPUT TYPE="BUTTON" VALUE="Voltar" class="botao" style="width: 100px;"
             ONCLICK="window.location.href='<%= root_path %>'">
 </FORM>
-
+<% else %>
+  <br />
+  Para comentar faça o <%= link_to "login com seu twitter", "/auth/twitter", :class => 'blue' %>
+<% end %>
 
 
   </div>

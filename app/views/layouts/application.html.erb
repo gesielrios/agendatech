@@ -149,7 +149,8 @@
               <% for comentario in @ultimos_comentarios %>
                 <div>
 
-                  <p class="comentario_descricao"><%= comentario.descricao %></p>
+                  <%= image_tag user_pic_by(comentario) %>
+                  <p class="comentario_descricao"><%= link_to comentario.descricao, root_path %></p>
                   <p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
 
                 </div>

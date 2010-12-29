@@ -52,4 +52,7 @@
     </div>
     <%= eu_vou evento %>
   </div>
+  <div class="comments">
+    <%= link_to "#{evento.comentarios.size} comentarios", evento_full_path(evento) %> 
+  </div>
 </div>
