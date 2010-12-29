@@ -51,8 +51,16 @@
       </div>
     </div>
     <%= eu_vou evento %>
-  </div>
+    <%= render 'shared/tweet_button', :text => "#{evento.nome} #agendatech", :url => evento_full_path(evento), :twitter => evento.twitter %>  </div>
+  
   <div class="comments">
     <%= link_to "#{evento.comentarios.size} comentarios", evento_full_path(evento) %> 
+  </div
+
+  <!-- ideia: badges! melhorar-->
+  <% if evento.id == 5 %>
+  <div class="badges">
+    <%= link_to (image_tag "call4paperz.png", :size => '25x25'), root_path %>
   </div>
+<%end%>
 </div>
