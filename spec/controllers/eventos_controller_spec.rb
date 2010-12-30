@@ -49,8 +49,19 @@ describe EventosController do
       assigns[:evento].data_termino.to_date.should eq data_termino
       flash[:aguarde].should eq "Obrigado! Seu evento aparecerá na lista em instantes!"
       response.should redirect_to :action =>"index"
-    end            
+    end       
   end
+  
+   describe "comentando evento" do
+     it "deveria adicionar um a mais pegando o usuario do twitter da pessoa logada" do
+        usuario_logado = User.new (:nickname => "teste",:email => "teste@teste.com.br",:image => "http://a3.twimg.com/profile_images/1201901056/ic_launcher.png")
+        controller.stub!(:current_user).and_return(usuario_logado)
+        post :comentar, :evento_nome => @evento1.nome,:comentario => {:twitter => "alberto_souza", :descricao => "desc", :evento_id => @evento1.id}       
+        assigns[:comentario].twitter.should eq usuario_logado.nickname
+        assigns[:evento].should eq @evento1
+        response.should redirect_to evento_path(:ano => @evento1.data.year,:id=>@evento1)
+     end    
+   end  
   
 
 end

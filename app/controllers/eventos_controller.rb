@@ -46,9 +46,9 @@ class EventosController < ApplicationController
     @comentario = Comentario.new(params[:comentario])
     @comentario.twitter = current_user.nickname
     if @comentario.save
-      flash[:comentario] = "Comentário cadastrado com sucesso!"
+      flash[:comentario] = "Comentário cadastrado com sucesso!"      
       @evento = Evento.find_by_cached_slug(params[:evento_nome])
-      redirect_to :action => "show"
+      redirect_to evento_path(:ano => @evento.data.year,:id=>@evento)
     else
       render :action => "new"
     end

@@ -24,9 +24,8 @@ module EventosHelper
     return meses,total
   end  
 
-  def user_pic_by comentario
+  def user_pic_by comentario    
     user = User.where(:nickname => comentario.twitter).first
-
     image = user.image
     extension = user.image[image.length-3, image.length]
     "twimages/#{comentario.twitter}.#{extension}"
