@@ -76,9 +76,9 @@ class ApplicationController < ActionController::Base
   end
 
   def twitter_search    
-    @ultimos_comentarios = Comentario.find_by_sql("select * from comentarios order by created_at desc limit 3")
+    @ultimos_comentarios = Comentario.ultimos
     
-    eventos = Evento.find_by_sql("select distinct twitter_hash from eventos where aprovado = true limit 3")
+    eventos = Evento.ultimos_twitados
     @twits = []
 
     eventos.each do |e|
