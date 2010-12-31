@@ -25,9 +25,13 @@ module EventosHelper
   end  
 
   def user_pic_by comentario    
-    user = User.where(:nickname => comentario.twitter).first
-    image = user.image
-    extension = user.image[image.length-3, image.length]
-    "twimages/#{comentario.twitter}.#{extension}"
+    user = User.por_login_social(comentario.twitter)
+    if user
+      image = user.image
+      extension = user.image[image.length-3, image.length]
+      "twimages/#{comentario.twitter}.#{extension}"
+    else
+      "twitter_usr_padrao.png"              
+    end
   end
 end
