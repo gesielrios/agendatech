@@ -20,7 +20,6 @@ class User < ActiveRecord::Base
   extend Scopes
 
   def vai_no? evento
-    return true if Gadget.where(:evento_id => evento.id, :user_id => self.id).first
-    false
+    return  Gadget.where(:evento_id => evento.id, :user_id => self.id).exists?
   end
 end

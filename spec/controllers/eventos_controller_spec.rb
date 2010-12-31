@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe EventosController do
-  before(:all) do
+  before do
      @evento1 = Evento.create :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => "10/09/2020", :estado => 'BA',:aprovado => true
      @evento2 = Evento.create :nome => "evento1", :descricao => "desc", :site => "http://www.example.com", :data => "10/10/2020", :estado => 'BA',:aprovado => true
      @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => "10/10/2020", :estado => 'SP',:aprovado => true                           

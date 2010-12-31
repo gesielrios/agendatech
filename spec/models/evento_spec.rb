@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Evento do
   
-    before(:all) do
+    before do
        @evento1 = Evento.create :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
        @evento2 = Evento.create :nome => "evento1", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
        @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'SP',:aprovado => true                           
@@ -11,13 +11,13 @@ describe Evento do
        Gadget.create :tipo => 'teste2', :evento_id => @evento1.id, :user_id => 1
     end              
     
-    before(:each) do
-       @data_base = Date.today
-       @evento = Evento.new :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => @data_base
-    end
   
   describe "validando as datas" do    
 
+    before do
+       @data_base = Date.today
+       @evento = Evento.new :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => @data_base
+    end
 
     it "deveria validar a data de inicio apenas para eventos não aprovados" do    
       #por algum motivo, o qual desconheco :), nao ta rolando garantir so ano com 4 digitos. Mesmo assim o plugin
@@ -91,7 +91,7 @@ describe Evento do
   
   describe "gadgets associados" do 
       it "deveria pegar apenas os gadgets do tipo eu vou" do
-        Evento.find_by_id(1).me_da_gadgets.eu_vou.length.should eq(1)
+        Evento.find_by_id(@evento1.id).me_da_gadgets.eu_vou.length.should eq(1)
       end
   end
        
