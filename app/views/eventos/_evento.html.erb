@@ -51,7 +51,7 @@
       </div>
     </div>
     <%= eu_vou evento %>
-    <%= render 'shared/tweet_button', :text => "#{evento.nome} #agendatech", :url => evento_full_path(evento), :twitter => evento.twitter %>  </div>
+    <%= render 'shared/tweet_button', :text => "#{evento.nome} #agendatech", :url => evento_full_url(evento), :twitter => evento.twitter %>  </div>
   
   <div class="comments">
     <%= link_to "#{evento.comentarios.size} comentarios", evento_full_path(evento) %> 
