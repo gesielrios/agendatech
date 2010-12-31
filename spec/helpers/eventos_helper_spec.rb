@@ -18,6 +18,7 @@ describe EventosHelper do
     Evento.should_receive(:agrupado_por_mes).and_return({12 => 2,10 => 4})
     meses,total = helper.meses_com_total_de_eventos
     meses.size.should eq 2
+    meses[12].should eq 2
     total.should eq 6
   end  
   
