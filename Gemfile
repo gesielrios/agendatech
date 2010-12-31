@@ -9,9 +9,9 @@ gem "friendly_id"      , "3.2.0.beta1"
 gem 'shorturl'         , "0.8.8"   
 gem 'validates_timeliness', '~> 3.0.2'
 gem "omniauth"
+gem "aws-s3"
 
 group :production do
-gem "aws-s3"
 end
 
 group :development do

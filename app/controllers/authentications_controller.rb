@@ -25,7 +25,7 @@ class AuthenticationsController < ApplicationController
       user.save!  
 
       # download user image
-      ImageTwitter.download omniauth['user_info']['nickname']
+      Plugins.new_image_twitter.download omniauth['user_info']['nickname']
       
       flash[:notice] = "Signed in successfully."  
       sign_in_and_redirect(:user, user)  

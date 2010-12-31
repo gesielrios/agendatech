@@ -29,7 +29,7 @@ module EventosHelper
     if user
       image = user.image
       extension = user.image[image.length-3, image.length]
-      "twimages/#{comentario.twitter}.#{extension}"
+      Plugins.url_para_imagem_do_twitter("#{comentario.twitter}.#{extension}")
     else
       "twitter_usr_padrao.png"              
     end
