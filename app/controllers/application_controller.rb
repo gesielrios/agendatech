@@ -72,7 +72,12 @@ class ApplicationController < ActionController::Base
   # filter_parameter_logging :password
   private
   def tag_cloud
-     @tags = Evento.tag_counts
+#     @tags = Evento.tag_counts
+    #mangue temporario enquanto nao descobrimos o bug do acts_as_taggable_on_steroids
+     @tags = Tag.select("#{Tag.table_name}.id, #{Tag.table_name}.name, COUNT(*) AS count").
+                 joins(:taggings).
+                 joins("INNER JOIN #{Evento.table_name} ON #{Evento.table_name}.id = #{Tagging.table_name}.taggable_id").where("#{Tagging.table_name}.taggable_type = 'Evento'").
+                 group("#{Tag.table_name}.id").group("#{Tag.table_name}.name").having("COUNT(*) > 5").all
   end
 
   def twitter_search    
