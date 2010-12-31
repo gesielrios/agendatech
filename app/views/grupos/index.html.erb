@@ -8,7 +8,7 @@
 
     <% if grupo.logo? %>
       <div class="logo_img clearfix">
-        <%= link_to(image_tag(grupo.logo.url(:thumb)), grupo_path(:nome => grupo.nome, :id => grupo))  %>
+        <%= link_to(image_tag(grupo.logo.url(:thumb)), grupo_path(:nome => grupo.nome, :id => grupo.to_param))  %>
       </div>
     <% else %>
         <div class="logo">
