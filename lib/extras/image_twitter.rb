@@ -26,14 +26,14 @@ class ImageTwitter
    end           
 end
 
-class ImageTwitterInS3 <  AWS::S3::S3Object
+class ImageTwitterInS3
   include ImageTwitterHelper    
-  set_current_bucket_to 'twitter_images'
   
   def download user_name
+    bucket = 'twitter_images'
     nome,url_da_imagem = arquivo_para user_name
-    unless exists? nome
-      store open(url_da_imagem)
+    unless S3Object.exists? nome,bucket
+      S3Object.store(nome,open(url_da_imagem),bucket)
     end
   end
 end
