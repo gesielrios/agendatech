@@ -18,10 +18,10 @@ class Plugins
    def self.new_image_twitter
      EnvironmentHack.para do |env|
        env.producao {
-          ImageTwitterInS3.new
+          return ImageTwitterInS3.new
        }
        env.outros {
-          ImageTwitter.new         
+          return ImageTwitter.new         
        }
      end     
    end
