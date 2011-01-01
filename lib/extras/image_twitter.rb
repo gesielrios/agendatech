@@ -32,8 +32,8 @@ class ImageTwitterInS3
   def download user_name
     bucket = 'twitter_images'
     nome,url_da_imagem = arquivo_para user_name
-    unless S3Object.exists? nome,bucket
-      S3Object.store(nome,open(url_da_imagem),bucket)
+    unless AWS::S3::S3Object.exists? nome,bucket
+      AWS::S3::S3Object.store(nome,open(url_da_imagem),bucket)
     end
   end
 end
