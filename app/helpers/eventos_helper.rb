@@ -27,9 +27,19 @@ module EventosHelper
   def user_pic_by comentario    
     user = User.por_login_social(comentario.twitter)
     if user
-      image = user.image
-      extension = user.image[image.length-3, image.length]
-      Plugins.url_para_imagem_do_twitter("#{comentario.twitter}.#{extension}")
+     EnvironmentHack.para do |env|
+       image = user.image
+       extension = user.image[image.length-3, image.length]       
+       nome_da_imagem = "#{comentario.twitter}.#{extension}"
+       env.producao {
+          return "http://s3.amazonaws.com/twitter_images/#{nome_da_imagem}"
+       }
+       env.outros {
+            image = user.image
+            extension = user.image[image.length-3, image.length]
+            return "twimages/#{nome_da_imagem}"           
+       } 
+     end     
     else
       "twitter_usr_padrao.png"              
     end

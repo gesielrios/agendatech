@@ -28,6 +28,14 @@ describe EventosHelper do
     helper.user_pic_by(Comentario.new(:twitter => "teste")).should eq("twimages/teste.png")    
   end
   
+  it "deveria pegar a imagem do usuario associado ao comentario como link para o s3 caso o ambiente seja de producao" do
+    Rails.env = 'production' 
+    user = User.new(:nickname => "teste",:email => "teste@teste.com.br",:image => "http://a3.twimg.com/profile_images/1201901056/ic_launcher.png")
+    User.should_receive(:por_login_social).with('teste').and_return(user)
+    helper.user_pic_by(Comentario.new(:twitter => "teste")).should eq("http://s3.amazonaws.com/twitter_images/teste.png")    
+    Rails.env = 'test' 
+  end  
+  
   it "deveria pegar a imagem padrao para comentarios anteriores, quando usuarios nao precisavam se logar" do
     User.should_receive(:por_login_social).with('teste').and_return(nil)
     helper.user_pic_by(Comentario.new(:twitter => "teste")).should eq("twitter_usr_padrao.png")    
