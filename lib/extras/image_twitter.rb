@@ -33,7 +33,7 @@ class ImageTwitterInS3
     bucket = 'twitter_images'
     nome,url_da_imagem = arquivo_para user_name
     unless AWS::S3::S3Object.exists? nome,bucket
-      AWS::S3::S3Object.store(nome,open(url_da_imagem),bucket)
+      AWS::S3::S3Object.store(nome,open(url_da_imagem),bucket,:access => :public_read)
     end
   end
 end
