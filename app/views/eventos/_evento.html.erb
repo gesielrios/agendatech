@@ -38,7 +38,7 @@
         </div>
         <% evento.me_da_gadgets.eu_vou.each do |gadget| %>
           <div class="quem_vai_pic"> 
-            <%= link_to  (image_tag "twimages/#{user_name gadget}.#{extension gadget}", :size => "25x25"), "http://www.twitter.com/#{user_name gadget}", :target => 'blank' %>
+            <%= link_to  (image_tag link_da_imagem_do_twitter_para("#{user_name gadget}.#{extension gadget}"), :size => "25x25"), "http://www.twitter.com/#{user_name gadget}", :target => 'blank' %>
           </div>
         <%end%>
         
