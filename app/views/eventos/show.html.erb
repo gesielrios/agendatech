@@ -83,7 +83,7 @@
                         <%= image_tag user_pic_by(comentario) %>
 
 			<p class="comentario_descricao"><%= comentario.descricao %></p>
-			<p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %m/%d/%Y %I:%M%p") %></p>
+			<p class="comentario_data"><%= comentario.created_at.strftime("Enviado em %d/%m/%Y %I:%M%p") %></p>
 
 		</div>
 	<% end %>
