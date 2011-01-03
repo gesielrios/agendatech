@@ -18,8 +18,16 @@ module EventosHelper
   end
   
   def meses_com_total_de_eventos
-    meses = Evento.agrupado_por_mes
-    meses.default = 0    
+    #gambi para heroku. Nao teve jeito 
+    #heroku
+    meses = Hash.new do |hash,key|
+         if hash.has_key? key.to_s
+          hash[key.to_s]
+         else
+          0
+         end
+    end
+    meses.update(Evento.agrupado_por_mes)
     total = meses.values.inject(0){|soma,por_mes| soma += por_mes}    
     return meses,total
   end  
