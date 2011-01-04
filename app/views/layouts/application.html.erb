@@ -41,7 +41,8 @@
             <span class="check"></span>
             </li>
           <% end %>
-
+          <li><%= tab_link_to 'RSS', feed_path('rss') %></li>
+          <li><%= tab_link_to "iCal", calendario_link_path %></li>
           <li><%= tab_link_to "Contato", contato_path %></li>
           <li><%= tab_link_to "Sobre", sobre_path %></li>
           <li><%= tab_link_to "Grupos",  grupos_path %></li>
