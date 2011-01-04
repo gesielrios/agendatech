@@ -54,7 +54,7 @@ describe EventosController do
   
    describe "comentando evento" do
      it "deveria adicionar um a mais pegando o usuario do twitter da pessoa logada" do
-        usuario_logado = User.new (:nickname => "teste",:email => "teste@teste.com.br",:image => "http://a3.twimg.com/profile_images/1201901056/ic_launcher.png")
+        usuario_logado = User.new(:nickname => "teste",:email => "teste@teste.com.br",:image => "http://a3.twimg.com/profile_images/1201901056/ic_launcher.png")
         controller.stub!(:current_user).and_return(usuario_logado)
         post :comentar, :evento_nome => @evento1.nome,:comentario => {:twitter => "alberto_souza", :descricao => "desc", :evento_id => @evento1.id}       
         assigns[:comentario].twitter.should eq usuario_logado.nickname
