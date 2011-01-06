@@ -184,7 +184,7 @@ h3{
 }
 
 .logo_img img{
-  height:  72px;
+  max-height:  72px;
   width: 72px;
 }
 
