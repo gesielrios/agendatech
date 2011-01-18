@@ -61,7 +61,7 @@ describe Evento do
   describe "listagens dos eventos aprovados" do      
     
       it "que ainda vao ocorrer" do
-          Evento.nao_ocorrido.length.should eq(3)
+          Evento.que_ainda_vao_rolar.length.should eq(3)
       end           
       
       it "do mes" do
@@ -73,7 +73,7 @@ describe Evento do
       end
       
       it "com os gadgets de algum tipo" do
-          Evento.nao_ocorrido.top_gadgets.length.should eq(3)
+          Evento.que_ainda_vao_rolar.top_gadgets.length.should eq(3)
       end 
       
       it "agrupados por estados" do 

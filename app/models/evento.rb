@@ -21,6 +21,8 @@ class Evento < ActiveRecord::Base
 
   scope :top_gadgets, includes(:gadgets)
   
+  scope :para_o_ano, lambda {|ano| where("#{SQL.ano_do_evento} = ?",ano)}
+  
       
   module Scopes
     
@@ -33,7 +35,7 @@ class Evento < ActiveRecord::Base
     end
     
     def agrupado_por_mes
-      group("#{SQL.mes_do_evento}").aprovado.where("#{SQL.ano_do_evento} = #{Time.now.year}").order("#{SQL.mes_do_evento} asc").count
+      group("#{SQL.mes_do_evento}").aprovado.para_o_ano(Time.now.year).order("#{SQL.mes_do_evento} asc").count
     end
     
     def ultimos_twitados
