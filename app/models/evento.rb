@@ -31,7 +31,7 @@ class Evento < ActiveRecord::Base
     end
     
     def agrupado_por_estado
-        group('estado').aprovado.order('estado asc').count
+        group('estado').aprovado.para_o_ano(Time.now.year).order('estado asc').count
     end
     
     def agrupado_por_mes

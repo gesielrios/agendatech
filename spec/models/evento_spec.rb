@@ -5,7 +5,8 @@ describe Evento do
     before do
        @evento1 = Evento.create :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
        @evento2 = Evento.create :nome => "evento1", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
-       @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'SP',:aprovado => true                           
+       @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'SP',:aprovado => true
+       @evento_de_outro_ano = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => '10/10/2006', :estado => 'SP',:aprovado => true                                                             
        Gadget.create :tipo => Gadget.tipos[:eu_vou], :evento_id => @evento1.id, :user_id => 1
        Gadget.create :tipo => 'teste1', :evento_id => @evento1.id, :user_id => 1
        Gadget.create :tipo => 'teste2', :evento_id => @evento1.id, :user_id => 1
@@ -69,7 +70,7 @@ describe Evento do
       end
       
       it "por estado" do
-          Evento.por_estado('BA').length.should eq(2)
+          Evento.por_estado('SP').length.should eq(2)
       end
       
       it "com os gadgets de algum tipo" do
