@@ -13,23 +13,39 @@ class Evento < ActiveRecord::Base
   validate :termino_depois_do_inicio?,:if => Proc.new { |evento| !evento.aprovado }
   validates_format_of :site, :with => /(^$)|(^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$)/ix
 
-  scope :estado_aprovado, lambda { |estado| where("aprovado = ? AND estado = ?", true, estado).order('data ASC')}
+  scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today)
 
-  scope :por_mes, lambda{|mes| where("aprovado = ? AND #{SQL.mes_do_evento} = ? ", true,  mes).order('data ASC')}
-
-  scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today).order('data ASC')
+  scope :aprovado, where("aprovado = ?",true)  
+  
+  scope :ordenado_por_data, order('data asc')
 
   scope :top_gadgets, includes(:gadgets)
   
-  scope :ultimos_twitados,select("distinct(twitter_hash)").where("aprovado = ?",true).limit(3)
-    
+      
   module Scopes
+    
+    def que_ainda_vao_rolar
+      nao_ocorrido.ordenado_por_data
+    end
+    
     def agrupado_por_estado
-        group('estado').where(:aprovado => true).order('estado asc').count
+        group('estado').aprovado.order('estado asc').count
     end
     
     def agrupado_por_mes
-      group("#{SQL.mes_do_evento}").where(:aprovado => true).where("#{SQL.ano_do_evento} = #{Time.now.year}").order("#{SQL.mes_do_evento} asc").count
+      group("#{SQL.mes_do_evento}").aprovado.where("#{SQL.ano_do_evento} = #{Time.now.year}").order("#{SQL.mes_do_evento} asc").count
+    end
+    
+    def ultimos_twitados
+      select("distinct(twitter_hash)").aprovado.limit(3)      
+    end
+    
+    def por_estado(estado)
+      where("estado = ?",estado).aprovado.ordenado_por_data
+    end
+    
+    def por_mes(mes)
+      where("#{SQL.mes_do_evento} = ? ", mes).aprovado.ordenado_por_data
     end
   end
   
