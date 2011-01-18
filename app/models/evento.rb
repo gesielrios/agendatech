@@ -21,8 +21,8 @@ class Evento < ActiveRecord::Base
 
   scope :top_gadgets, includes(:gadgets)
   
-  scope :para_o_ano, lambda {|ano| where("#{SQL.ano_do_evento} = ?",ano)}
-  
+  scope :para_o_ano, lambda {|ano| where("#{SQL.ano_do_evento} >= ?",ano)}
+    
       
   module Scopes
     
@@ -30,24 +30,24 @@ class Evento < ActiveRecord::Base
       nao_ocorrido.ordenado_por_data
     end
     
-    def agrupado_por_estado
-        group('estado').aprovado.para_o_ano(Time.now.year).order('estado asc').count
+    def agrupado_por_estado(ano = Time.now.year)
+        group('estado').aprovado.para_o_ano(ano).order('estado asc').count
     end
     
-    def agrupado_por_mes
-      group("#{SQL.mes_do_evento}").aprovado.para_o_ano(Time.now.year).order("#{SQL.mes_do_evento} asc").count
+    def agrupado_por_mes(ano = Time.now.year)
+      group("#{SQL.mes_do_evento}").aprovado.para_o_ano(ano).order("#{SQL.mes_do_evento} asc").count
     end
     
     def ultimos_twitados
       select("distinct(twitter_hash)").aprovado.limit(3)      
     end
     
-    def por_estado(estado)
-      where("estado = ?",estado).aprovado.ordenado_por_data
+    def por_estado(estado,ano = Time.now.year)
+      where("estado = ?",estado).aprovado.para_o_ano(Time.now.year).ordenado_por_data
     end
     
-    def por_mes(mes)
-      where("#{SQL.mes_do_evento} = ? ", mes).aprovado.ordenado_por_data
+    def por_mes(mes,ano = Time.now.year)
+      where("#{SQL.mes_do_evento} = ? ", mes).aprovado.para_o_ano(ano).ordenado_por_data
     end
   end
   

@@ -70,7 +70,7 @@ describe Evento do
       end
       
       it "por estado" do
-          Evento.por_estado('SP').length.should eq(2)
+          Evento.por_estado('SP').length.should eq(1)
       end
       
       it "com os gadgets de algum tipo" do
