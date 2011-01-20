@@ -6,7 +6,7 @@ require 'aws/s3'
 module ImageTwitterHelper
   def arquivo_para user_name
     image_url =  Twitter.user(user_name).profile_image_url
-    image_name = image_url.match(/([\w_]+).(\w\w\w)$/)
+    image_name = image_url.match(/([\w_]+).(\w{3,4})$/)
     return "#{user_name}.#{image_name[2]}", image_url
   end
 end
