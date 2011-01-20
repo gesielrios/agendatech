@@ -5,7 +5,8 @@ describe Evento do
     before do
        @evento1 = Evento.create :nome => "evento", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
        @evento2 = Evento.create :nome => "evento1", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'BA',:aprovado => true
-       @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'SP',:aprovado => true                           
+       @evento3 = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => Date.today, :estado => 'SP',:aprovado => true
+       @evento_de_outro_ano = Evento.create :nome => "evento2", :descricao => "desc", :site => "http://www.example.com", :data => '10/10/2006', :estado => 'SP',:aprovado => true                                                             
        Gadget.create :tipo => Gadget.tipos[:eu_vou], :evento_id => @evento1.id, :user_id => 1
        Gadget.create :tipo => 'teste1', :evento_id => @evento1.id, :user_id => 1
        Gadget.create :tipo => 'teste2', :evento_id => @evento1.id, :user_id => 1
@@ -61,7 +62,7 @@ describe Evento do
   describe "listagens dos eventos aprovados" do      
     
       it "que ainda vao ocorrer" do
-          Evento.nao_ocorrido.length.should eq(3)
+          Evento.que_ainda_vao_rolar.length.should eq(3)
       end           
       
       it "do mes" do
@@ -69,11 +70,11 @@ describe Evento do
       end
       
       it "por estado" do
-          Evento.estado_aprovado('BA').length.should eq(2)
+          Evento.por_estado('SP').length.should eq(1)
       end
       
       it "com os gadgets de algum tipo" do
-          Evento.nao_ocorrido.top_gadgets.length.should eq(3)
+          Evento.que_ainda_vao_rolar.top_gadgets.length.should eq(3)
       end 
       
       it "agrupados por estados" do 

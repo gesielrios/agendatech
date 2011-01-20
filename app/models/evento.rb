@@ -13,23 +13,41 @@ class Evento < ActiveRecord::Base
   validate :termino_depois_do_inicio?,:if => Proc.new { |evento| !evento.aprovado }
   validates_format_of :site, :with => /(^$)|(^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$)/ix
 
-  scope :estado_aprovado, lambda { |estado| where("aprovado = ? AND estado = ?", true, estado).order('data ASC')}
+  scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today)
 
-  scope :por_mes, lambda{|mes| where("aprovado = ? AND #{SQL.mes_do_evento} = ? ", true,  mes).order('data ASC')}
-
-  scope :nao_ocorrido, where("aprovado = ? AND ((? between data and data_termino) OR (data >= ?))",true, Date.today,Date.today).order('data ASC')
+  scope :aprovado, where("aprovado = ?",true)  
+  
+  scope :ordenado_por_data, order('data asc')
 
   scope :top_gadgets, includes(:gadgets)
   
-  scope :ultimos_twitados,select("distinct(twitter_hash)").where("aprovado = ?",true).limit(3)
+  scope :para_o_ano, lambda {|ano| where("#{SQL.ano_do_evento} >= ?",ano)}
     
+      
   module Scopes
-    def agrupado_por_estado
-        group('estado').where(:aprovado => true).order('estado asc').count
+    
+    def que_ainda_vao_rolar
+      nao_ocorrido.ordenado_por_data
     end
     
-    def agrupado_por_mes
-      group("#{SQL.mes_do_evento}").where(:aprovado => true).where("#{SQL.ano_do_evento} = #{Time.now.year}").order("#{SQL.mes_do_evento} asc").count
+    def agrupado_por_estado(ano = Time.now.year)
+        group('estado').aprovado.para_o_ano(ano).order('estado asc').count
+    end
+    
+    def agrupado_por_mes(ano = Time.now.year)
+      group("#{SQL.mes_do_evento}").aprovado.para_o_ano(ano).order("#{SQL.mes_do_evento} asc").count
+    end
+    
+    def ultimos_twitados
+      select("distinct(twitter_hash)").aprovado.limit(3)      
+    end
+    
+    def por_estado(estado,ano = Time.now.year)
+      where("estado = ?",estado).aprovado.para_o_ano(Time.now.year).ordenado_por_data
+    end
+    
+    def por_mes(mes,ano = Time.now.year)
+      where("#{SQL.mes_do_evento} = ? ", mes).aprovado.para_o_ano(ano).ordenado_por_data
     end
   end
   
