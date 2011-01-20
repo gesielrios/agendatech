@@ -23,6 +23,7 @@ module GadgetsHelper
 
   def extension gadget
     image = User.find(gadget.user_id).image
-    image[image.length-3, image.length]
+    image.match(/(\w{3,4})$/).to_s
   end
+    
 end
