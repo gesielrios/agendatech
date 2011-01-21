@@ -93,7 +93,7 @@ describe Evento do
   describe "gadgets associados" do 
       it "deveria pegar apenas os gadgets do tipo eu vou" do
         Evento.find_by_id(@evento1.id).me_da_gadgets.eu_vou.length.should eq(1)
-      end
+      end      
   end
        
 end

@@ -1,0 +1,10 @@
+<% pessoas_que_vao[0..11].each do |gadget| %>
+  <div class="quem_vai_pic"> 
+    <%= link_to  (image_tag link_da_imagem_do_twitter_para("#{user_name gadget}.#{extension gadget}"), :size => "25x25"), "http://www.twitter.com/#{user_name gadget}", :target => 'blank' %>
+  </div>
+<%end%>
+<% if pessoas_que_vao.size > 12 %>
+  <p style="clear:left;">
+    E mais <%= pessoas_que_vao.size - 12 %> <%= pessoas_que_vao.size == 13 ? "pessoa" : "pessoas" %>...
+  </p>
+<% end %>
