@@ -1,6 +1,6 @@
 class MobileController < ApplicationController
   def eventos
-    @eventos = Evento.nao_ocorrido
+    @eventos = Evento.que_ainda_vao_rolar
     render :json => @eventos
   end
   
