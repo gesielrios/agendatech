@@ -38,6 +38,6 @@ Agendatech::Application.routes.draw do
   match 'grupos/:nome/:id/eventos' => 'grupos#show', :as => :grupo
   match 'busca/eventos/:estado' => 'eventos#index', :as => :eventos_por_estado
   match 'busca/eventos/:ano/:month' => 'eventos#index', :as => :eventos_por_mes
-
+  match 'eventos/lista/:evento_name' => 'eventos#lista' 
 end
 
