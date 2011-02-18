@@ -8,6 +8,10 @@ module ApplicationHelper
     klass = match ? 'menu_select' : 'menu_inicial'
     link_to caption, url, {:class => klass}
   end
+  
+  def facebook_like_button
+     raw %&<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/Agendatech/190166907684709" width="230" show_faces="true" stream="true" header="true"></fb:like-box>&
+  end
 end
 
 
