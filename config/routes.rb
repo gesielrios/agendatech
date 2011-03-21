@@ -4,15 +4,15 @@ Agendatech::Application.routes.draw do
   devise_for :users
 
   devise_for :admins
-  namespace :admin do 
+  namespace :admin do
     root :to => 'admin#index'
     resources :eventos, :only => [:index,:update] do
       member do
         get 'aprovar'
-        get 'remover' 
+        get 'remover'
       end
     end
-    resources :grupos, :only => [:index,:update,:destroy] do 
+    resources :grupos, :only => [:index,:update,:destroy] do
       member do
         put 'aprovar'
       end
@@ -38,6 +38,7 @@ Agendatech::Application.routes.draw do
   match 'grupos/:nome/:id/eventos' => 'grupos#show', :as => :grupo
   match 'busca/eventos/:estado' => 'eventos#index', :as => :eventos_por_estado
   match 'busca/eventos/:ano/:month' => 'eventos#index', :as => :eventos_por_mes
-  match 'eventos/lista/:evento_name' => 'eventos#lista' 
+  match 'eventos/lista/:evento_name' => 'eventos#lista'
+  match 'eventos/meus_eventos' => 'eventos#meus_eventos', :as => :meus_eventos
 end
 

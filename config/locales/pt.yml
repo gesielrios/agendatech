@@ -21,7 +21,7 @@ pt:
       month: "%B"
     am: ""
     pm: ""
-    
+
     day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
     abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
@@ -164,4 +164,9 @@ pt:
         after: "deve ser após {{restriction}}"
         on_or_after: "deve ser em ou após {{restriction}}"
         between: "deve ser entre {{earliest}} e {{latest}}"
+
+  helpers:
+    submit:
+      create: 'Cadastrar'
+      update: 'Alterar'
 

@@ -75,7 +75,7 @@ body{
 
 #content .container{
   -moz-border-radius:10px 10px 0px 0px;
-  -webkit-border-radius:10px 10px 0px 0px;	
+  -webkit-border-radius:10px 10px 0px 0px;
   background: repeat scroll 0 0 #f2f2f2;
   color:#4A4A47;
   width:960px;
@@ -141,7 +141,7 @@ h3{
 #left{
   float:left;
   width:660px;
-  min-height:1900px;	
+  min-height:1900px;
   padding:0 12px 12px;
 }
 
@@ -279,7 +279,7 @@ h3{
 
 .grupo{
   -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;	
+  -webkit-border-radius:10px 10px 10px 10px;
   background-color:#CCCCCC;
   border:5px solid #818181;
   margin-bottom:30px;
@@ -293,7 +293,7 @@ h3{
 
 .cadastre{
   -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;	
+  -webkit-border-radius:10px 10px 10px 10px;
   background-color: #0CBADF;
   color:#F2F2F2;
   cursor:pointer;
@@ -338,7 +338,7 @@ h3{
 
 .twit img{
   float: left;
-  margin-right: 5px;	
+  margin-right: 5px;
 }
 
 .twit small{
@@ -525,7 +525,7 @@ a:visited {
 
 .evento_destaque{
   -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;	
+  -webkit-border-radius:10px 10px 10px 10px;
   background-color:#CCCCCC;
   border:5px solid #818181;
   margin-bottom:20px;
@@ -622,7 +622,7 @@ a:link.menu_select, a:visited.menu_select  {
 
 .colaboradores  {
   -moz-border-radius:10px 10px 10px 10px;
-  -webkit-border-radius:10px 10px 10px 10px;	
+  -webkit-border-radius:10px 10px 10px 10px;
   background-color:#4A4A47;
   color:#F2F2F2;
   display:inline-block;
@@ -661,7 +661,7 @@ a:link.menu_select, a:visited.menu_select  {
 .comentario{
   background-color: #E6E6E6;
   padding: 10px;
-  overflow: auto;  
+  overflow: auto;
 }
 
 .quem_vai {
@@ -715,7 +715,7 @@ a.button{
   position:relative;
   z-index:40;
   color: #ffffff;
-}  
+}
 
 .inner{
   padding: 8px 10px ;
@@ -735,7 +735,7 @@ a.button{
 
 .spinner {
   display: none;
-  float: left;	
+  float: left;
   position:relative;
   top: 11px;
   left: 7px;
@@ -772,7 +772,7 @@ a.button{
   padding:5px;
   float: left;
   margin-right: 10px
-  
+
 
   border-top:1px solid #f2f2f2;
   border-left:1px solid #f2f2f2;
@@ -789,7 +789,7 @@ a.button{
 }
 .tweet img{
   display: none;
- } 
+ }
 
 .ajax_vou_confirmado{
   background-color: #A9C342 !important;
@@ -813,5 +813,20 @@ a.button{
  padding:2px;
  position:absolute;
  top:93px;
- width:25px;}
+ width:25px;
+ }
+
+ .meus_eventos_titulo {
+  padding:10px;
+  width:652px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  margin-bottom: 13px;
+  background-color:#0CBADF !important;
+  color:#FFFFFF !important;
+ }
 

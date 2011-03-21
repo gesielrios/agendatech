@@ -1,0 +1,26 @@
+<% if @meus_eventos.empty? %>
+  <b align="center">Você não possui eventos cadastrado.</b>
+<% else %>
+  <div class="meus_eventos_titulo">
+  	<h2>Meus Eventos</h2>
+  </div>
+
+  <table>
+    <tr>
+      <th width="30%">Nome</th>
+      <th width="20%">Estado</th>
+      <th width="50%">Data</th>
+      <th></th>
+    </tr>
+    <% @meus_eventos.each do |evento| %>
+      <tr>
+        <td width="30%"><%= evento.nome %></td>
+        <td width="20%"><%= evento.estado %></td>
+        <td width="50%"><%= evento.data %></td>
+        <td><%= link_to "Editar", :action => 'edit', :id => evento %></td>
+      </tr>
+    <% end -%>
+  </table>
+
+<% end %>
+

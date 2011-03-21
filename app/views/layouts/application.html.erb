@@ -24,8 +24,8 @@
 
         <% if user_signed_in? %>
           <div id="user_logged">
-            Usuário: 
-            <%= current_user.nickname %>, 
+            Usuário:
+            <%= current_user.nickname %>,
             <%= link_to "Sair", destroy_user_session_path, :class => 'blue' %>
           </div>
           <div style="clear:right"></div>
@@ -74,12 +74,14 @@
             <INPUT TYPE="BUTTON" VALUE="Cadastrar novo evento" class="botao" style="width: 230px;"
             ONCLICK="window.location.href='<%= new_evento_path %>'">
           </FORM>
-          <br/> 
+          <br/>
           <FORM>
             <INPUT TYPE="BUTTON" VALUE="Cadastrar novo grupo" class="botao" style="width: 230px;"
             ONCLICK="window.location.href='<%= new_grupo_path %>'">
           </FORM>
+          <br/>
 
+          <%= button_to "Meus Eventos", meus_eventos_path, {:class => "botao", :style => "width: 230px;"} if user_signed_in? %>
 
           <br/>
 
@@ -143,7 +145,7 @@
 
           <div id="mes">
             <div class="header">
-              <p>Últimos comentários</p>              
+              <p>Últimos comentários</p>
             </div>
             <div class="inner">
 
@@ -166,7 +168,7 @@
             <%= image_tag "android.png" %>
           </div>
           <br/>
-          
+
           <br/>
           <div id="twitter">
             <div class="header">
@@ -207,8 +209,8 @@
           <br/><br/>
            <div id="facebook">
               <%=facebook_like_button%>
-          </div>          
-  
+          </div>
+
 
 
         </div>
@@ -280,3 +282,4 @@ loading_text: "carregando tweets..."
 
   </body>
 </html>
+

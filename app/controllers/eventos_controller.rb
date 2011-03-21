@@ -20,9 +20,10 @@ class EventosController < ApplicationController
   def create
     @evento = Evento.new(params[:evento])
     @evento.aprovado = false
-    unless @evento.data_termino?
-      @evento.data_termino = @evento.data
-    end
+
+    @evento.data_termino = @evento.data unless @evento.data_termino?
+    @evento.user = current_user if user_signed_in?
+
     if @evento.save
       flash[:aguarde] = "Obrigado! Seu evento aparecerá na lista em instantes!"
       redirect_to :action => "index"
@@ -32,8 +33,31 @@ class EventosController < ApplicationController
   end
 
   def show
+    debugger
     @evento = Evento.find_by_cached_slug(params[:id])
     @comentario = Comentario.new
+  end
+
+  def edit
+    @evento = Evento.find_by_cached_slug(params[:id])
+    unless @evento.pode_editar? current_user
+      redirect_to :action => "index"
+    end
+  end
+
+  def update
+    debugger
+    @evento = Evento.find_by_cached_slug(params[:id])
+    unless @evento.pode_editar? current_user
+      redirect_to :action => "index"
+    else
+      if @evento.update_attributes(params[:evento])
+        flash[:notice] = "Evento editado com sucesso"
+        redirect_to :action => "index"
+      else
+        render :action => 'edit'
+      end
+    end
   end
 
   def tag
@@ -46,21 +70,29 @@ class EventosController < ApplicationController
     @comentario = Comentario.new(params[:comentario])
     @comentario.twitter = current_user.nickname
     if @comentario.save
-      flash[:comentario] = "Comentário cadastrado com sucesso!"      
+      flash[:comentario] = "Comentário cadastrado com sucesso!"
       @evento = Evento.find_by_cached_slug(params[:evento_nome])
       redirect_to evento_path(:ano => @evento.data.year,:id=>@evento)
     else
       render :action => "new"
     end
   end
-  
+
   def lista
     @participantes = []
-    puts params[:id]
     evento = Evento.find_by_cached_slug(params[:id])
     evento.gadgets.each do |g|
       @participantes << Twitter.user(User.find(g.user_id).nickname).name
     end
   end
 
+  def meus_eventos
+    if user_signed_in?
+      @meus_eventos = current_user.eventos
+    else
+      redirect_to :action => "index"
+    end
+  end
+
 end
+
